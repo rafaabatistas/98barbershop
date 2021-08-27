@@ -1,0 +1,21 @@
+{
+  "name": "Boilerplate NextJS",
+  "short_name": "Boilerplate NextJS",
+  "icons": [
+    {
+      "src": "assets/img/icon-react.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "assets/svg/ilustration.svg",
+      "type": "image/img",
+      "sizes": "427x373"
+    }
+  ],
+  "background_color": "#19062b",
+  "description": "Boilerlate utilizando Typescript, React, NextJS e Styled Components!",
+  "display": "fullscreen",
+  "start_url": "/",
+  "theme_color": "#19062b"
+}

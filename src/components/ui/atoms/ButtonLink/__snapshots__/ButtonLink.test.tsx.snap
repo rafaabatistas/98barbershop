@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ButtonLink /> Deve renderizar o componente <ButtonLink /> 1`] = `
+.c0 {
+  color: white;
+  font-size: 1.8rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.c0:hover {
+  color: #adadad;
+}
+
+<a
+  class="c0"
+  href="https://github.com/rafaabatistas/boilerplate-nextjs"
+  rel="noreferrer noopener"
+  target="_blank"
+>
+  GitHub
+</a>
+`;

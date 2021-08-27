@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "~src/*": ["./src/*"],
+      "~components/*": ["./src/components/*"],
+      "~templates/*": ["./src/components/ui/templates/*"],
+      "~organisms/*": ["./src/components/ui/organisms/*"],
+      "~molecules/*": ["./src/components/ui/molecules/*"],
+      "~atoms/*": ["./src/components/ui/atoms/*"],
+      "~styles/*": ["./src/styles/*"],
+      "~assets/*": ["./public/assets/*"],
+      "~svg/*": ["./public/assets/svg/*"],
+      "~img/*": ["./public/assets/img/*"],
+    },
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve"
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+, "src/styles/mixins.ts"  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

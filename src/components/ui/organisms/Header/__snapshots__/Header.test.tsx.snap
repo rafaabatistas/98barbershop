@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> Deve renderizar o componente <Header /> 1`] = `
+.c0 {
+  width: 100vw;
+  height: 80px;
+  background-color: #19062b;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-bottom: 1px solid white;
+}
+
+.c1 {
+  width: 100%;
+  height: 100%;
+  max-width: 1240px;
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+
+.c2 {
+  display: block;
+  width: 60px;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3 {
+  width: 50px;
+}
+
+.c4 {
+  color: white;
+  font-size: 1.8rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.c4:hover {
+  color: #adadad;
+}
+
+<header
+  class="c0"
+>
+  <ul
+    class="c1"
+  >
+    <li
+      class="c2"
+    >
+      <img
+        alt="Imagem escrito nextJS"
+        class="c3"
+        src="assets/img/icon-react.png"
+      />
+    </li>
+    <li
+      class="c2"
+    >
+      <a
+        class="c4"
+        href="https://github.com/rafaabatistas/boilerplate-nextjs"
+        rel="noreferrer noopener"
+        target="_blank"
+      >
+        GitHub
+      </a>
+    </li>
+  </ul>
+</header>
+`;
