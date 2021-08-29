@@ -1,5 +1,5 @@
-import HomeSection from '~templates/HomeSection/HomeSection';
+import HomePage from '~templates/HomePage/HomePage';
 
 export default function Home() {
-  return <HomeSection />;
+  return <HomePage />;
 }

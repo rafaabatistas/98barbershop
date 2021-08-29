@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<HomeSection /> Deve renderizar o componente <HomeSection /> 1`] = `
+exports[`<Home /> Deve renderizar o componente <Home /> 1`] = `
 .c0 {
   width: 100vw;
   height: 80px;
@@ -55,7 +55,7 @@ exports[`<HomeSection /> Deve renderizar o componente <HomeSection /> 1`] = `
 }
 
 .c4 {
-  color: white;
+  color: #ffffff;
   font-size: 1.8rem;
   -webkit-text-decoration: none;
   text-decoration: none;

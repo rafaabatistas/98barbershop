@@ -1,7 +1,7 @@
 import { Header } from '~organisms/Header/Header';
 import { Main } from '~organisms/Main/Main';
 
-const HomeSection = () => {
+const HomePage = () => {
   return (
     <>
       <Header />
@@ -10,4 +10,4 @@ const HomeSection = () => {
   );
 };
 
-export default HomeSection;
+export default HomePage;
