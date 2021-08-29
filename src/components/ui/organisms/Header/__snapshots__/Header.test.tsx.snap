@@ -55,7 +55,7 @@ exports[`<Header /> Deve renderizar o componente <Header /> 1`] = `
 }
 
 .c4 {
-  color: white;
+  color: #ffffff;
   font-size: 1.8rem;
   -webkit-text-decoration: none;
   text-decoration: none;
