@@ -14,9 +14,9 @@ module.exports = {
     '~img/(.*)': '<rootDir>/public/assets/img/$1'
   },
   collectCoverage: true,
-  collectCoverageFrom: ['src/**/*.ts(x)?', '!src/**/*.stories.tsx'],
+  collectCoverageFrom: ['src/**/*.ts(x)?', '!src/**/*.stories.tsx', '!src/styles/*.ts', '!src/types/*.ts'],
   setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],
-  testMatch: ['**/**/**/**/*.test.tsx'],
+  testMatch: ['**/**/**/**/**/*.test.tsx'],
   modulePaths: ['<rootDir>/src/'],
   verbose: false
 };
