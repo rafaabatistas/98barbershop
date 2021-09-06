@@ -3,10 +3,11 @@ import * as S from './Logotipo.styles';
 export type LogotipoProps = {
   color?: 'white' | 'black';
   size?: 'small' | 'normal' | 'large';
+  hideOnMobile?: boolean;
 };
 
-export const Logotipo = ({ color = 'white', size = 'normal' }: LogotipoProps) => (
-  <S.Wrapper color={color} size={size}>
+export const Logotipo = ({ color = 'white', size = 'normal', hideOnMobile = false }: LogotipoProps) => (
+  <S.Wrapper color={color} size={size} hideOnMobile={hideOnMobile}>
     <svg viewBox="0 0 59 78" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="98Barbershop">
       <g clipPath="url(#clip0)">
         <path
