@@ -3,7 +3,12 @@ export default {
     container: '129rem'
   },
   border: {
-    radius: '0.4rem'
+    radius: {
+      light: '1rem',
+      regular: '2rem',
+      medium: '4rem',
+      large: '5rem'
+    }
   },
   font: {
     family: {
@@ -18,6 +23,7 @@ export default {
     medium: 600,
     bold: 700,
     sizes: {
+      xxsmall: '1rem',
       xsmall: '1.2rem',
       small: '1.4rem',
       medium: '1.6rem',

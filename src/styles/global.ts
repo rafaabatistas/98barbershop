@@ -99,7 +99,6 @@ const GlobalStyles = createGlobalStyle`
       font-family: ${theme.font.family.tertiary};
     }
   `}
-
   
   button {
     cursor: pointer;
