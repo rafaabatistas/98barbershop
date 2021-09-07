@@ -4,7 +4,6 @@ exports[`<NavList /> Deve renderizar o componente <NavList /> 1`] = `
 .c0 {
   width: 100%;
   height: 100%;
-  max-width: 1290px;
   list-style: none;
   display: -webkit-box;
   display: -webkit-flex;
@@ -18,7 +17,6 @@ exports[`<NavList /> Deve renderizar o componente <NavList /> 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin: 0 15px;
 }
 
 .c1 {
