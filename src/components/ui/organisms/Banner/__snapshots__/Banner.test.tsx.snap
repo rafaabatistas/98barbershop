@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Banner /> Deve renderizar o componente <Banner /> 1`] = `
+.c0 {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/assets/img/image-banner-1.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  color: #F71812;
+  font-family: Dancing Script;
+  font-weight: 500;
+  font-size: 3.5rem;
+}
+
+.c2 {
+  max-width: 105rem;
+  color: #FFFFFF;
+  font-family: Abril Fatface;
+  font-weight: 400;
+  font-size: 3.0rem;
+}
+
+@media (min-width:768px) {
+  .c1 {
+    font-size: 5.0rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    font-size: 6.0rem;
+  }
+}
+
+<div
+  class="c0"
+  src="/assets/img/image-banner-1.jpg"
+>
+  <div
+    class="react-reveal"
+  >
+    <h2
+      class="c1"
+    >
+      Seja o Primeiro a Saber
+    </h2>
+  </div>
+  <div
+    class="react-reveal"
+  >
+    <h2
+      class="c2"
+    >
+      Em breve sua Barbearia favorita terá uma nova plataforma inaugurada!
+    </h2>
+  </div>
+</div>
+`;

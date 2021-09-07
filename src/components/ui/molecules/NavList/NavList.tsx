@@ -1,16 +1,19 @@
 import * as S from './NavList.styles';
 
-import { ButtonLink } from '~atoms/ButtonLink/ButtonLink';
+import Fade from 'react-reveal/Fade';
+
+import { Logotipo } from '~atoms/Logotipo/Logotipo';
+import { NavItem } from '~atoms/NavItem/NavItem';
 
 export const NavList = () => {
   return (
     <S.NavList>
-      <S.Item>
-        <S.Logotipo src="assets/img/icon-react.png" alt="Imagem escrito nextJS" />
-      </S.Item>
-      <S.Item>
-        <ButtonLink link={'https://github.com/rafaabatistas/boilerplate-nextjs'}>GitHub</ButtonLink>
-      </S.Item>
+      <Fade left>
+        <Logotipo hideOnMobile />
+      </Fade>
+      <Fade right>
+        <NavItem>O melhor estar por vir!</NavItem>
+      </Fade>
     </S.NavList>
   );
 };
