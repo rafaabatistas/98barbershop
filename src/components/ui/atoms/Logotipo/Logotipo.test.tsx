@@ -1,5 +1,6 @@
 import { screen } from '@testing-library/react';
 import { renderWithTheme } from '~src/utils/tests/helpers';
+import 'jest-styled-components';
 
 import { Logotipo } from './Logotipo';
 
@@ -36,5 +37,14 @@ describe('<Logotipo />', () => {
     const labelText = screen.getByLabelText('98Barbershop');
     //Assert
     expect(labelText.parentElement).toHaveStyle({ width: '8.5rem', height: '12rem' });
+  });
+
+  it('Deve renderizar o componente <Logotipo /> responsivo para mobile', () => {
+    renderWithTheme(<Logotipo hideOnMobile />);
+    //Arrange
+    const labelText = screen.getByLabelText('98Barbershop');
+    //Assert
+    expect(labelText.parentElement).toHaveStyle({ width: '6rem', height: '8rem' });
+    expect(labelText.parentElement).toHaveStyleRule('width', '3.6rem', { media: '(max-width: 768px)' });
   });
 });
