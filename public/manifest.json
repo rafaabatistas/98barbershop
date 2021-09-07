@@ -3,19 +3,19 @@
   "short_name": "Boilerplate NextJS",
   "icons": [
     {
-      "src": "assets/img/icon-react.png",
+      "src": "assets/img/icon-logo.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "40x59"
     },
     {
       "src": "assets/svg/ilustration.svg",
       "type": "image/img",
-      "sizes": "427x373"
+      "sizes": "1920x1279"
     }
   ],
-  "background_color": "#19062b",
-  "description": "Boilerlate utilizando Typescript, React, NextJS e Styled Components!",
+  "background_color": "#333333",
+  "description": "98Barbershop, sua barbearia preferida agora em uma plataforma.",
   "display": "fullscreen",
   "start_url": "/",
-  "theme_color": "#19062b"
+  "theme_color": "#333333"
 }
