@@ -3,7 +3,7 @@ import { Story, Meta } from '@storybook/react';
 import { Title, TitleProps } from './Title';
 
 export default {
-  title: 'Title',
+  title: 'atoms/Title',
   component: Title,
   argTypes: {
     children: {
