@@ -9,7 +9,8 @@ exports[`<Container /> Deve renderizar o componente <Container /> 1`] = `
 
 @media (min-width:450px) {
   .c0 {
-    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

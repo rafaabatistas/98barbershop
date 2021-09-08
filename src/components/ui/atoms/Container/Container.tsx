@@ -8,7 +8,8 @@ export const Container = styled.div`
     margin: 0 15px;
 
     ${media.greaterThan('small')`
-      margin: 0;
+      margin-left: auto;
+      margin-right: auto;
     `}
   `}
 `;
