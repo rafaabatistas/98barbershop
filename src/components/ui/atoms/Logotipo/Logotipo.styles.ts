@@ -32,6 +32,10 @@ export const Wrapper = styled.div<LogotipoProps>`
     color: ${theme.colors[color!]};
     cursor: pointer;
 
+    ${media.greaterThan('small')`
+      margin: 0 ${theme.spacings.huge};
+    `}
+
     ${!!size && wrapperModifiers[size]}
     ${!!hideOnMobile && wrapperModifiers.hideOnMobile}
   `}

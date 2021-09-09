@@ -5,6 +5,7 @@ import { NavList } from './NavList';
 export default {
   title: 'molecules/NavList',
   component: NavList,
+  layout: 'fullscreen',
   parameters: {
     backgrounds: {
       default: 'dark',
@@ -14,3 +15,12 @@ export default {
 } as Meta;
 
 export const Basic: Story = () => <NavList />;
+
+export const Mobile: Story = () => <NavList />;
+
+Mobile.parameters = {
+  layout: 'fullscreen',
+  viewport: {
+    defaultViewport: 'mobile1'
+  }
+};
