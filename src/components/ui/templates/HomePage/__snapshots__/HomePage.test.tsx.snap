@@ -3,8 +3,8 @@
 exports[`<Home /> Deve renderizar o componente <Home /> 1`] = `
 .c0 {
   width: 100%;
-  height: 100px;
-  z-index: 2;
+  height: 7.2rem;
+  z-index: 10;
   position: fixed;
   display: -webkit-box;
   display: -webkit-flex;
@@ -14,18 +14,24 @@ exports[`<Home /> Deve renderizar o componente <Home /> 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: transparent;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  border-bottom: 3px solid rgba(255,255,255,0.3);
-  border-radius: 0 0 20px 20px;
+  background: rgba(0,0,0,0.3);
+  border-bottom: 0.3rem solid rgba(255,255,255,0.3);
+  border-radius: 0 0 2rem 2rem;
+}
+
+.c4 {
+  display: none;
+}
+
+.c3 {
+  color: #FFFFFF;
+  cursor: pointer;
+  width: 6rem;
+  height: 8rem;
 }
 
 .c2 {
+  position: relative;
   width: 100%;
   height: 100%;
   list-style: none;
@@ -41,35 +47,132 @@ exports[`<Home /> Deve renderizar o componente <Home /> 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  overflow-x: hidden;
 }
 
-.c3 {
-  color: #FFFFFF;
-  cursor: pointer;
-  width: 6rem;
-  height: 8rem;
+.c5 {
+  background: #080808;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: calc(4.8rem + (1.5rem + 1.5rem));
+  z-index: 20;
+  color: white;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
-.c4 {
-  color: #FFFFFF;
-  font-size: 1.4rem;
-  font-weight: 500;
-  font-family: Poppins,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
-  background-color: transparent;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
+.c6 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 3.2rem;
 }
 
-.c4:hover {
+.c7 {
+  position: relative;
+  list-style: none;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c7:first-child::after {
+  width: 100%;
+}
+
+.c7:first-child {
   color: #F71812;
+  text-shadow: 0px 0px 30px rgba(247,24,18,0.5),0px 0px 15px rgba(247,24,18,0.4),0px 0px 10px rgba(247,24,18,0.4),0px 0px 5px rgba(247,24,18,0.2);
+}
+
+.c7::after {
+  content: '';
+  position: absolute;
+  justify-self: center;
+  bottom: -0.5rem;
+  width: 0;
+  height: 0.2rem;
+  background: #F71812;
+  box-shadow: 0px 0px 10px #F71812;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.c7:hover::after,
+.c7:focus::after {
+  width: 100%;
+}
+
+.c8 {
+  font-size: 1.8rem;
+  font-weight: 300;
+  padding: 0 1rem;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.c8:hover,
+.c8:focus {
+  color: #F71812;
+  cursor: pointer;
+  text-shadow: 0px 0px 30px rgba(247,24,18,0.5),0px 0px 15px rgba(247,24,18,0.4),0px 0px 10px rgba(247,24,18,0.4),0px 0px 5px rgba(247,24,18,0.2);
 }
 
 .c1 {
   width: 100%;
   max-width: 129rem;
   margin: 0 15px;
+}
+
+@media (min-width:450px) {
+  .c0 {
+    height: 10rem;
+  }
+}
+
+@media (max-width:768px) {
+  .c4 {
+    display: block;
+  }
+}
+
+@media (min-width:450px) {
+  .c3 {
+    margin: 0 8.0rem;
+  }
 }
 
 @media (max-width:768px) {
@@ -79,15 +182,19 @@ exports[`<Home /> Deve renderizar o componente <Home /> 1`] = `
   }
 }
 
-@media (min-width:768px) {
-  .c4 {
-    font-size: 1.6rem;
+@media (min-width:450px) {
+  .c2 {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 }
 
 @media (min-width:450px) {
   .c1 {
-    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -231,14 +338,103 @@ exports[`<Home /> Deve renderizar o componente <Home /> 1`] = `
         </div>
       </div>
       <div
-        class="react-reveal"
+        class="c4"
       >
-        <button
-          class="c4"
-          type="button"
+        <div
+          class="react-reveal"
         >
-          O melhor estar por vir!
-        </button>
+          <div
+            aria-label="Abrir e Fechar"
+            class="hamburger-react"
+            role="button"
+            style="cursor: pointer; height: 48px; position: relative; transition: 0.4s ease-out; user-select: none; width: 48px; outline: none; transform: none;"
+            tabindex="0"
+          >
+            <div
+              style="background: rgb(255, 255, 255); height: 3px; left: 9px; position: absolute; border-radius: 9em; width: 30px; top: 13px; transition: 0.4s ease-out; transform: none;"
+            />
+            <div
+              style="background: rgb(255, 255, 255); height: 3px; left: 9px; position: absolute; border-radius: 9em; width: 30px; top: 23px; transition: 0.4s ease-out; transform: none;"
+            />
+            <div
+              style="background: rgb(255, 255, 255); height: 3px; left: 9px; position: absolute; border-radius: 9em; width: 30px; top: 33px; transition: 0.4s ease-out; transform: none;"
+            />
+          </div>
+        </div>
+        <div
+          class="react-reveal"
+        >
+          <div
+            aria-hidden="true"
+            aria-label="Menu Full"
+            class="c5"
+          >
+            <ul
+              class="c6"
+            >
+              <li
+                class="c7"
+              >
+                <a
+                  aria-label="Home"
+                  class="c8"
+                >
+                  Home
+                </a>
+              </li>
+              <li
+                class="c7"
+              >
+                <a
+                  aria-label="Sobre"
+                  class="c8"
+                >
+                  Sobre
+                </a>
+              </li>
+              <li
+                class="c7"
+              >
+                <a
+                  aria-label="Serviços"
+                  class="c8"
+                >
+                  Serviços
+                </a>
+              </li>
+              <li
+                class="c7"
+              >
+                <a
+                  aria-label="Equipe"
+                  class="c8"
+                >
+                  Equipe
+                </a>
+              </li>
+              <li
+                class="c7"
+              >
+                <a
+                  aria-label="Opinião"
+                  class="c8"
+                >
+                  Opinião
+                </a>
+              </li>
+              <li
+                class="c7"
+              >
+                <a
+                  aria-label="FeedBack"
+                  class="c8"
+                >
+                  FeedBack
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </ul>
   </div>
