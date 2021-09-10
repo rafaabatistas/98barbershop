@@ -32,7 +32,7 @@ export const Wrapper = styled.div<LogotipoProps>`
     color: ${theme.colors[color!]};
     cursor: pointer;
 
-    ${media.greaterThan('small')`
+    ${media.greaterThan('medium')`
       margin: 0 ${theme.spacings.huge};
     `}
 
