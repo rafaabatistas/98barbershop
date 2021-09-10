@@ -2,6 +2,7 @@
 
 exports[`<Header /> Deve renderizar o componente <Header /> 1`] = `
 .c0 {
+  position: relative;
   width: 100%;
   height: 7.2rem;
   z-index: 10;
@@ -15,22 +16,26 @@ exports[`<Header /> Deve renderizar o componente <Header /> 1`] = `
   -ms-flex-align: center;
   align-items: center;
   background: rgba(0,0,0,0.3);
-  border-bottom: 0.3rem solid rgba(255,255,255,0.3);
+  box-shadow: inset 0 -0.3rem 0 rgba(255,255,255,0.3);
   border-radius: 0 0 2rem 2rem;
 }
 
-.c4 {
+.c3 {
   display: none;
 }
 
-.c3 {
+.c10 {
+  display: none;
+}
+
+.c8 {
   color: #FFFFFF;
   cursor: pointer;
   width: 6rem;
   height: 8rem;
 }
 
-.c2 {
+.c1 {
   position: relative;
   width: 100%;
   height: 100%;
@@ -48,9 +53,10 @@ exports[`<Header /> Deve renderizar o componente <Header /> 1`] = `
   -ms-flex-pack: justify;
   justify-content: space-between;
   overflow-x: hidden;
+  padding: 0 1.5rem;
 }
 
-.c5 {
+.c11 {
   background: #080808;
   opacity: 0;
   pointer-events: none;
@@ -79,7 +85,7 @@ exports[`<Header /> Deve renderizar o componente <Header /> 1`] = `
   overflow-x: hidden;
 }
 
-.c6 {
+.c12 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -95,7 +101,7 @@ exports[`<Header /> Deve renderizar o componente <Header /> 1`] = `
   gap: 3.2rem;
 }
 
-.c7 {
+.c13 {
   position: relative;
   list-style: none;
   text-align: center;
@@ -109,16 +115,16 @@ exports[`<Header /> Deve renderizar o componente <Header /> 1`] = `
   justify-content: center;
 }
 
-.c7:first-child::after {
+.c13:first-child::after {
   width: 100%;
 }
 
-.c7:first-child {
+.c13:first-child {
   color: #F71812;
   text-shadow: 0px 0px 30px rgba(247,24,18,0.5),0px 0px 15px rgba(247,24,18,0.4),0px 0px 10px rgba(247,24,18,0.4),0px 0px 5px rgba(247,24,18,0.2);
 }
 
-.c7::after {
+.c13::after {
   content: '';
   position: absolute;
   justify-self: center;
@@ -131,12 +137,12 @@ exports[`<Header /> Deve renderizar o componente <Header /> 1`] = `
   transition: 0.3s linear;
 }
 
-.c7:hover::after,
-.c7:focus::after {
+.c13:hover::after,
+.c13:focus::after {
   width: 100%;
 }
 
-.c8 {
+.c14 {
   font-size: 1.8rem;
   font-weight: 300;
   padding: 0 1rem;
@@ -144,17 +150,95 @@ exports[`<Header /> Deve renderizar o componente <Header /> 1`] = `
   transition: 0.3s linear;
 }
 
-.c8:hover,
-.c8:focus {
+.c14:hover,
+.c14:focus {
   color: #F71812;
   cursor: pointer;
   text-shadow: 0px 0px 30px rgba(247,24,18,0.5),0px 0px 15px rgba(247,24,18,0.4),0px 0px 10px rgba(247,24,18,0.4),0px 0px 5px rgba(247,24,18,0.2);
 }
 
-.c1 {
+.c2 {
   width: 100%;
-  max-width: 129rem;
-  margin: 0 15px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.c9 {
+  height: 0.3rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #F71812;
+  border-radius: 0.3rem;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  box-shadow: 0 0 1rem #F71812;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4rem;
+}
+
+.c5 {
+  list-style: none;
+}
+
+.c6 {
+  font-size: 1.6rem;
+  color: #F71812;
+  text-shadow: 0 0 1rem #F71812;
+  cursor: pointer;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c6:hover {
+  color: #F71812;
+  text-shadow: 0 0 1rem #F71812;
+}
+
+.c7 {
+  font-size: 1.6rem;
+  color: #FFFFFF;
+  cursor: pointer;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c7:hover {
+  color: #F71812;
+  text-shadow: 0 0 1rem #F71812;
 }
 
 @media (min-width:450px) {
@@ -163,55 +247,96 @@ exports[`<Header /> Deve renderizar o componente <Header /> 1`] = `
   }
 }
 
-@media (max-width:768px) {
-  .c4 {
+@media (min-width:768px) {
+  .c3 {
     display: block;
   }
 }
 
-@media (min-width:450px) {
-  .c3 {
+@media (max-width:768px) {
+  .c10 {
+    display: block;
+  }
+}
+
+@media (min-width:768px) {
+  .c8 {
     margin: 0 8.0rem;
   }
 }
 
 @media (max-width:768px) {
-  .c3 {
+  .c8 {
     width: 3.6rem;
     height: 4.8rem;
   }
 }
 
-@media (min-width:450px) {
-  .c2 {
+@media (min-width:768px) {
+  .c1 {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
+    margin: 0;
   }
 }
 
-@media (min-width:450px) {
-  .c1 {
-    margin-left: auto;
-    margin-right: auto;
+@media (min-width:768px) {
+  .c2 {
+    width: auto;
   }
 }
 
 <header
   class="c0"
 >
-  <div
+  <ul
     class="c1"
   >
-    <ul
+    <nav
       class="c2"
     >
+      <div
+        class="c3"
+      >
+        <ul
+          class="c4"
+        >
+          <li
+            class="c5"
+          >
+            <a
+              class="c6"
+            >
+              Home
+            </a>
+          </li>
+          <li
+            class="c5"
+          >
+            <a
+              class="c7"
+            >
+              Sobre
+            </a>
+          </li>
+          <li
+            class="c5"
+          >
+            <a
+              class="c7"
+            >
+              Serviços
+            </a>
+          </li>
+        </ul>
+      </div>
       <div
         class="react-reveal"
       >
         <div
-          class="c3"
+          class="c8"
           color="white"
         >
           <svg
@@ -314,105 +439,145 @@ exports[`<Header /> Deve renderizar o componente <Header /> 1`] = `
         </div>
       </div>
       <div
-        class="c4"
+        class="c3"
       >
-        <div
-          class="react-reveal"
+        <ul
+          class="c4"
         >
-          <div
-            aria-label="Abrir e Fechar"
-            class="hamburger-react"
-            role="button"
-            style="cursor: pointer; height: 48px; position: relative; transition: 0.4s ease-out; user-select: none; width: 48px; outline: none; transform: none;"
-            tabindex="0"
-          >
-            <div
-              style="background: rgb(255, 255, 255); height: 3px; left: 9px; position: absolute; border-radius: 9em; width: 30px; top: 13px; transition: 0.4s ease-out; transform: none;"
-            />
-            <div
-              style="background: rgb(255, 255, 255); height: 3px; left: 9px; position: absolute; border-radius: 9em; width: 30px; top: 23px; transition: 0.4s ease-out; transform: none;"
-            />
-            <div
-              style="background: rgb(255, 255, 255); height: 3px; left: 9px; position: absolute; border-radius: 9em; width: 30px; top: 33px; transition: 0.4s ease-out; transform: none;"
-            />
-          </div>
-        </div>
-        <div
-          class="react-reveal"
-        >
-          <div
-            aria-hidden="true"
-            aria-label="Menu Full"
+          <li
             class="c5"
           >
-            <ul
-              class="c6"
+            <a
+              class="c7"
             >
-              <li
-                class="c7"
-              >
-                <a
-                  aria-label="Home"
-                  class="c8"
-                >
-                  Home
-                </a>
-              </li>
-              <li
-                class="c7"
-              >
-                <a
-                  aria-label="Sobre"
-                  class="c8"
-                >
-                  Sobre
-                </a>
-              </li>
-              <li
-                class="c7"
-              >
-                <a
-                  aria-label="Serviços"
-                  class="c8"
-                >
-                  Serviços
-                </a>
-              </li>
-              <li
-                class="c7"
-              >
-                <a
-                  aria-label="Equipe"
-                  class="c8"
-                >
-                  Equipe
-                </a>
-              </li>
-              <li
-                class="c7"
-              >
-                <a
-                  aria-label="Opinião"
-                  class="c8"
-                >
-                  Opinião
-                </a>
-              </li>
-              <li
-                class="c7"
-              >
-                <a
-                  aria-label="FeedBack"
-                  class="c8"
-                >
-                  FeedBack
-                </a>
-              </li>
-            </ul>
-          </div>
+              Equipe
+            </a>
+          </li>
+          <li
+            class="c5"
+          >
+            <a
+              class="c7"
+            >
+              Opinião
+            </a>
+          </li>
+          <li
+            class="c5"
+          >
+            <a
+              class="c7"
+            >
+              FeedBack
+            </a>
+          </li>
+        </ul>
+        <span
+          aria-label="Line"
+          class="c9"
+          style="width: 20px; transform: translateX(-10px);"
+        />
+      </div>
+    </nav>
+    <div
+      class="c10"
+    >
+      <div
+        class="react-reveal"
+      >
+        <div
+          aria-label="Abrir e Fechar"
+          class="hamburger-react"
+          role="button"
+          style="cursor: pointer; height: 48px; position: relative; transition: 0.4s ease-out; user-select: none; width: 48px; outline: none; transform: none;"
+          tabindex="0"
+        >
+          <div
+            style="background: rgb(255, 255, 255); height: 3px; left: 9px; position: absolute; border-radius: 9em; width: 30px; top: 13px; transition: 0.4s ease-out; transform: none;"
+          />
+          <div
+            style="background: rgb(255, 255, 255); height: 3px; left: 9px; position: absolute; border-radius: 9em; width: 30px; top: 23px; transition: 0.4s ease-out; transform: none;"
+          />
+          <div
+            style="background: rgb(255, 255, 255); height: 3px; left: 9px; position: absolute; border-radius: 9em; width: 30px; top: 33px; transition: 0.4s ease-out; transform: none;"
+          />
         </div>
       </div>
-    </ul>
-  </div>
+      <div
+        class="react-reveal"
+      >
+        <div
+          aria-hidden="true"
+          aria-label="Menu Full"
+          class="c11"
+        >
+          <ul
+            class="c12"
+          >
+            <li
+              class="c13"
+            >
+              <a
+                aria-label="Home"
+                class="c14"
+              >
+                Home
+              </a>
+            </li>
+            <li
+              class="c13"
+            >
+              <a
+                aria-label="Sobre"
+                class="c14"
+              >
+                Sobre
+              </a>
+            </li>
+            <li
+              class="c13"
+            >
+              <a
+                aria-label="Serviços"
+                class="c14"
+              >
+                Serviços
+              </a>
+            </li>
+            <li
+              class="c13"
+            >
+              <a
+                aria-label="Equipe"
+                class="c14"
+              >
+                Equipe
+              </a>
+            </li>
+            <li
+              class="c13"
+            >
+              <a
+                aria-label="Opinião"
+                class="c14"
+              >
+                Opinião
+              </a>
+            </li>
+            <li
+              class="c13"
+            >
+              <a
+                aria-label="FeedBack"
+                class="c14"
+              >
+                FeedBack
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </ul>
 </header>
 `;

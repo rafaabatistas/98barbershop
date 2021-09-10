@@ -1,7 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<NavList /> Deve Renderizar todos os components de <NavList /> 1`] = `
-.c1 {
+.c2 {
+  display: none;
+}
+
+.c8 {
   display: none;
 }
 
@@ -23,9 +27,10 @@ exports[`<NavList /> Deve Renderizar todos os components de <NavList /> 1`] = `
   -ms-flex-pack: justify;
   justify-content: space-between;
   overflow-x: hidden;
+  padding: 0 1.5rem;
 }
 
-.c2 {
+.c9 {
   background: #080808;
   opacity: 0;
   pointer-events: none;
@@ -54,7 +59,7 @@ exports[`<NavList /> Deve Renderizar todos os components de <NavList /> 1`] = `
   overflow-x: hidden;
 }
 
-.c3 {
+.c10 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -70,7 +75,7 @@ exports[`<NavList /> Deve Renderizar todos os components de <NavList /> 1`] = `
   gap: 3.2rem;
 }
 
-.c4 {
+.c11 {
   position: relative;
   list-style: none;
   text-align: center;
@@ -84,16 +89,16 @@ exports[`<NavList /> Deve Renderizar todos os components de <NavList /> 1`] = `
   justify-content: center;
 }
 
-.c4:first-child::after {
+.c11:first-child::after {
   width: 100%;
 }
 
-.c4:first-child {
+.c11:first-child {
   color: #F71812;
   text-shadow: 0px 0px 30px rgba(247,24,18,0.5),0px 0px 15px rgba(247,24,18,0.4),0px 0px 10px rgba(247,24,18,0.4),0px 0px 5px rgba(247,24,18,0.2);
 }
 
-.c4::after {
+.c11::after {
   content: '';
   position: absolute;
   justify-self: center;
@@ -106,12 +111,12 @@ exports[`<NavList /> Deve Renderizar todos os components de <NavList /> 1`] = `
   transition: 0.3s linear;
 }
 
-.c4:hover::after,
-.c4:focus::after {
+.c11:hover::after,
+.c11:focus::after {
   width: 100%;
 }
 
-.c5 {
+.c12 {
   font-size: 1.8rem;
   font-weight: 300;
   padding: 0 1rem;
@@ -119,40 +124,216 @@ exports[`<NavList /> Deve Renderizar todos os components de <NavList /> 1`] = `
   transition: 0.3s linear;
 }
 
-.c5:hover,
-.c5:focus {
+.c12:hover,
+.c12:focus {
   color: #F71812;
   cursor: pointer;
   text-shadow: 0px 0px 30px rgba(247,24,18,0.5),0px 0px 15px rgba(247,24,18,0.4),0px 0px 10px rgba(247,24,18,0.4),0px 0px 5px rgba(247,24,18,0.2);
 }
 
-@media (max-width:768px) {
-  .c1 {
+.c1 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.c7 {
+  height: 0.3rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #F71812;
+  border-radius: 0.3rem;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  box-shadow: 0 0 1rem #F71812;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4rem;
+}
+
+.c4 {
+  list-style: none;
+}
+
+.c5 {
+  font-size: 1.6rem;
+  color: #F71812;
+  text-shadow: 0 0 1rem #F71812;
+  cursor: pointer;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c5:hover {
+  color: #F71812;
+  text-shadow: 0 0 1rem #F71812;
+}
+
+.c6 {
+  font-size: 1.6rem;
+  color: #FFFFFF;
+  cursor: pointer;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c6:hover {
+  color: #F71812;
+  text-shadow: 0 0 1rem #F71812;
+}
+
+@media (min-width:768px) {
+  .c2 {
     display: block;
   }
 }
 
-@media (min-width:450px) {
+@media (max-width:768px) {
+  .c8 {
+    display: block;
+  }
+}
+
+@media (min-width:768px) {
   .c0 {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
+    margin: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    width: auto;
   }
 }
 
 <ul
   class="c0"
 >
-  <div
-    class="react-reveal"
+  <nav
+    class="c1"
   >
     <div
-      data-testid="Logo"
-    />
-  </div>
+      class="c2"
+    >
+      <ul
+        class="c3"
+      >
+        <li
+          class="c4"
+        >
+          <a
+            class="c5"
+          >
+            Home
+          </a>
+        </li>
+        <li
+          class="c4"
+        >
+          <a
+            class="c6"
+          >
+            Sobre
+          </a>
+        </li>
+        <li
+          class="c4"
+        >
+          <a
+            class="c6"
+          >
+            Serviços
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div
+      class="react-reveal"
+    >
+      <div
+        data-testid="Logo"
+      />
+    </div>
+    <div
+      class="c2"
+    >
+      <ul
+        class="c3"
+      >
+        <li
+          class="c4"
+        >
+          <a
+            class="c6"
+          >
+            Equipe
+          </a>
+        </li>
+        <li
+          class="c4"
+        >
+          <a
+            class="c6"
+          >
+            Opinião
+          </a>
+        </li>
+        <li
+          class="c4"
+        >
+          <a
+            class="c6"
+          >
+            FeedBack
+          </a>
+        </li>
+      </ul>
+      <span
+        aria-label="Line"
+        class="c7"
+        style="width: 20px; transform: translateX(-10px);"
+      />
+    </div>
+  </nav>
   <div
-    class="c1"
+    class="c8"
   >
     <div
       class="react-reveal"
@@ -181,67 +362,67 @@ exports[`<NavList /> Deve Renderizar todos os components de <NavList /> 1`] = `
       <div
         aria-hidden="true"
         aria-label="Menu Full"
-        class="c2"
+        class="c9"
       >
         <ul
-          class="c3"
+          class="c10"
         >
           <li
-            class="c4"
+            class="c11"
           >
             <a
               aria-label="Home"
-              class="c5"
+              class="c12"
             >
               Home
             </a>
           </li>
           <li
-            class="c4"
+            class="c11"
           >
             <a
               aria-label="Sobre"
-              class="c5"
+              class="c12"
             >
               Sobre
             </a>
           </li>
           <li
-            class="c4"
+            class="c11"
           >
             <a
               aria-label="Serviços"
-              class="c5"
+              class="c12"
             >
               Serviços
             </a>
           </li>
           <li
-            class="c4"
+            class="c11"
           >
             <a
               aria-label="Equipe"
-              class="c5"
+              class="c12"
             >
               Equipe
             </a>
           </li>
           <li
-            class="c4"
+            class="c11"
           >
             <a
               aria-label="Opinião"
-              class="c5"
+              class="c12"
             >
               Opinião
             </a>
           </li>
           <li
-            class="c4"
+            class="c11"
           >
             <a
               aria-label="FeedBack"
-              class="c5"
+              class="c12"
             >
               FeedBack
             </a>

@@ -1,0 +1,186 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NavLinks /> Deve renderizar todos os componentes dentro do componente <NavLinks /> 1`] = `
+.c1 {
+  display: none;
+}
+
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.c6 {
+  height: 0.3rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #F71812;
+  border-radius: 0.3rem;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  box-shadow: 0 0 1rem #F71812;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4rem;
+}
+
+.c3 {
+  list-style: none;
+}
+
+.c4 {
+  font-size: 1.6rem;
+  color: #F71812;
+  text-shadow: 0 0 1rem #F71812;
+  cursor: pointer;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c4:hover {
+  color: #F71812;
+  text-shadow: 0 0 1rem #F71812;
+}
+
+.c5 {
+  font-size: 1.6rem;
+  color: #FFFFFF;
+  cursor: pointer;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c5:hover {
+  color: #F71812;
+  text-shadow: 0 0 1rem #F71812;
+}
+
+@media (min-width:768px) {
+  .c1 {
+    display: block;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    width: auto;
+  }
+}
+
+<nav
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <ul
+      class="c2"
+    >
+      <li
+        class="c3"
+      >
+        <a
+          class="c4"
+        >
+          Home
+        </a>
+      </li>
+      <li
+        class="c3"
+      >
+        <a
+          class="c5"
+        >
+          Sobre
+        </a>
+      </li>
+      <li
+        class="c3"
+      >
+        <a
+          class="c5"
+        >
+          Serviços
+        </a>
+      </li>
+    </ul>
+  </div>
+  <h1>
+    Logo
+  </h1>
+  <div
+    class="c1"
+  >
+    <ul
+      class="c2"
+    >
+      <li
+        class="c3"
+      >
+        <a
+          class="c5"
+        >
+          Equipe
+        </a>
+      </li>
+      <li
+        class="c3"
+      >
+        <a
+          class="c5"
+        >
+          Opinião
+        </a>
+      </li>
+      <li
+        class="c3"
+      >
+        <a
+          class="c5"
+        >
+          FeedBack
+        </a>
+      </li>
+    </ul>
+    <span
+      aria-label="Line"
+      class="c6"
+      style="width: 20px; transform: translateX(-10px);"
+    />
+  </div>
+</nav>
+`;
