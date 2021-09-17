@@ -15,10 +15,6 @@ exports[`<NavLinks /> Deve renderizar todos os componentes dentro do componente 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   height: 100%;
 }
 
