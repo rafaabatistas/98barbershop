@@ -173,46 +173,38 @@ exports[`<NavList /> Deve Renderizar todos os components de <NavList /> 1`] = `
 }
 
 .c5 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
   font-size: 1.6rem;
   color: #F71812;
   text-shadow: 0 0 1rem #F71812;
-  cursor: pointer;
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  cursor: pointer;
 }
 
-.c5:hover {
+.c5:hover,
+.c5:focus {
   color: #F71812;
   text-shadow: 0 0 1rem #F71812;
+  outline: none;
 }
 
 .c6 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
   font-size: 1.6rem;
   color: #FFFFFF;
-  cursor: pointer;
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  cursor: pointer;
 }
 
-.c6:hover {
+.c6:hover,
+.c6:focus {
   color: #F71812;
   text-shadow: 0 0 1rem #F71812;
+  outline: none;
 }
 
 @media (min-width:768px) {
@@ -259,7 +251,9 @@ exports[`<NavList /> Deve Renderizar todos os components de <NavList /> 1`] = `
           class="c4"
         >
           <a
+            aria-selected="true"
             class="c5"
+            href="#"
           >
             Home
           </a>
@@ -268,7 +262,9 @@ exports[`<NavList /> Deve Renderizar todos os components de <NavList /> 1`] = `
           class="c4"
         >
           <a
+            aria-selected="false"
             class="c6"
+            href="#"
           >
             Sobre
           </a>
@@ -277,7 +273,9 @@ exports[`<NavList /> Deve Renderizar todos os components de <NavList /> 1`] = `
           class="c4"
         >
           <a
+            aria-selected="false"
             class="c6"
+            href="#"
           >
             Serviços
           </a>
@@ -301,7 +299,9 @@ exports[`<NavList /> Deve Renderizar todos os components de <NavList /> 1`] = `
           class="c4"
         >
           <a
+            aria-selected="false"
             class="c6"
+            href="#"
           >
             Equipe
           </a>
@@ -310,7 +310,9 @@ exports[`<NavList /> Deve Renderizar todos os components de <NavList /> 1`] = `
           class="c4"
         >
           <a
+            aria-selected="false"
             class="c6"
+            href="#"
           >
             Opinião
           </a>
@@ -319,7 +321,9 @@ exports[`<NavList /> Deve Renderizar todos os components de <NavList /> 1`] = `
           class="c4"
         >
           <a
+            aria-selected="false"
             class="c6"
+            href="#"
           >
             FeedBack
           </a>

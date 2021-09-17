@@ -20,7 +20,7 @@ const titleModifiers = {
   `
 };
 
-export const Title = styled.h2<TitleProps>`
+export const Title = styled.h1<TitleProps>`
   ${({ theme, size }) => css`
     color: ${theme.colors.primary};
     font-family: ${theme.font.family.primary};

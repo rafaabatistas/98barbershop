@@ -41,17 +41,18 @@ export const List = styled.li`
 
 export const Link = styled.a<ActiveProps>`
   ${({ theme, active }) => css`
+    text-decoration: none;
     font-size: ${theme.font.sizes.medium};
     color: ${active ? theme.colors.primary : theme.colors.white};
     text-shadow: ${active && `0 0 1rem ${theme.colors.primary}`};
-    cursor: pointer;
     transition: 0.3s linear;
-    display: flex;
-    justify-content: center;
+    cursor: pointer;
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: ${theme.colors.primary};
       text-shadow: 0 0 1rem ${theme.colors.primary};
+      outline: none;
     }
   `}
 `;

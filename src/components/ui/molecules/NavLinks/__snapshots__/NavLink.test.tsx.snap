@@ -47,46 +47,38 @@ exports[`<NavLinks /> Deve renderizar todos os componentes dentro do componente 
 }
 
 .c4 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
   font-size: 1.6rem;
   color: #F71812;
   text-shadow: 0 0 1rem #F71812;
-  cursor: pointer;
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  cursor: pointer;
 }
 
-.c4:hover {
+.c4:hover,
+.c4:focus {
   color: #F71812;
   text-shadow: 0 0 1rem #F71812;
+  outline: none;
 }
 
 .c5 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
   font-size: 1.6rem;
   color: #FFFFFF;
-  cursor: pointer;
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  cursor: pointer;
 }
 
-.c5:hover {
+.c5:hover,
+.c5:focus {
   color: #F71812;
   text-shadow: 0 0 1rem #F71812;
+  outline: none;
 }
 
 @media (min-width:768px) {
@@ -114,7 +106,9 @@ exports[`<NavLinks /> Deve renderizar todos os componentes dentro do componente 
         class="c3"
       >
         <a
+          aria-selected="true"
           class="c4"
+          href="#"
         >
           Home
         </a>
@@ -123,7 +117,9 @@ exports[`<NavLinks /> Deve renderizar todos os componentes dentro do componente 
         class="c3"
       >
         <a
+          aria-selected="false"
           class="c5"
+          href="#"
         >
           Sobre
         </a>
@@ -132,7 +128,9 @@ exports[`<NavLinks /> Deve renderizar todos os componentes dentro do componente 
         class="c3"
       >
         <a
+          aria-selected="false"
           class="c5"
+          href="#"
         >
           Serviços
         </a>
@@ -152,7 +150,9 @@ exports[`<NavLinks /> Deve renderizar todos os componentes dentro do componente 
         class="c3"
       >
         <a
+          aria-selected="false"
           class="c5"
+          href="#"
         >
           Equipe
         </a>
@@ -161,7 +161,9 @@ exports[`<NavLinks /> Deve renderizar todos os componentes dentro do componente 
         class="c3"
       >
         <a
+          aria-selected="false"
           class="c5"
+          href="#"
         >
           Opinião
         </a>
@@ -170,7 +172,9 @@ exports[`<NavLinks /> Deve renderizar todos os componentes dentro do componente 
         class="c3"
       >
         <a
+          aria-selected="false"
           class="c5"
+          href="#"
         >
           FeedBack
         </a>
