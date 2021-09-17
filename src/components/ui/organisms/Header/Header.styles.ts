@@ -9,11 +9,22 @@ export const Header = styled.header`
     position: fixed;
     display: flex;
     align-items: center;
-    background: rgba(0, 0, 0, 0.3);
-    border-bottom: 0.3rem solid rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0 -0.3rem 0 rgba(255, 255, 255, 0.18);
     border-radius: 0 0 2rem 2rem;
 
-    ${media.greaterThan('small')`
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0.3rem;
+      border-radius: 0 0 2rem 2rem;
+      background: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(1rem);
+    }
+
+    ${media.greaterThan('medium')`
       height: 10rem;
     `}
   `}

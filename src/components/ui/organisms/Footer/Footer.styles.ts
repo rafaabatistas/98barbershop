@@ -68,7 +68,7 @@ export const BoxSocialMedia = styled.div`
   justify-content: center;
 `;
 
-export const Heading = styled.h4`
+export const Heading = styled.h3`
   ${({ theme }) => css`
     font-family: ${theme.font.family.tertiary};
     font-weight: ${theme.font.bold};

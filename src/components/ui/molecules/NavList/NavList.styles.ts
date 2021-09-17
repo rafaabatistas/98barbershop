@@ -10,8 +10,10 @@ export const NavList = styled.ul`
   align-items: center;
   justify-content: space-between;
   overflow-x: hidden;
+  padding: 0 1.5rem;
 
-  ${media.greaterThan('small')`
+  ${media.greaterThan('medium')`
     justify-content: center;
+    margin: 0;
   `}
 `;

@@ -59,11 +59,11 @@ exports[`<Banner /> Deve renderizar o componente <Banner /> 1`] = `
   <div
     class="react-reveal"
   >
-    <h2
+    <h1
       class="c1"
     >
       Seja o Primeiro a Saber
-    </h2>
+    </h1>
   </div>
   <div
     class="react-reveal"

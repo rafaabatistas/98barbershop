@@ -61,7 +61,7 @@ exports[`<Footer /> Deve renderizar o componente <Footer /> 1`] = `
   order: 1;
 }
 
-.c8 {
+.c9 {
   width: auto;
   display: -webkit-box;
   display: -webkit-flex;
@@ -83,7 +83,7 @@ exports[`<Footer /> Deve renderizar o componente <Footer /> 1`] = `
   order: 3;
 }
 
-.c10 {
+.c11 {
   width: auto;
   display: -webkit-box;
   display: -webkit-flex;
@@ -126,28 +126,22 @@ exports[`<Footer /> Deve renderizar o componente <Footer /> 1`] = `
 .c5 {
   width: 50px;
   height: 50px;
-  border-radius: 50%;
   background-color: #181818;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  border-radius: 50%;
   margin-right: 2rem;
 }
 
-.c7 {
+.c8 {
   width: 50px;
   height: 50px;
-  border-radius: 50%;
   background-color: #181818;
+  border-radius: 50%;
+}
+
+.c6 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -160,14 +154,22 @@ exports[`<Footer /> Deve renderizar o componente <Footer /> 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
-.c6 {
+.c6:hover,
+.c6:focus {
+  box-shadow: 0 0 1rem #F71812;
+  outline: none;
+}
+
+.c7 {
   width: 20px;
   height: 20px;
 }
 
-.c9 {
+.c10 {
   font-size: 1.6rem;
   font-family: Poppins,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
   font-weight: 400;
@@ -175,18 +177,18 @@ exports[`<Footer /> Deve renderizar o componente <Footer /> 1`] = `
   margin-bottom: 2.5rem;
 }
 
-.c9 span {
+.c10 span {
   color: #F71812;
 }
 
-.c11 {
+.c12 {
   font-size: 1.8rem;
   font-family: Poppins,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
   font-weight: 400;
   text-align: center;
 }
 
-.c11 span {
+.c12 span {
   color: #F71812;
 }
 
@@ -205,7 +207,7 @@ exports[`<Footer /> Deve renderizar o componente <Footer /> 1`] = `
 }
 
 @media (min-width:768px) {
-  .c8 {
+  .c9 {
     -webkit-order: 2;
     -ms-flex-order: 2;
     order: 2;
@@ -213,7 +215,7 @@ exports[`<Footer /> Deve renderizar o componente <Footer /> 1`] = `
 }
 
 @media (min-width:768px) {
-  .c10 {
+  .c11 {
     -webkit-order: 3;
     -ms-flex-order: 3;
     order: 3;
@@ -232,11 +234,11 @@ exports[`<Footer /> Deve renderizar o componente <Footer /> 1`] = `
       <div
         class="react-reveal"
       >
-        <h4
+        <h3
           class="c3"
         >
           Siga-nos
-        </h4>
+        </h3>
       </div>
       <div
         class="react-reveal"
@@ -244,41 +246,49 @@ exports[`<Footer /> Deve renderizar o componente <Footer /> 1`] = `
         <div
           class="c4"
         >
-          <a
+          <div
             class="c5"
-            href="https://www.instagram.com/98barbershop/"
-            rel="noreferrer noopener"
-            target="_blank"
           >
-            <img
-              alt="Link que leva para a página no instagram"
+            <a
               class="c6"
-              src="/assets/svg/instagram-icon.svg"
-            />
-          </a>
-          <a
-            class="c7"
-            href="tel:+5511986548715"
-            rel="noreferrer noopener"
-            target="_blank"
+              href="https://www.instagram.com/98barbershop/"
+              rel="noreferrer noopener"
+              target="_blank"
+            >
+              <img
+                alt="Link que leva para a página no instagram"
+                class="c7"
+                src="/assets/svg/instagram-icon.svg"
+              />
+            </a>
+          </div>
+          <div
+            class="c8"
           >
-            <img
-              alt="Link que mostra número do Whatsapp"
+            <a
               class="c6"
-              src="/assets/svg/whatsapp-icon.svg"
-            />
-          </a>
+              href="tel:+5511986548715"
+              rel="noreferrer noopener"
+              target="_blank"
+            >
+              <img
+                alt="Link que mostra número do Whatsapp"
+                class="c7"
+                src="/assets/svg/whatsapp-icon.svg"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </div>
     <div
-      class="c8"
+      class="c9"
     >
       <div
         class="react-reveal"
       >
         <p
-          class="c9"
+          class="c10"
           data-testid="description"
         >
           Rua Caminho Encanto 334 - Guarulhos - SP
@@ -288,7 +298,7 @@ exports[`<Footer /> Deve renderizar o componente <Footer /> 1`] = `
         class="react-reveal"
       >
         <p
-          class="c9"
+          class="c10"
           data-testid="description"
         >
           Copyright ©2021 
@@ -300,22 +310,22 @@ exports[`<Footer /> Deve renderizar o componente <Footer /> 1`] = `
       </div>
     </div>
     <div
-      class="c10"
+      class="c11"
     >
       <div
         class="react-reveal"
       >
-        <h4
+        <h3
           class="c3"
         >
           Institucional
-        </h4>
+        </h3>
       </div>
       <div
         class="react-reveal"
       >
         <p
-          class="c11"
+          class="c12"
           data-testid="description"
         >
           Termos de Uso
