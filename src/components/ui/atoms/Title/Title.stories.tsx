@@ -12,7 +12,30 @@ export default {
   },
   args: {
     children: 'Seja o Primeiro a Saber'
+  },
+  parameters: {
+    backgrounds: {
+      default: 'dark',
+      values: [{ name: 'dark', value: '#121212' }]
+    },
+    layout: 'fullscreen'
   }
 } as Meta;
 
-export const Basic: Story<TitleProps> = (args) => <Title {...args} />;
+export const Basic: Story<TitleProps> = (args) => (
+  <div style={{ textAlign: 'center' }}>
+    <Title {...args} />
+  </div>
+);
+
+export const Mobile: Story<TitleProps> = (args) => (
+  <div style={{ textAlign: 'center' }}>
+    <Title {...args} />
+  </div>
+);
+
+Mobile.parameters = {
+  viewport: {
+    defaultViewport: 'mobile1'
+  }
+};

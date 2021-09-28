@@ -1,4 +1,4 @@
-import { useLayoutEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import MediaMatch from '../MediaMatch/MediaMatch';
 import * as S from './NavLinks.styles';
 
@@ -14,7 +14,7 @@ export const NavLinks = ({ children, names, paddingXLine }: NavLinksProps) => {
 
   const link = useRef<HTMLAnchorElement>(null);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const updatePosition = () =>
       setDimensions({
         width: link.current!.getBoundingClientRect().width + paddingXLine * 2,

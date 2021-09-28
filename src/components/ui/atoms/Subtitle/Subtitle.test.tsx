@@ -29,4 +29,14 @@ describe('<Subtitle />', () => {
     expect(subtitle).toHaveStyle({ 'font-size': '3.0rem' });
     expect(subtitle).toHaveStyleRule('font-size', '6.0rem', { media: '(min-width: 768px)' });
   });
+
+  it('Deve renderizar o componente <Title /> com uma linha em baixo', () => {
+    renderWithTheme(
+      <Subtitle lineBottom>Em breve sua Barbearia favorita terá sua nova plataforma inaugurada!</Subtitle>
+    );
+    //Arrange
+    const subtitle = screen.getByLabelText(/LineTitle/i);
+    //Assert
+    expect(subtitle).toBeInTheDocument();
+  });
 });

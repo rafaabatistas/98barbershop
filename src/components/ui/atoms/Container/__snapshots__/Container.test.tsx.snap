@@ -2,12 +2,11 @@
 
 exports[`<Container /> Deve renderizar o componente <Container /> 1`] = `
 .c0 {
-  width: 100%;
   max-width: 129rem;
   margin: 0 15px;
 }
 
-@media (min-width:450px) {
+@media (min-width:768px) {
   .c0 {
     margin-left: auto;
     margin-right: auto;
