@@ -174,7 +174,8 @@ exports[`<Footer /> Deve renderizar o componente <Footer /> 1`] = `
   font-family: Poppins,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
   font-weight: 400;
   text-align: center;
-  margin-bottom: 2.5rem;
+  color: #FFFFFF;
+  margin-bottom: 4.5rem;
 }
 
 .c10 span {
@@ -186,6 +187,7 @@ exports[`<Footer /> Deve renderizar o componente <Footer /> 1`] = `
   font-family: Poppins,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
   font-weight: 400;
   text-align: center;
+  color: #FFFFFF;
 }
 
 .c12 span {
@@ -289,6 +291,7 @@ exports[`<Footer /> Deve renderizar o componente <Footer /> 1`] = `
       >
         <p
           class="c10"
+          color="white"
           data-testid="description"
         >
           Rua Caminho Encanto 334 - Guarulhos - SP
@@ -299,6 +302,7 @@ exports[`<Footer /> Deve renderizar o componente <Footer /> 1`] = `
       >
         <p
           class="c10"
+          color="white"
           data-testid="description"
         >
           Copyright ©2021 
@@ -326,6 +330,7 @@ exports[`<Footer /> Deve renderizar o componente <Footer /> 1`] = `
       >
         <p
           class="c12"
+          color="white"
           data-testid="description"
         >
           Termos de Uso

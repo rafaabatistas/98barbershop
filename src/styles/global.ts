@@ -97,6 +97,7 @@ const GlobalStyles = createGlobalStyle`
   ${({ theme }) => css`
     body {
       font-family: ${theme.font.family.tertiary};
+      background: ${theme.colors.darkGray};
     }
   `}
   

@@ -1,0 +1,199 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Heading /> Deve renderizar todos os componentes o componente <Heading /> 1`] = `
+.c0 {
+  max-width: 129rem;
+  margin: 0 15px;
+}
+
+.c1 {
+  color: #F71812;
+  font-family: Dancing Script;
+  font-weight: 500;
+  text-align: center;
+  font-size: 3.5rem;
+  margin-bottom: 1.6rem;
+}
+
+.c2 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 3.2rem;
+}
+
+.c3 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  color: #FFFFFF;
+  font-family: Abril Fatface;
+  font-weight: 400;
+  font-size: 3.0rem;
+  text-align: center;
+}
+
+.c4 {
+  font-size: 1.2rem;
+  font-family: Poppins,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
+  font-weight: 400;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 4.5rem;
+}
+
+.c4 span {
+  color: #F71812;
+}
+
+.c6 {
+  color: #FFFFFF;
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 4rem;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  background: #1923F6;
+  border: 0.2rem solid #1923F6;
+}
+
+.c6:hover {
+  background: #060da3;
+  border: 0.2rem solid #060da3;
+}
+
+.c7 {
+  color: #FFFFFF;
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 4rem;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  background: rgba(255,255,255,0.12);
+  border: 0.2rem solid #FFFFFF;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}
+
+.c7:hover {
+  background: #060da3;
+  border: 0.2rem solid #060da3;
+}
+
+.c5 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 3.2rem;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    font-size: 5.0rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    margin-bottom: 4.8rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    font-size: 6.0rem;
+  }
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="react-reveal"
+  >
+    <h1
+      class="c1"
+    >
+      Bem Vindo a BarberShop
+    </h1>
+  </div>
+  <div
+    class="react-reveal"
+  >
+    <div
+      class="c2"
+    >
+      <h2
+        class="c3"
+      >
+        We Are BarberShop!
+      </h2>
+    </div>
+  </div>
+  <div
+    class="react-reveal"
+  >
+    <p
+      class="c4"
+      color="white"
+      data-testid="description"
+    >
+      Enjoy the Ultimate Relaxed Grooming Experience For Men every time you step into the Boardroom
+    </p>
+  </div>
+  <div
+    class="c5"
+  >
+    <div
+      class="react-reveal"
+    >
+      <button
+        class="c6"
+      >
+        Marcar Hora
+      </button>
+    </div>
+    <div
+      class="react-reveal"
+    >
+      <button
+        class="c7"
+      >
+        Saiba Mais
+      </button>
+    </div>
+  </div>
+</div>
+`;

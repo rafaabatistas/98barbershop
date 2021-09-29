@@ -7,7 +7,6 @@ import { NavList } from '../NavList/NavList.styles';
 export default {
   title: 'molecules/NavLinks',
   component: NavLinks,
-  layout: 'fullscreen',
   args: {
     paddingXLine: 10,
     names: ['Home', 'Sobre', 'Serviços', 'Equipe', 'Opinião', 'FeedBack']
@@ -16,7 +15,8 @@ export default {
     backgrounds: {
       default: 'dark',
       values: [{ name: 'dark', value: '#121212' }]
-    }
+    },
+    layout: 'fullscreen'
   }
 } as Meta;
 

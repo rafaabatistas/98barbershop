@@ -5,12 +5,12 @@ import { NavList } from './NavList';
 export default {
   title: 'molecules/NavList',
   component: NavList,
-  layout: 'fullscreen',
   parameters: {
     backgrounds: {
       default: 'dark',
       values: [{ name: 'dark', value: '#121212' }]
-    }
+    },
+    layout: 'fullscreen'
   }
 } as Meta;
 

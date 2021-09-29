@@ -6,7 +6,18 @@ export default {
   title: 'organisms/Banner',
   component: Banner,
   args: {
-    image: '/assets/img/image-banner-1.jpg'
+    img: '/assets/img/slide-1.jpg',
+    title: 'Bem Vindo a BarberShop',
+    subtitle: 'We Are BarberShop!',
+    description: 'Enjoy the Ultimate Relaxed Grooming Experience For Men every time you step into the Boardroom',
+    buttons: 2,
+    buttonLabelOne: 'Marcar Hora',
+    buttonLabelTwo: 'Saiba Mais'
+  },
+  argsTypes: {
+    img: {
+      type: ''
+    }
   },
   parameters: {
     backgrounds: {
