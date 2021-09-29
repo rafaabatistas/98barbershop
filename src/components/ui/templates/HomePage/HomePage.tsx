@@ -1,6 +1,6 @@
 import { Header } from '~organisms/Header/Header';
 import { Footer } from '~organisms/Footer/Footer';
-import { BannerSlider } from '../../organisms/BannerSlider/BannerSlider';
+import { BannerSlider } from '~organisms/BannerSlider/BannerSlider';
 import items from '~organisms/BannerSlider/mock';
 
 const HomePage = () => {
