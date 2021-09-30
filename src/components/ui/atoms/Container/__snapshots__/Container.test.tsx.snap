@@ -6,7 +6,7 @@ exports[`<Container /> Deve renderizar o componente <Container /> 1`] = `
   margin: 0 15px;
 }
 
-@media (min-width:768px) {
+@media (min-width:1170px) {
   .c0 {
     margin-left: auto;
     margin-right: auto;

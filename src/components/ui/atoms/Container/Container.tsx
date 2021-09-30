@@ -6,7 +6,7 @@ export const Container = styled.div`
     max-width: ${theme.grid.container};
     margin: 0 15px;
 
-    ${media.greaterThan('medium')`
+    ${media.greaterThan('large')`
       margin-left: auto;
       margin-right: auto;
     `}
