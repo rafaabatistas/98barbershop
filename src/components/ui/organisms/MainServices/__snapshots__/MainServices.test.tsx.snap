@@ -369,26 +369,14 @@ exports[`<MainServices /> Deve renderizar o componente <MainServices /> 1`] = `
         class="c3 c11"
       >
         <div
-          class="react-reveal"
-        >
-          <div
-            data-testid="Service Box"
-          />
-        </div>
+          data-testid="Service Box"
+        />
         <div
-          class="react-reveal"
-        >
-          <div
-            data-testid="Service Box"
-          />
-        </div>
+          data-testid="Service Box"
+        />
         <div
-          class="react-reveal"
-        >
-          <div
-            data-testid="Service Box"
-          />
-        </div>
+          data-testid="Service Box"
+        />
       </div>
     </div>
     <div

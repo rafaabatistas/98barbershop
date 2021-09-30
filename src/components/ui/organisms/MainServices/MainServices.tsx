@@ -1,5 +1,3 @@
-import Fade from 'react-reveal/Fade';
-
 import MediaMatch from '~molecules/MediaMatch/MediaMatch';
 
 import { Background } from '~atoms/Background/Background';
@@ -39,15 +37,7 @@ export const MainServices = ({ items }: MainServicesProps) => (
       <MediaMatch greaterThan="large">
         <S.WrapperServicesBox>
           {items.map(({ infos, type }, index) => (
-            <Fade
-              key={`Service the ${type} - ${index}`}
-              delay={400}
-              left={index === 0}
-              bottom={index === 1}
-              right={index === 2}
-            >
-              <ServiceBox infos={infos} type={type} />
-            </Fade>
+            <ServiceBox key={`Service the ${type} - ${index}`} infos={infos} type={type} />
           ))}
         </S.WrapperServicesBox>
       </MediaMatch>
