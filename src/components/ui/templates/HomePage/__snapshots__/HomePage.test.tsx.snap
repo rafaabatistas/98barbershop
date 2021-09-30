@@ -258,6 +258,14 @@ exports[`<Home /> Deve renderizar o componente <Home /> 1`] = `
   }
 }
 
+@media (min-width:1170px) {
+
+}
+
+@media (max-width:1170px) {
+
+}
+
 @media (min-width:768px) {
   .c8 {
     margin: 0 8.0rem;
@@ -303,6 +311,22 @@ exports[`<Home /> Deve renderizar o componente <Home /> 1`] = `
 
 }
 
+@media (min-width:1170px) {
+
+}
+
+@media (min-width:768px) {
+
+}
+
+@media (min-width:768px) {
+
+}
+
+@media (min-width:768px) {
+
+}
+
 @media (min-width:768px) {
 
 }
@@ -320,6 +344,34 @@ exports[`<Home /> Deve renderizar o componente <Home /> 1`] = `
 }
 
 @media (min-width:1170px) {
+
+}
+
+@media (min-width:768px) {
+
+}
+
+@media (min-width:768px) {
+
+}
+
+@media (min-width:768px) {
+
+}
+
+@media (min-width:768px) {
+
+}
+
+@media (min-width:768px) {
+
+}
+
+@media (min-width:768px) {
+
+}
+
+@media (min-width:768px) {
 
 }
 

@@ -16,6 +16,7 @@ export type HeadingProps = {
   buttons?: 1 | 2;
   buttonLabelOne?: string;
   buttonLabelTwo?: string;
+  size?: 'normal' | 'large';
   children?: React.ReactNode;
 };
 
@@ -27,15 +28,16 @@ export const Heading = ({
   buttons,
   buttonLabelOne,
   buttonLabelTwo,
+  size = 'normal',
   children
 }: HeadingProps) => (
   <Container>
     <Fade delay={300} bottom>
-      <Title size="large">{title}</Title>
+      <Title size={size}>{title}</Title>
     </Fade>
 
     <Fade delay={400} bottom>
-      <Subtitle lineBottom={lineBottom} size="large">
+      <Subtitle lineBottom={lineBottom} size={size}>
         {subtitle}
       </Subtitle>
     </Fade>

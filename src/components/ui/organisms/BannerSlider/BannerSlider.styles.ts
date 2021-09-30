@@ -3,6 +3,8 @@ import media from 'styled-media-query';
 
 export const Wrapper = styled.main`
   ${({ theme }) => css`
+    margin-bottom: calc(${theme.spacings.section} / 2);
+
     .slick-dots {
       position: absolute;
       list-style: none;
@@ -55,6 +57,10 @@ export const Wrapper = styled.main`
         cursor: pointer;
       }
     }
+
+    ${media.greaterThan('medium')`
+      margin-bottom: ${theme.spacings.section};
+    `}
 
     ${media.greaterThan('large')`
       .slick-dots {

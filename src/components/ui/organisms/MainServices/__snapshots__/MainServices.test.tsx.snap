@@ -1,0 +1,455 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MainServices /> Deve renderizar o componente <MainServices /> 1`] = `
+.c10 {
+  display: none;
+}
+
+.c12 {
+  display: none;
+}
+
+.c1 {
+  position: relative;
+  background-image: url(/assets/img/slide-4.jpg);
+  padding: 5rem 0;
+  overflow: hidden;
+}
+
+.c2 {
+  position: absolute;
+  width: 5rem;
+  color: #080808;
+  top: -0.1rem;
+  left: 50%;
+  -webkit-transform: translate(-50%,0);
+  -ms-transform: translate(-50%,0);
+  transform: translate(-50%,0);
+}
+
+.c14 {
+  position: absolute;
+  width: 5rem;
+  color: #080808;
+  bottom: -0.1rem;
+  left: 50%;
+  -webkit-transform: translate(-50%,0);
+  -ms-transform: translate(-50%,0);
+  transform: translate(-50%,0);
+}
+
+.c3 {
+  max-width: 129rem;
+  margin: 0 15px;
+}
+
+.c4 {
+  color: #F71812;
+  font-family: Dancing Script;
+  font-weight: 500;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.c5 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 3.2rem;
+}
+
+.c6 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  color: #FFFFFF;
+  font-family: Abril Fatface;
+  font-weight: 400;
+  font-size: 3.0rem;
+  text-align: center;
+}
+
+.c7 {
+  width: calc(100% + 2rem);
+  height: 0.2rem;
+  background: rgba(255,255,255,0.3);
+  margin-top: 0.5rem;
+  margin-left: calc(-2rem / 2);
+}
+
+.c8 {
+  font-size: 1.2rem;
+  font-family: Poppins,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
+  font-weight: 400;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 4.5rem;
+}
+
+.c8 span {
+  color: #F71812;
+}
+
+.c9 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 3.2rem;
+}
+
+.c13 .slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.c13 .slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.c13 .slick-list:focus {
+  outline: none;
+}
+
+.c13 .slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.c13 .slick-slider .slick-track,
+.c13 .slick-slider .slick-list {
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.c13 .slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+}
+
+.c13 .slick-track:before,
+.c13 .slick-track:after {
+  display: table;
+  content: '';
+}
+
+.c13 .slick-track:after {
+  clear: both;
+}
+
+.c13 .slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.c13 .slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+
+.c13 [dir='rtl'] .slick-slide {
+  float: right;
+}
+
+.c13 .slick-slide img {
+  display: block;
+}
+
+.c13 .slick-slide.slick-loading img {
+  display: none;
+}
+
+.c13 .slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.c13 .slick-initialized .slick-slide {
+  display: block;
+}
+
+.c13 .slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.c13 .slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+}
+
+.c13 .slick-arrow.slick-hidden {
+  display: none;
+}
+
+.c0 {
+  margin: calc(10rem / 2) 0;
+}
+
+.c0 .slick-track,
+.c0 .slick-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c0 .slick-slide > div {
+  margin: 0 0.8rem;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  height: 100%;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3rem;
+}
+
+@media (min-width:1170px) {
+  .c10 {
+    display: block;
+  }
+}
+
+@media (max-width:1170px) {
+  .c12 {
+    display: block;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    padding: 10rem 0;
+  }
+}
+
+@media (min-width:1170px) {
+  .c3 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    font-size: 4.5rem;
+    margin-bottom: 1.6rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    margin-bottom: 8.0rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c6 {
+    font-size: 5.0rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    margin: 10rem 0;
+  }
+}
+
+<div
+  class="c0"
+>
+  <div
+    aria-label="Background"
+    class="c1"
+    src="/assets/img/slide-4.jpg"
+  >
+    <svg
+      class="c2"
+      viewBox="0 0 50 19"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M25.5 18.85C25.5 9.426 43 1.347 50 1.347V0H0v1.347c7 0 25.5 8.078 25.5 17.504Z"
+        fill="currentColor"
+      />
+    </svg>
+    <div
+      class="c3"
+    >
+      <div
+        class="react-reveal"
+      >
+        <h1
+          class="c4"
+        >
+          Pronto para Cortar
+        </h1>
+      </div>
+      <div
+        class="react-reveal"
+      >
+        <div
+          class="c5"
+        >
+          <h2
+            class="c6"
+          >
+            Principais Serviços
+            <div
+              aria-label="LineTitle"
+              class="c7"
+            />
+          </h2>
+        </div>
+      </div>
+      <div
+        class="react-reveal"
+      >
+        <p
+          class="c8"
+          color="white"
+          data-testid="description"
+        />
+      </div>
+      <div
+        class="c9"
+      />
+    </div>
+    <div
+      class="c10"
+    >
+      <div
+        class="c3 c11"
+      >
+        <div
+          data-testid="Service Box"
+        />
+        <div
+          data-testid="Service Box"
+        />
+        <div
+          data-testid="Service Box"
+        />
+      </div>
+    </div>
+    <div
+      class="c12"
+    >
+      <section
+        class="c13"
+      >
+        <div
+          class="slick-slider slick-initialized"
+          dir="ltr"
+        >
+          <div
+            class="slick-list"
+          >
+            <div
+              class="slick-track"
+              style="opacity: 1; transform: translate3d(0px, 0px, 0px);"
+            >
+              <div
+                aria-hidden="false"
+                class="slick-slide slick-active slick-current"
+                data-index="0"
+                style="outline: none; width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    data-testid="Service Box"
+                  />
+                </div>
+              </div>
+              <div
+                aria-hidden="false"
+                class="slick-slide slick-active"
+                data-index="1"
+                style="outline: none; width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    data-testid="Service Box"
+                  />
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                class="slick-slide"
+                data-index="2"
+                style="outline: none; width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    data-testid="Service Box"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <svg
+      class="c14"
+      viewBox="0 0 50 19"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M24.5 0C24.5 9.425 7 17.504 0 17.504v1.347h50v-1.347c-7 0-25.5-8.079-25.5-17.504Z"
+        fill="currentColor"
+      />
+    </svg>
+  </div>
+</div>
+`;

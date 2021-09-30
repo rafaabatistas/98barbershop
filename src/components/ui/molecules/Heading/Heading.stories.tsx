@@ -12,7 +12,8 @@ export default {
     description: 'Enjoy the Ultimate Relaxed Grooming Experience For Men every time you step into the Boardroom',
     buttons: 2,
     buttonLabelOne: 'Marcar Hora',
-    buttonLabelTwo: 'Saiba Mais'
+    buttonLabelTwo: 'Saiba Mais',
+    size: 'large'
   },
   parameters: {
     backgrounds: {
@@ -66,7 +67,8 @@ export const MobileWithContent: Story<HeadingProps> = (args) => (
 MobileWithContent.args = {
   title: 'Olá Pessoal',
   description:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisi lorem consectetur sapien, ridiculus nulla magna bibendum. Euismod mi aliquam eget pretium blandit. Sed sit facilisi pellentesque mi. Sed molestie eu aliquet auctor.'
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisi lorem consectetur sapien, ridiculus nulla magna bibendum. Euismod mi aliquam eget pretium blandit. Sed sit facilisi pellentesque mi. Sed molestie eu aliquet auctor.',
+  size: 'normal'
 };
 
 MobileWithContent.parameters = {
