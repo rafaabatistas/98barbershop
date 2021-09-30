@@ -108,6 +108,10 @@ exports[`<BannerSlider /> Deve renderizar o componente <BannerSlider /> com a pr
   display: none;
 }
 
+.c0 {
+  margin-bottom: calc(10rem / 2);
+}
+
 .c0 .slick-dots {
   position: absolute;
   list-style: none;
@@ -180,6 +184,12 @@ exports[`<BannerSlider /> Deve renderizar o componente <BannerSlider /> com a pr
   width: 1rem;
   height: 1rem;
   cursor: pointer;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    margin-bottom: 10rem;
+  }
 }
 
 @media (min-width:1170px) {

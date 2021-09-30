@@ -15,6 +15,7 @@ export const Banner = ({ img, title, subtitle, description, buttons, buttonLabel
         buttons={buttons}
         buttonLabelOne={buttonLabelOne}
         buttonLabelTwo={buttonLabelTwo}
+        size="large"
       />
     </S.Banner>
   );
