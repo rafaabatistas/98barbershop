@@ -99,6 +99,12 @@ const GlobalStyles = createGlobalStyle`
       font-family: ${theme.font.family.tertiary};
       background: ${theme.colors.darkGray};
     }
+
+    .active {
+      color: ${theme.colors.primary};
+      text-shadow: 0 0 3rem rgba(26, 255, 234, 0.2), 0 0 1.5rem rgba(26, 255, 234, 0.4),
+        0 0 1rem rgba(26, 255, 234, 0.4), 0 0 5rem rgba(26, 255, 234, 0.2);
+    }
   `}
   
   button {
@@ -109,6 +115,8 @@ const GlobalStyles = createGlobalStyle`
   button:focus {
     outline: none;
   }
+
+  
 `;
 
 export default GlobalStyles;
