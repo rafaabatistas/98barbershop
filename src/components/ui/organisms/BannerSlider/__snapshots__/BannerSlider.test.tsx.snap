@@ -137,7 +137,7 @@ exports[`<BannerSlider /> Deve renderizar o componente <BannerSlider /> com a pr
   background: transparent;
   width: 1rem;
   height: 1rem;
-  border: 0.1rem solid #F71812;
+  border: 0.1rem solid #1affea;
   border-radius: 0.1rem;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -161,11 +161,11 @@ exports[`<BannerSlider /> Deve renderizar o componente <BannerSlider /> com a pr
 
 .c0 .slick-dots li:hover,
 .c0 .slick-dots li:focus {
-  background: #F71812;
+  background: #1affea;
 }
 
 .c0 .slick-dots li.slick-active {
-  background: #F71812;
+  background: #1affea;
 }
 
 .c0 .slick-dots li.slick-active::after {
@@ -174,9 +174,9 @@ exports[`<BannerSlider /> Deve renderizar o componente <BannerSlider /> com a pr
   background: transparent;
   width: calc(1rem * 1.4);
   height: calc(1rem * 1.4);
-  border: 0.1rem solid #F71812;
+  border: 0.1rem solid #1affea;
   border-radius: 0.1rem;
-  box-shadow: 0 0 0.5rem #F71812;
+  box-shadow: 0 0 0.5rem #1affea;
 }
 
 .c0 .slick-dots button {

@@ -18,7 +18,7 @@ exports[`<HairIcon /> Deve renderizar o componente <HairIcon /> com a cor do cab
 }
 
 .c1 path:first-child {
-  color: #fa7470;
+  color: #75fff2;
 }
 
 .c1 path:last-child {

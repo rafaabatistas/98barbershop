@@ -23,11 +23,11 @@ exports[`<NavLinks /> Deve renderizar todos os componentes dentro do componente 
   position: absolute;
   bottom: 0;
   left: 0;
-  background: #F71812;
+  background: #1affea;
   border-radius: 0.3rem;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
-  box-shadow: 0 0 1rem #F71812;
+  box-shadow: 0 0 1rem #1affea;
 }
 
 .c2 {
@@ -40,14 +40,19 @@ exports[`<NavLinks /> Deve renderizar todos os componentes dentro do componente 
 
 .c3 {
   list-style: none;
+  color: #1affea;
+  text-shadow: 0 0 1rem #1affea;
+}
+
+.c5 {
+  list-style: none;
+  color: #FFFFFF;
 }
 
 .c4 {
   -webkit-text-decoration: none;
   text-decoration: none;
   font-size: 1.6rem;
-  color: #F71812;
-  text-shadow: 0 0 1rem #F71812;
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
   cursor: pointer;
@@ -55,35 +60,18 @@ exports[`<NavLinks /> Deve renderizar todos os componentes dentro do componente 
 
 .c4:hover,
 .c4:focus {
-  color: #F71812;
-  text-shadow: 0 0 1rem #F71812;
+  color: #1affea;
+  text-shadow: 0 0 1rem #1affea;
   outline: none;
 }
 
-.c5 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-size: 1.6rem;
-  color: #FFFFFF;
-  -webkit-transition: 0.3s linear;
-  transition: 0.3s linear;
-  cursor: pointer;
-}
-
-.c5:hover,
-.c5:focus {
-  color: #F71812;
-  text-shadow: 0 0 1rem #F71812;
-  outline: none;
-}
-
-@media (min-width:768px) {
+@media (min-width:769px) {
   .c1 {
     display: block;
   }
 }
 
-@media (min-width:768px) {
+@media (min-width:769px) {
   .c0 {
     width: auto;
   }
@@ -104,29 +92,26 @@ exports[`<NavLinks /> Deve renderizar todos os componentes dentro do componente 
         <a
           aria-selected="true"
           class="c4"
-          href="#"
         >
           Home
         </a>
       </li>
       <li
-        class="c3"
+        class="c5"
       >
         <a
           aria-selected="false"
-          class="c5"
-          href="#"
+          class="c4"
         >
           Sobre
         </a>
       </li>
       <li
-        class="c3"
+        class="c5"
       >
         <a
           aria-selected="false"
-          class="c5"
-          href="#"
+          class="c4"
         >
           Serviços
         </a>
@@ -143,34 +128,31 @@ exports[`<NavLinks /> Deve renderizar todos os componentes dentro do componente 
       class="c2"
     >
       <li
-        class="c3"
+        class="c5"
       >
         <a
           aria-selected="false"
-          class="c5"
-          href="#"
+          class="c4"
         >
           Equipe
         </a>
       </li>
       <li
-        class="c3"
+        class="c5"
       >
         <a
           aria-selected="false"
-          class="c5"
-          href="#"
+          class="c4"
         >
           Opinião
         </a>
       </li>
       <li
-        class="c3"
+        class="c5"
       >
         <a
           aria-selected="false"
-          class="c5"
-          href="#"
+          class="c4"
         >
           FeedBack
         </a>

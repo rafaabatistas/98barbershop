@@ -54,7 +54,7 @@ exports[`<ServiceBox /> Deve renderizar o componente <ServiceBox /> 1`] = `
 }
 
 .c5 {
-  color: #F71812;
+  color: #1affea;
 }
 
 .c6 {
