@@ -11,13 +11,13 @@ exports[`<Button /> Deve renderizar os estilos primarios do componente <Button /
   cursor: pointer;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
-  background: #1923F6;
-  border: 0.2rem solid #1923F6;
+  background: #3abcbf;
+  border: 0.2rem solid #3abcbf;
 }
 
 .c0:hover {
-  background: #060da3;
-  border: 0.2rem solid #060da3;
+  background: #226f71;
+  border: 0.2rem solid #226f71;
 }
 
 <button

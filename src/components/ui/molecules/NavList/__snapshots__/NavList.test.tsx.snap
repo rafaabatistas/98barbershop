@@ -1,14 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<NavList /> Deve Renderizar todos os components de <NavList /> 1`] = `
-.c2 {
-  display: none;
-}
-
-.c8 {
-  display: none;
-}
-
 .c0 {
   position: relative;
   width: 100%;
@@ -28,6 +20,14 @@ exports[`<NavList /> Deve Renderizar todos os components de <NavList /> 1`] = `
   justify-content: space-between;
   overflow-x: hidden;
   padding: 0 1.5rem;
+}
+
+.c2 {
+  display: none;
+}
+
+.c8 {
+  display: none;
 }
 
 .c9 {
@@ -87,15 +87,7 @@ exports[`<NavList /> Deve Renderizar todos os components de <NavList /> 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-
-.c11:first-child::after {
-  width: 100%;
-}
-
-.c11:first-child {
-  color: #F71812;
-  text-shadow: 0px 0px 30px rgba(247,24,18,0.5),0px 0px 15px rgba(247,24,18,0.4),0px 0px 10px rgba(247,24,18,0.4),0px 0px 5px rgba(247,24,18,0.2);
+  color: #1affea;
 }
 
 .c11::after {
@@ -103,16 +95,49 @@ exports[`<NavList /> Deve Renderizar todos os components de <NavList /> 1`] = `
   position: absolute;
   justify-self: center;
   bottom: -0.5rem;
-  width: 0;
   height: 0.2rem;
-  background: #F71812;
-  box-shadow: 0px 0px 10px #F71812;
+  width: 100%;
+  background: #1affea;
+  box-shadow: 0 0 1rem #1affea;
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
 }
 
 .c11:hover::after,
 .c11:focus::after {
+  width: 100%;
+}
+
+.c13 {
+  position: relative;
+  list-style: none;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #FFFFFF;
+}
+
+.c13::after {
+  content: '';
+  position: absolute;
+  justify-self: center;
+  bottom: -0.5rem;
+  height: 0.2rem;
+  width: 0;
+  background: #1affea;
+  box-shadow: 0 0 1rem #1affea;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.c13:hover::after,
+.c13:focus::after {
   width: 100%;
 }
 
@@ -126,9 +151,9 @@ exports[`<NavList /> Deve Renderizar todos os components de <NavList /> 1`] = `
 
 .c12:hover,
 .c12:focus {
-  color: #F71812;
+  color: #1affea;
   cursor: pointer;
-  text-shadow: 0px 0px 30px rgba(247,24,18,0.5),0px 0px 15px rgba(247,24,18,0.4),0px 0px 10px rgba(247,24,18,0.4),0px 0px 5px rgba(247,24,18,0.2);
+  text-shadow: 0 0 3rem rgba(26,255,234,0.2),0 0 1.5rem rgba(26,255,234,0.4),0 0 1rem rgba(26,255,234,0.4),0 0 5rem rgba(26,255,234,0.2);
 }
 
 .c1 {
@@ -149,11 +174,11 @@ exports[`<NavList /> Deve Renderizar todos os components de <NavList /> 1`] = `
   position: absolute;
   bottom: 0;
   left: 0;
-  background: #F71812;
+  background: #1affea;
   border-radius: 0.3rem;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
-  box-shadow: 0 0 1rem #F71812;
+  box-shadow: 0 0 1rem #1affea;
 }
 
 .c3 {
@@ -166,14 +191,19 @@ exports[`<NavList /> Deve Renderizar todos os components de <NavList /> 1`] = `
 
 .c4 {
   list-style: none;
+  color: #1affea;
+  text-shadow: 0 0 1rem #1affea;
+}
+
+.c6 {
+  list-style: none;
+  color: #FFFFFF;
 }
 
 .c5 {
   -webkit-text-decoration: none;
   text-decoration: none;
   font-size: 1.6rem;
-  color: #F71812;
-  text-shadow: 0 0 1rem #F71812;
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
   cursor: pointer;
@@ -181,38 +211,9 @@ exports[`<NavList /> Deve Renderizar todos os components de <NavList /> 1`] = `
 
 .c5:hover,
 .c5:focus {
-  color: #F71812;
-  text-shadow: 0 0 1rem #F71812;
+  color: #1affea;
+  text-shadow: 0 0 1rem #1affea;
   outline: none;
-}
-
-.c6 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-size: 1.6rem;
-  color: #FFFFFF;
-  -webkit-transition: 0.3s linear;
-  transition: 0.3s linear;
-  cursor: pointer;
-}
-
-.c6:hover,
-.c6:focus {
-  color: #F71812;
-  text-shadow: 0 0 1rem #F71812;
-  outline: none;
-}
-
-@media (min-width:768px) {
-  .c2 {
-    display: block;
-  }
-}
-
-@media (max-width:768px) {
-  .c8 {
-    display: block;
-  }
 }
 
 @media (min-width:768px) {
@@ -225,7 +226,19 @@ exports[`<NavList /> Deve Renderizar todos os components de <NavList /> 1`] = `
   }
 }
 
-@media (min-width:768px) {
+@media (min-width:769px) {
+  .c2 {
+    display: block;
+  }
+}
+
+@media (max-width:768px) {
+  .c8 {
+    display: block;
+  }
+}
+
+@media (min-width:769px) {
   .c1 {
     width: auto;
   }
@@ -249,29 +262,26 @@ exports[`<NavList /> Deve Renderizar todos os components de <NavList /> 1`] = `
           <a
             aria-selected="true"
             class="c5"
-            href="#"
           >
             Home
           </a>
         </li>
         <li
-          class="c4"
+          class="c6"
         >
           <a
             aria-selected="false"
-            class="c6"
-            href="#"
+            class="c5"
           >
             Sobre
           </a>
         </li>
         <li
-          class="c4"
+          class="c6"
         >
           <a
             aria-selected="false"
-            class="c6"
-            href="#"
+            class="c5"
           >
             Serviços
           </a>
@@ -292,34 +302,31 @@ exports[`<NavList /> Deve Renderizar todos os components de <NavList /> 1`] = `
         class="c3"
       >
         <li
-          class="c4"
+          class="c6"
         >
           <a
             aria-selected="false"
-            class="c6"
-            href="#"
+            class="c5"
           >
             Equipe
           </a>
         </li>
         <li
-          class="c4"
+          class="c6"
         >
           <a
             aria-selected="false"
-            class="c6"
-            href="#"
+            class="c5"
           >
             Opinião
           </a>
         </li>
         <li
-          class="c4"
+          class="c6"
         >
           <a
             aria-selected="false"
-            class="c6"
-            href="#"
+            class="c5"
           >
             FeedBack
           </a>
@@ -378,7 +385,7 @@ exports[`<NavList /> Deve Renderizar todos os components de <NavList /> 1`] = `
             </a>
           </li>
           <li
-            class="c11"
+            class="c13"
           >
             <a
               aria-label="Sobre"
@@ -388,7 +395,7 @@ exports[`<NavList /> Deve Renderizar todos os components de <NavList /> 1`] = `
             </a>
           </li>
           <li
-            class="c11"
+            class="c13"
           >
             <a
               aria-label="Serviços"
@@ -398,7 +405,7 @@ exports[`<NavList /> Deve Renderizar todos os components de <NavList /> 1`] = `
             </a>
           </li>
           <li
-            class="c11"
+            class="c13"
           >
             <a
               aria-label="Equipe"
@@ -408,7 +415,7 @@ exports[`<NavList /> Deve Renderizar todos os components de <NavList /> 1`] = `
             </a>
           </li>
           <li
-            class="c11"
+            class="c13"
           >
             <a
               aria-label="Opinião"
@@ -418,7 +425,7 @@ exports[`<NavList /> Deve Renderizar todos os components de <NavList /> 1`] = `
             </a>
           </li>
           <li
-            class="c11"
+            class="c13"
           >
             <a
               aria-label="FeedBack"

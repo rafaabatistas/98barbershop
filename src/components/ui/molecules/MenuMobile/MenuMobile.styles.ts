@@ -1,8 +1,13 @@
 import styled, { css } from 'styled-components';
+import { Link } from 'react-scroll';
 
 import { MenuMobileProps } from './MenuMobile';
 
 type OpenMenuMobileProps = Pick<MenuMobileProps, 'isOpen'>;
+
+type ListProps = {
+  isActive: boolean;
+};
 
 export const Wrapper = styled.div<OpenMenuMobileProps>`
   ${({ theme, isOpen }) => css`
@@ -35,33 +40,24 @@ export const WrapperList = styled.ul`
   `}
 `;
 
-export const List = styled.li`
-  ${({ theme }) => css`
+export const List = styled.li<ListProps>`
+  ${({ theme, isActive }) => css`
     position: relative;
     list-style: none;
     text-align: center;
     display: flex;
     justify-content: center;
-
-    &:first-child::after {
-      width: 100%;
-    }
-
-    &:first-child {
-      color: ${theme.colors.primary};
-      text-shadow: 0px 0px 30px rgba(247, 24, 18, 0.5), 0px 0px 15px rgba(247, 24, 18, 0.4),
-        0px 0px 10px rgba(247, 24, 18, 0.4), 0px 0px 5px rgba(247, 24, 18, 0.2);
-    }
+    color: ${isActive ? theme.colors.primary : theme.colors.white};
 
     &::after {
       content: '';
       position: absolute;
       justify-self: center;
       bottom: -0.5rem;
-      width: 0;
       height: 0.2rem;
+      width: ${isActive ? '100%' : `0`};
       background: ${theme.colors.primary};
-      box-shadow: 0px 0px 10px ${theme.colors.primary};
+      box-shadow: 0 0 1rem ${theme.colors.primary};
       transition: 0.3s linear;
     }
 
@@ -72,7 +68,14 @@ export const List = styled.li`
   `}
 `;
 
-export const Link = styled.a`
+export const MenuLink = styled(Link).attrs({
+  spy: true,
+  hashSpy: true,
+  smooth: true,
+  duration: 600,
+  activeClass: 'active',
+  autoFocus: true
+})`
   ${({ theme }) => css`
     font-size: ${theme.font.sizes.xmedium};
     font-weight: 300;
@@ -83,8 +86,8 @@ export const Link = styled.a`
     &:focus {
       color: ${theme.colors.primary};
       cursor: pointer;
-      text-shadow: 0px 0px 30px rgba(247, 24, 18, 0.5), 0px 0px 15px rgba(247, 24, 18, 0.4),
-        0px 0px 10px rgba(247, 24, 18, 0.4), 0px 0px 5px rgba(247, 24, 18, 0.2);
+      text-shadow: 0 0 3rem rgba(26, 255, 234, 0.2), 0 0 1.5rem rgba(26, 255, 234, 0.4),
+        0 0 1rem rgba(26, 255, 234, 0.4), 0 0 5rem rgba(26, 255, 234, 0.2);
     }
   `}
 `;

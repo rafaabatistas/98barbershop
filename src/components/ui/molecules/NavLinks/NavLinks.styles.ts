@@ -1,8 +1,9 @@
-import media from 'styled-media-query';
 import styled, { css } from 'styled-components';
+import { customMedia } from '~src/utils/media/customMedia';
+import { Link } from 'react-scroll';
 
 type ActiveProps = {
-  active?: boolean;
+  isActive?: boolean;
 };
 
 export const Wrapper = styled.nav`
@@ -11,7 +12,7 @@ export const Wrapper = styled.nav`
   align-items: center;
   height: 100%;
 
-  ${media.greaterThan('medium')`
+  ${customMedia.greaterThan('medium')`
     width: auto;
   `}
 `;
@@ -34,16 +35,25 @@ export const WrapperUl = styled.ul`
   gap: 4rem;
 `;
 
-export const List = styled.li`
-  list-style: none;
+export const List = styled.li<ActiveProps>`
+  ${({ theme, isActive }) => css`
+    list-style: none;
+    color: ${isActive ? theme.colors.primary : theme.colors.white};
+    text-shadow: ${isActive && `0 0 1rem ${theme.colors.primary}`};
+  `}
 `;
 
-export const Link = styled.a<ActiveProps>`
-  ${({ theme, active }) => css`
+export const NavLink = styled(Link).attrs({
+  spy: true,
+  hashSpy: true,
+  smooth: true,
+  duration: 600,
+  autoFocus: true,
+  activeClass: 'active'
+})`
+  ${({ theme }) => css`
     text-decoration: none;
     font-size: ${theme.font.sizes.medium};
-    color: ${active ? theme.colors.primary : theme.colors.white};
-    text-shadow: ${active && `0 0 1rem ${theme.colors.primary}`};
     transition: 0.3s linear;
     cursor: pointer;
 

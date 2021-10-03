@@ -14,7 +14,7 @@ exports[`<NavItem /> Deve renderizar o componente <NavItem /> 1`] = `
 }
 
 .c0:hover {
-  color: #F71812;
+  color: #1affea;
 }
 
 @media (min-width:768px) {

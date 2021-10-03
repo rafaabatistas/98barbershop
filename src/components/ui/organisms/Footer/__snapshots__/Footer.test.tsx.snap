@@ -160,7 +160,7 @@ exports[`<Footer /> Deve renderizar o componente <Footer /> 1`] = `
 
 .c6:hover,
 .c6:focus {
-  box-shadow: 0 0 1rem #F71812;
+  box-shadow: 0 0 1rem #1affea;
   outline: none;
 }
 
@@ -179,7 +179,7 @@ exports[`<Footer /> Deve renderizar o componente <Footer /> 1`] = `
 }
 
 .c10 span {
-  color: #F71812;
+  color: #1affea;
 }
 
 .c12 {
@@ -191,7 +191,7 @@ exports[`<Footer /> Deve renderizar o componente <Footer /> 1`] = `
 }
 
 .c12 span {
-  color: #F71812;
+  color: #1affea;
 }
 
 @media (min-width:768px) {

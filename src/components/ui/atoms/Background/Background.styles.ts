@@ -7,11 +7,13 @@ export const Wrapper = styled.div<BackgroundProps>`
   ${({ src }) => css`
     position: relative;
     background-image: url(${src});
+    background-position: center;
+    background-size: cover;
     padding: 5rem 0;
     overflow: hidden;
 
     ${media.greaterThan('medium')`
-      padding: 10rem 0;
+      padding: 10rem 1.5rem;
     `}
   `}
 `;

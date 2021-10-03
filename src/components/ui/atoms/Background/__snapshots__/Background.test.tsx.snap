@@ -4,7 +4,9 @@ exports[`<Background /> Deve renderizar o componente <Background /> 1`] = `
 .c0 {
   position: relative;
   background-image: url(/assets/img/slide-1.jpg);
-  padding: 5rem 0;
+  background-position: center;
+  background-size: cover;
+  padding: 5rem 1.5rem;
   overflow: hidden;
 }
 
@@ -32,7 +34,7 @@ exports[`<Background /> Deve renderizar o componente <Background /> 1`] = `
 
 @media (min-width:768px) {
   .c0 {
-    padding: 10rem 0;
+    padding: 10rem 1.5rem;
   }
 }
 

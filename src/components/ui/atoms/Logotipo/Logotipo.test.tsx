@@ -12,7 +12,7 @@ describe('<Logotipo />', () => {
     //Assert
     expect(labelText).toBeInTheDocument();
     expect(labelText.parentElement).toHaveStyle({ color: '#FFFFFF' });
-    expect(labelText.parentElement).toHaveStyle({ width: '6rem', height: '8rem' });
+    expect(labelText.parentElement).toHaveStyle({ width: '7rem', height: '6rem' });
   });
 
   it('Deve renderizar o componente <Logotipo /> com a cor preta', () => {
@@ -28,7 +28,7 @@ describe('<Logotipo />', () => {
     //Arrange
     const labelText = screen.getByLabelText('98Barbershop');
     //Assert
-    expect(labelText.parentElement).toHaveStyle({ width: '3.6rem', height: '4.8rem' });
+    expect(labelText.parentElement).toHaveStyle({ width: '4.8rem', height: '4rem' });
   });
 
   it('Deve renderizar o componente <Logotipo /> no seu tamanho maior', () => {
@@ -36,7 +36,7 @@ describe('<Logotipo />', () => {
     //Arrange
     const labelText = screen.getByLabelText('98Barbershop');
     //Assert
-    expect(labelText.parentElement).toHaveStyle({ width: '8.5rem', height: '12rem' });
+    expect(labelText.parentElement).toHaveStyle({ width: '8.5rem', height: '7.5rem' });
   });
 
   it('Deve renderizar o componente <Logotipo /> responsivo para mobile', () => {
@@ -44,7 +44,7 @@ describe('<Logotipo />', () => {
     //Arrange
     const labelText = screen.getByLabelText('98Barbershop');
     //Assert
-    expect(labelText.parentElement).toHaveStyle({ width: '6rem', height: '8rem' });
-    expect(labelText.parentElement).toHaveStyleRule('width', '3.6rem', { media: '(max-width: 768px)' });
+    expect(labelText.parentElement).toHaveStyle({ width: '7rem', height: '6rem' });
+    expect(labelText.parentElement).toHaveStyleRule('width', '4.8rem', { media: '(max-width: 768px)' });
   });
 });
