@@ -9,7 +9,7 @@ export const Wrapper = styled.div<BackgroundProps>`
     background-image: url(${src});
     background-position: center;
     background-size: cover;
-    padding: 5rem 1.5rem;
+    padding: 5rem 0;
     overflow: hidden;
 
     ${media.greaterThan('medium')`
