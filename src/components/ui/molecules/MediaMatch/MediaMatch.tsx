@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components';
 import media, { DefaultBreakpoints } from 'styled-media-query';
+import { customMedia } from '~src/utils/media/customMedia';
 
 type breakpoint = keyof DefaultBreakpoints;
 
@@ -16,7 +17,7 @@ export const mediaMatchModifiers = {
   `,
 
   greaterThan: (size: breakpoint) => css`
-    ${media.greaterThan(size)`
+    ${customMedia.greaterThan(size)`
       display: block;
     `}
   `
