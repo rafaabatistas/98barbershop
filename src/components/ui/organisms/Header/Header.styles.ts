@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import media from 'styled-media-query';
+import { customMedia } from '~src/utils/media/customMedia';
 
 export const Header = styled.header`
   ${({ theme }) => css`
@@ -24,7 +24,7 @@ export const Header = styled.header`
       backdrop-filter: blur(1rem);
     }
 
-    ${media.greaterThan('medium')`
+    ${customMedia.greaterThan('medium')`
       height: 10rem;
     `}
   `}
