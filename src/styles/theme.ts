@@ -14,6 +14,7 @@ export default {
     family: {
       primary: 'Dancing Script',
       secundary: 'Abril Fatface',
+      textReview: 'Kaushan Script',
       tertiary:
         "Poppins, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif"
     },
@@ -45,6 +46,8 @@ export default {
     white: '#FFFFFF',
     lightRed: '#F17575',
     lightGray: '#EEEEEE',
+    textGray: '#282828',
+    textName: '#A5A5A5',
     gray: '#181818',
     darkGray: '#080808',
     black: '#000000'
