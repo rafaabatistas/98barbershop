@@ -4,8 +4,11 @@ import { Header } from '~organisms/Header/Header';
 import { Footer } from '~organisms/Footer/Footer';
 import { BannerSlider } from '~organisms/BannerSlider/BannerSlider';
 import { MainServices } from '~organisms/MainServices/MainServices';
+import { Review } from '~organisms/Review/Review';
+
 import items from '~organisms/BannerSlider/mock';
 import services from '~organisms/MainServices/mock';
+import reviews from '~organisms/Review/mock';
 
 const HomePage = () => {
   return (
@@ -16,6 +19,9 @@ const HomePage = () => {
       </Element>
       <Element name="servicos">
         <MainServices items={services} />
+      </Element>
+      <Element name="opiniao">
+        <Review items={reviews} />
       </Element>
       <Footer />
     </>
