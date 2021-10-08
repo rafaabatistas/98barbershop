@@ -3,7 +3,7 @@ import media from 'styled-media-query';
 
 export const Wrapper = styled.main`
   ${({ theme }) => css`
-    margin-bottom: calc(${theme.spacings.section} / 2);
+    margin: calc(${theme.spacings.section} / 2) 0;
 
     .slick-track,
     .slick-list {

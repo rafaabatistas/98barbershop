@@ -9,7 +9,18 @@ export default {
   component: Review,
   args: {
     items: items
+  },
+  parameters: {
+    layout: 'fullscreen'
   }
 } as Meta;
 
 export const Basic: Story<ReviewProps> = (args) => <Review {...args} />;
+
+export const Mobile: Story<ReviewProps> = (args) => <Review {...args} />;
+
+Mobile.parameters = {
+  viewport: {
+    defaultViewport: 'mobile1'
+  }
+};

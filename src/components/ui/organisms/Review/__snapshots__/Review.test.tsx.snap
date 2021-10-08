@@ -336,7 +336,7 @@ exports[`<Review /> Deve renderizar o componente <Review /> 1`] = `
 }
 
 .c0 {
-  margin-bottom: calc(10rem / 2);
+  margin: calc(10rem / 2) 0;
 }
 
 .c0 .slick-track,
