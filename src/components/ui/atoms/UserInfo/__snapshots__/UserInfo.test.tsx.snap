@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<UserInfo /> Deve renderizar o componente <UserInfo /> 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  background-image: url(/assets/img/testUser.png);
+  background-size: cover;
+}
+
+.c1::before {
+  content: '';
+  position: absolute;
+  width: calc(100% + 0.5rem);
+  height: calc(100% + 0.5rem);
+  border-radius: 50%;
+  border: 0.2rem solid #1affea;
+}
+
+.c2 {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #A5A5A5;
+  margin-top: 1rem;
+}
+
+<div
+  class="c0"
+>
+  <div
+    aria-label="User image"
+    class="c1"
+  />
+  <p
+    aria-label="User name"
+    class="c2"
+  >
+    -Gabriel Guedes
+  </p>
+</div>
+`;
