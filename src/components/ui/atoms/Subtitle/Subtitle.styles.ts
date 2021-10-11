@@ -17,8 +17,8 @@ export const WrapperSubtitle = styled.div<Pick<SubtitleProps, 'size' | 'lineBott
   `}
 `;
 
-export const Subtitle = styled.h2<Pick<SubtitleProps, 'size'>>`
-  ${({ theme, size }) => css`
+export const Subtitle = styled.h2<Pick<SubtitleProps, 'size' | 'textAlign'>>`
+  ${({ theme, size, textAlign }) => css`
     width: fit-content;
     display: flex;
     flex-direction: column;
@@ -30,6 +30,7 @@ export const Subtitle = styled.h2<Pick<SubtitleProps, 'size'>>`
 
     ${media.greaterThan('medium')`
       font-size: ${size === 'normal' ? theme.font.sizes.xxlarge : theme.font.sizes.extra};
+      text-align: ${textAlign};
     `}
   `}
 `;
@@ -37,6 +38,7 @@ export const Subtitle = styled.h2<Pick<SubtitleProps, 'size'>>`
 export const LineTitle = styled.div`
   width: calc(100% + 2rem);
   height: 0.2rem;
+  border-radius: 0.2rem;
   background: rgba(255, 255, 255, 0.3);
   margin-top: 0.5rem;
   margin-left: calc(-2rem / 2);

@@ -135,6 +135,7 @@ exports[`<Heading /> Deve renderizar todos os componentes o componente <Heading 
 @media (min-width:768px) {
   .c3 {
     font-size: 5.0rem;
+    text-align: center;
   }
 }
 

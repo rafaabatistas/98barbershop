@@ -60,6 +60,7 @@ export default {
     large: '4.0rem',
     xlarge: '4.8rem',
     xxlarge: '5.6rem',
+    big: '5.8rem',
     huge: '8.0rem',
     section: '10rem'
   },
