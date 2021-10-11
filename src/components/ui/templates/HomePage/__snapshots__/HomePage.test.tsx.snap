@@ -281,6 +281,14 @@ exports[`<Home /> Deve renderizar o componente <Home /> 1`] = `
   }
 }
 
+@media (min-width:1025px) {
+
+}
+
+@media (max-width:1024px) {
+
+}
+
 @media (min-width:1171px) {
 
 }
@@ -356,7 +364,75 @@ exports[`<Home /> Deve renderizar o componente <Home /> 1`] = `
 
 }
 
+@media (min-width:768px) {
+
+}
+
+@media (min-width:768px) {
+
+}
+
 @media (min-width:1170px) {
+
+}
+
+@media (min-width:450px) {
+
+}
+
+@media (min-width:1025px) {
+
+}
+
+@media (min-width:768px) {
+
+}
+
+@media (min-width:1025px) {
+
+}
+
+@media (min-width:1025px) {
+
+}
+
+@media (min-width:768px) {
+
+}
+
+@media (min-width:1025px) {
+
+}
+
+@media (min-width:1025px) {
+
+}
+
+@media (min-width:768px) {
+
+}
+
+@media (max-width:1024px) {
+
+}
+
+@media (min-width:768px) {
+
+}
+
+@media (max-width:1170px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1025px) {
+
+}
+
+@media (min-width:450px) {
 
 }
 
