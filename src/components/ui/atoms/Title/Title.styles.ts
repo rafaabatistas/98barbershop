@@ -24,11 +24,11 @@ const titleModifiers = {
 };
 
 export const Title = styled.h1<TitleProps>`
-  ${({ theme, size }) => css`
+  ${({ theme, size, textAlign }) => css`
     color: ${theme.colors.primary};
     font-family: ${theme.font.family.primary};
     font-weight: ${theme.font.regular};
-    text-align: center;
+    text-align: ${textAlign};
 
     ${!!size && titleModifiers[size!](theme)}
   `}
