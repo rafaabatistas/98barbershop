@@ -329,6 +329,12 @@ exports[`<Footer /> Deve renderizar o componente <Footer /> 1`] = `
   }
 }
 
+@media (min-width:1440px) {
+  .c14 {
+    padding: 6rem 0rem;
+  }
+}
+
 @media (min-width:768px) {
   .c5 {
     font-size: 1.6rem;

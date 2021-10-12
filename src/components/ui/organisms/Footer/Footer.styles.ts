@@ -73,6 +73,10 @@ export const BoxInfoLocation = styled.div`
     ${media.greaterThan('medium')`
       order: 2;
     `};
+
+    ${media.greaterThan('huge')`
+      padding: 6rem 0rem;
+    `};
   `}
 `;
 
