@@ -311,28 +311,44 @@ exports[`<Home /> Deve renderizar o componente <Home /> 1`] = `
 }
 
 @media (min-width:769px) {
+
+}
+
+@media (min-width:769px) {
   .c2 {
     width: auto;
   }
 }
 
-@media (min-width:768px) {
-
-}
-
-@media (min-width:768px) {
-
-}
-
-@media (min-width:768px) {
-
-}
-
-@media (min-width:768px) {
-
-}
-
 @media (min-width:1170px) {
+
+}
+
+@media (min-width:768px) {
+
+}
+
+@media (min-width:768px) {
+
+}
+
+@media (min-width:768px) {
+
+}
+
+@media (min-width:768px) {
+
+}
+
+@media (min-width:768px) {
+
+}
+
+@media (min-width:768px) {
+
+}
+
+@media (min-width:768px) {
 
 }
 
