@@ -80,6 +80,7 @@ exports[`<Review /> Deve renderizar o componente <Review /> 1`] = `
 .c7 {
   width: calc(100% + 2rem);
   height: 0.2rem;
+  border-radius: 0.2rem;
   background: rgba(255,255,255,0.3);
   margin-top: 0.5rem;
   margin-left: calc(-2rem / 2);
@@ -472,6 +473,7 @@ exports[`<Review /> Deve renderizar o componente <Review /> 1`] = `
 @media (min-width:768px) {
   .c6 {
     font-size: 5.0rem;
+    text-align: center;
   }
 }
 

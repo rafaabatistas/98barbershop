@@ -24,7 +24,7 @@ export const NavList = () => {
           { nav: 'Sobre', link: 'sobre' },
           { nav: 'Serviços', link: 'servicos' },
           { nav: 'Equipe', link: 'equipe' },
-          { nav: 'Opinião', link: 'opiniao' },
+          { nav: 'Avaliações', link: 'avaliacao' },
           { nav: 'FeedBack', link: 'feedBack' }
         ]}
       >

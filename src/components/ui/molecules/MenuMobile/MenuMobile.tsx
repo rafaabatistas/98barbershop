@@ -34,8 +34,8 @@ export const MenuMobile = ({ isOpen, setIsOpen }: MenuMobileProps) => {
           </S.MenuLink>
         </S.List>
         <S.List isActive={isActive === 'opiniao'}>
-          <S.MenuLink to="opiniao" aria-label="Opinião" onSetActive={setIsActive} onClick={() => setIsOpen(!isOpen)}>
-            Opinião
+          <S.MenuLink to="avaliacao" aria-label="Opinião" onSetActive={setIsActive} onClick={() => setIsOpen(!isOpen)}>
+            Avaliações
           </S.MenuLink>
         </S.List>
         <S.List isActive={isActive === 'feedback'}>
