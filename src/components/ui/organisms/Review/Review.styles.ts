@@ -10,16 +10,20 @@ export const Wrapper = styled.main`
       display: flex;
     }
 
-    .slick-slide > div {
-      display: flex;
-      flex: 1 0 auto;
-      height: 100%;
-      transition: all linear 0.5s;
+    .slick-slide {
+      transition: all linear 0.3s;
+
+      & > div {
+        display: flex;
+        flex: 1 0 auto;
+        height: 100%;
+      }
+
+      &:not(.slick-center) {
+        transform: scale(0.9);
+      }
     }
 
-    .slick-slide:not(.slick-center) {
-      transform: scale(0.9);
-    }
   }
 
     .slick-dots {
