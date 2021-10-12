@@ -405,53 +405,45 @@ exports[`<Footer /> Deve renderizar o componente <Footer /> 1`] = `
     <div
       class="c6"
     >
-      <div
-        class="react-reveal"
+      <h3
+        class="c7"
       >
-        <h3
-          class="c7"
-        >
-          Siga-nos
-        </h3>
-      </div>
+        Siga-nos
+      </h3>
       <div
-        class="react-reveal"
+        class="c8"
       >
         <div
-          class="c8"
+          class="c9"
         >
-          <div
-            class="c9"
+          <a
+            class="c10"
+            href="https://www.instagram.com/98barbershop/"
+            rel="noreferrer noopener"
+            target="_blank"
           >
-            <a
-              class="c10"
-              href="https://www.instagram.com/98barbershop/"
-              rel="noreferrer noopener"
-              target="_blank"
-            >
-              <img
-                alt="Link que leva para a página no instagram"
-                class="c11"
-                src="/assets/svg/instagram-icon.svg"
-              />
-            </a>
-          </div>
-          <div
-            class="c12"
+            <img
+              alt="Link que leva para a página no instagram"
+              class="c11"
+              src="/assets/svg/instagram-icon.svg"
+            />
+          </a>
+        </div>
+        <div
+          class="c12"
+        >
+          <a
+            class="c10"
+            href="tel:+5511986548715"
+            rel="noreferrer noopener"
+            target="_blank"
           >
-            <a
-              class="c10"
-              href="tel:+5511986548715"
-              rel="noreferrer noopener"
-              target="_blank"
-            >
-              <img
-                alt="Link que mostra número do Whatsapp"
-                class="c11"
-                src="/assets/svg/whatsapp-icon.svg"
-              />
-            </a>
-          </div>
+            <img
+              alt="Link que mostra número do Whatsapp"
+              class="c11"
+              src="/assets/svg/whatsapp-icon.svg"
+            />
+          </a>
         </div>
       </div>
     </div>
@@ -507,28 +499,20 @@ exports[`<Footer /> Deve renderizar o componente <Footer /> 1`] = `
         />
       </svg>
     </a>
-    <div
-      class="react-reveal"
+    <p
+      class="c19"
     >
-      <p
-        class="c19"
-      >
-        Rua Caminho Encanto 334 - Guarulhos - SP
-      </p>
-    </div>
-    <div
-      class="react-reveal"
+      Rua Caminho Encanto 334 - Guarulhos - SP
+    </p>
+    <p
+      class="c19"
     >
-      <p
-        class="c19"
-      >
-        Copyright ©2021 
-        <span>
-          98Barbershop
-        </span>
-        . Todos os direitos reservados
-      </p>
-    </div>
+      Copyright ©2021 
+      <span>
+        98Barbershop
+      </span>
+      . Todos os direitos reservados
+    </p>
   </div>
 </footer>
 `;

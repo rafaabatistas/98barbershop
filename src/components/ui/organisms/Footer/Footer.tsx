@@ -1,11 +1,10 @@
 import * as S from './Footer.styles';
 
-import Fade from 'react-reveal/Fade';
 import Link from 'next/link';
 
 import { SocialMedia } from '~atoms/SocialMedia/SocialMedia';
 import { Container } from '~atoms/Container/Container';
-import { Logotipo } from '../../atoms/Logotipo/Logotipo';
+import { Logotipo } from '~atoms/Logotipo/Logotipo';
 
 export const Footer = () => (
   <S.Footer>
@@ -19,22 +18,20 @@ export const Footer = () => (
       </S.BoxLogo>
 
       <S.BoxInfoSocialMedia>
-        <Fade>
-          <S.Heading>Siga-nos</S.Heading>
-          <S.BoxSocialMedia>
-            <SocialMedia
-              marginRight
-              link="https://www.instagram.com/98barbershop/"
-              image="/assets/svg/instagram-icon.svg"
-              alt="Link que leva para a página no instagram"
-            />
-            <SocialMedia
-              link="tel:+5511986548715"
-              image="/assets/svg/whatsapp-icon.svg"
-              alt="Link que mostra número do Whatsapp"
-            />
-          </S.BoxSocialMedia>
-        </Fade>
+        <S.Heading>Siga-nos</S.Heading>
+        <S.BoxSocialMedia>
+          <SocialMedia
+            marginRight
+            link="https://www.instagram.com/98barbershop/"
+            image="/assets/svg/instagram-icon.svg"
+            alt="Link que leva para a página no instagram"
+          />
+          <SocialMedia
+            link="tel:+5511986548715"
+            image="/assets/svg/whatsapp-icon.svg"
+            alt="Link que mostra número do Whatsapp"
+          />
+        </S.BoxSocialMedia>
       </S.BoxInfoSocialMedia>
       <S.BoxInfoInstitutional>
         <S.Heading>Institucional</S.Heading>
@@ -54,12 +51,10 @@ export const Footer = () => (
         <S.Arrow size={25} />
       </S.BoxIcon>
 
-      <Fade>
-        <S.Description size="small">Rua Caminho Encanto 334 - Guarulhos - SP</S.Description>
-        <S.Description size="small">
-          Copyright ©2021 <span>98Barbershop</span>. Todos os direitos reservados
-        </S.Description>
-      </Fade>
+      <S.Description size="small">Rua Caminho Encanto 334 - Guarulhos - SP</S.Description>
+      <S.Description size="small">
+        Copyright ©2021 <span>98Barbershop</span>. Todos os direitos reservados
+      </S.Description>
     </S.BoxInfoLocation>
   </S.Footer>
 );
