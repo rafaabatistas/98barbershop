@@ -7,11 +7,13 @@ import { BannerSlider } from '~organisms/BannerSlider/BannerSlider';
 import { SectionAbout } from '~organisms/SectionAbout/SectionAbout';
 import { MainServices } from '~organisms/MainServices/MainServices';
 import { Review } from '~organisms/Review/Review';
+import { SectionContributors } from '~organisms/SectionContributors/SectionContributors';
 
 import items from '~organisms/BannerSlider/mock';
 import services from '~organisms/MainServices/mock';
 import reviews from '~organisms/Review/mock';
 import places from '~molecules/Map/map.mock';
+import contributors from '~organisms/SectionContributors/contributors.mock';
 
 const Map = dynamic(() => import('~molecules/Map/Map'), { ssr: false });
 
@@ -27,6 +29,9 @@ const HomePage = () => {
       </Element>
       <Element name="servicos">
         <MainServices items={services} />
+      </Element>
+      <Element name="equipe">
+        <SectionContributors contributors={contributors} />
       </Element>
       <Element name="avaliacao">
         <Review items={reviews} />
