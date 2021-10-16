@@ -13,7 +13,7 @@ export const SocialMedia = styled.div<SocialProps>`
   ${({ theme, marginRight }) => css`
     width: 50px;
     height: 50px;
-    background-color: ${theme.colors.gray};
+    background-color: ${theme.colors.darkGray};
     border-radius: 50%;
 
     ${!!marginRight && socialMediaModifiers.marginRight}
