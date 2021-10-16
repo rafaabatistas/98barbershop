@@ -1,45 +1,43 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Footer /> Deve renderizar o componente <Footer /> 1`] = `
-.c0 {
-  width: 100%;
-  height: 420px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  background-color: #080808;
-  color: white;
-  position: absolute;
-}
-
-.c1 {
-  width: 100%;
-  height: 100%;
-  max-width: 1290px;
-  margin: 0 15px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+.c17 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
 }
 
 .c2 {
+  max-width: 129rem;
+  margin: 0 15px;
+}
+
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background: #181818;
+  color: white;
+}
+
+.c0 .c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 5rem 0;
+}
+
+.c3 {
   width: auto;
   display: -webkit-box;
   display: -webkit-flex;
@@ -56,12 +54,38 @@ exports[`<Footer /> Deve renderizar o componente <Footer /> 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  gap: 2rem;
+}
+
+.c6 {
+  width: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
 }
 
-.c9 {
+.c14 {
   width: auto;
   display: -webkit-box;
   display: -webkit-flex;
@@ -78,12 +102,76 @@ exports[`<Footer /> Deve renderizar o componente <Footer /> 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  position: relative;
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
+  gap: 2rem;
+  background: #080808;
+  background-attachment: fixed;
+  padding: 3rem 1.5rem;
 }
 
-.c11 {
+.c15 {
+  width: 10rem;
+  position: absolute;
+  bottom: 99.5%;
+  color: #080808;
+}
+
+.c5 {
+  font-size: 1.2rem;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.c5 span {
+  color: #1affea;
+}
+
+.c19 {
+  font-size: 1rem;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.c19 span {
+  color: #1affea;
+}
+
+.c16 {
+  position: absolute;
+  width: 5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  bottom: calc(99.5% - 1.5rem);
+  cursor: pointer;
+}
+
+.c16 svg {
+  -webkit-transition: linear 0.3s;
+  transition: linear 0.3s;
+}
+
+.c16:hover svg,
+.c16:focus svg {
+  color: #1affea;
+}
+
+.c18 {
+  color: #FFFFFF;
+}
+
+.c13 {
   width: auto;
   display: -webkit-box;
   display: -webkit-flex;
@@ -100,12 +188,33 @@ exports[`<Footer /> Deve renderizar o componente <Footer /> 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
 }
 
-.c4 {
+.c13 a {
+  font-size: 1.6rem;
+  color: #FFFFFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c13 a:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.c13 a:hover,
+.c13 a:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  outline: none;
+}
+
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -116,29 +225,29 @@ exports[`<Footer /> Deve renderizar o componente <Footer /> 1`] = `
   justify-content: center;
 }
 
-.c3 {
+.c7 {
   font-family: Poppins,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
   font-weight: 700;
   font-size: 1.8rem;
   margin-bottom: 3rem;
 }
 
-.c5 {
+.c9 {
   width: 50px;
   height: 50px;
-  background-color: #181818;
+  background-color: #080808;
   border-radius: 50%;
   margin-right: 2rem;
 }
 
-.c8 {
+.c12 {
   width: 50px;
   height: 50px;
-  background-color: #181818;
+  background-color: #080808;
   border-radius: 50%;
 }
 
-.c6 {
+.c10 {
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -158,58 +267,46 @@ exports[`<Footer /> Deve renderizar o componente <Footer /> 1`] = `
   transition: all 0.3s linear;
 }
 
-.c6:hover,
-.c6:focus {
+.c10:hover,
+.c10:focus {
   box-shadow: 0 0 1rem #1affea;
   outline: none;
 }
 
-.c7 {
+.c11 {
   width: 20px;
   height: 20px;
 }
 
-.c10 {
-  font-size: 1.6rem;
-  font-family: Poppins,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
-  font-weight: 400;
-  text-align: center;
+.c4 {
   color: #FFFFFF;
-  margin-bottom: 4.5rem;
+  cursor: pointer;
+  width: 7rem;
+  height: 6rem;
 }
 
-.c10 span {
-  color: #1affea;
-}
-
-.c12 {
-  font-size: 1.8rem;
-  font-family: Poppins,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
-  font-weight: 400;
-  text-align: center;
-  color: #FFFFFF;
-}
-
-.c12 span {
-  color: #1affea;
-}
-
-@media (min-width:768px) {
-  .c0 {
-    height: 180px;
+@media (min-width:1170px) {
+  .c2 {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 @media (min-width:768px) {
-  .c1 {
+  .c0 .c1 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 10rem 0rem;
   }
 }
 
 @media (min-width:768px) {
-  .c9 {
+  .c3 {
     -webkit-order: 2;
     -ms-flex-order: 2;
     order: 2;
@@ -217,10 +314,50 @@ exports[`<Footer /> Deve renderizar o componente <Footer /> 1`] = `
 }
 
 @media (min-width:768px) {
-  .c11 {
+  .c6 {
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+}
+
+@media (min-width:768px) {
+  .c14 {
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+}
+
+@media (min-width:1440px) {
+  .c14 {
+    padding: 6rem 0rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c19 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c13 {
     -webkit-order: 3;
     -ms-flex-order: 3;
     order: 3;
+  }
+}
+
+@media (min-width:769px) {
+  .c4 {
+    margin: 0 8.0rem;
   }
 }
 
@@ -228,115 +365,154 @@ exports[`<Footer /> Deve renderizar o componente <Footer /> 1`] = `
   class="c0"
 >
   <div
-    class="c1"
+    class="c1 c2"
   >
     <div
-      class="c2"
+      class="c3"
     >
       <div
-        class="react-reveal"
+        class="c4"
+        color="white"
       >
-        <h3
-          class="c3"
+        <svg
+          aria-label="98Barbershop"
+          role="img"
+          viewBox="0 0 168.27 141.21"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          Siga-nos
-        </h3>
+          <g>
+            <path
+              d="M43.89 5H80.7c2.59 0 9.4 0 9.4 7.62 0 1.14 0 2.27-24.64 117.24-2.46 11.35-10.71 11.35-13.62 11.35H6.76A2.57 2.57 0 0 1 4 138.78c0-.16.16-.49 3.24-15.24a4.15 4.15 0 0 1 3.89-3.25h30.65l5-23.83H24.59c-2.59 0-9.4 0-9.4-7.63 0-1.13.16-2.27 14.92-72.48C32.54 5 41 5 43.89 5Zm10.22 20.92L43.4 75.7h7.79l10.7-49.78ZM158.86 5c2.6 0 9.41 0 9.41 7.62 0 1.14-.17 2.27-9.9 48.32-2.43 11.35-10.54 11.35-13.45 11.35l-.17.82c2.6 0 9.08 0 9.08 7.45 0 1.14-.16 2.44-10.05 49.3-2.43 11.35-10.86 11.35-13.78 11.35H92.7c-2.59 0-9.57 0-9.57-7.62 0-1.14.17-2.27 10.22-49.13 2.43-11.35 10.54-11.35 13.46-11.35l.16-.82c-2.59 0-9.08 0-9.08-7.45 0-1.14.16-2.44 9.89-48.49C110.21 5 118.65 5 121.57 5Zm-47.35 115.29h7.78l7.79-36.81h-7.79Zm12.16-57.56h7.79l7.94-36.81h-7.78Z"
+              fill="currentColor"
+            />
+          </g>
+          <g>
+            <path
+              d="M40.89 1H77.7c2.59 0 9.4 0 9.4 7.62 0 1.14 0 2.27-24.64 117.24-2.46 11.35-10.71 11.35-13.62 11.35H3.76A2.57 2.57 0 0 1 1 134.78c0-.16.16-.49 3.24-15.24a4.15 4.15 0 0 1 3.89-3.25h30.65l5-23.83H21.59c-2.59 0-9.4 0-9.4-7.63 0-1.13.16-2.27 14.92-72.48C29.54 1 38 1 40.89 1Zm10.22 20.92L40.4 71.7h7.79l10.7-49.78ZM155.86 1c2.6 0 9.41 0 9.41 7.62 0 1.14-.17 2.27-9.9 48.32-2.43 11.35-10.54 11.35-13.45 11.35l-.17.82c2.6 0 9.08 0 9.08 7.45 0 1.14-.16 2.44-10.05 49.3-2.43 11.35-10.86 11.35-13.78 11.35H89.7c-2.59 0-9.57 0-9.57-7.62 0-1.14.17-2.27 10.22-49.13 2.43-11.35 10.54-11.35 13.46-11.35l.16-.82c-2.59 0-9.08 0-9.08-7.45 0-1.14.16-2.44 9.89-48.49C107.21 1 115.65 1 118.57 1Zm-47.35 115.29h7.78l7.79-36.81h-7.79Zm12.16-57.56h7.79l7.94-36.81h-7.78Z"
+              fill="none"
+              stroke="#1affea"
+              stroke-width="2px"
+            />
+          </g>
+        </svg>
       </div>
+      <p
+        class="c5"
+      >
+        A 98 BarberShop é um espaço de serviços masculinos que combina valores tradicionais com estilo moderno. Uma barbearia contemporânea com uma atmosfera informal e alegre.
+      </p>
+    </div>
+    <div
+      class="c6"
+    >
+      <h3
+        class="c7"
+      >
+        Siga-nos
+      </h3>
       <div
-        class="react-reveal"
+        class="c8"
       >
         <div
-          class="c4"
+          class="c9"
         >
-          <div
-            class="c5"
+          <a
+            class="c10"
+            href="https://www.instagram.com/98barbershop/"
+            rel="noreferrer noopener"
+            target="_blank"
           >
-            <a
-              class="c6"
-              href="https://www.instagram.com/98barbershop/"
-              rel="noreferrer noopener"
-              target="_blank"
-            >
-              <img
-                alt="Link que leva para a página no instagram"
-                class="c7"
-                src="/assets/svg/instagram-icon.svg"
-              />
-            </a>
-          </div>
-          <div
-            class="c8"
+            <img
+              alt="Link que leva para a página no instagram"
+              class="c11"
+              src="/assets/svg/instagram-icon.svg"
+            />
+          </a>
+        </div>
+        <div
+          class="c12"
+        >
+          <a
+            class="c10"
+            href="tel:+5511986548715"
+            rel="noreferrer noopener"
+            target="_blank"
           >
-            <a
-              class="c6"
-              href="tel:+5511986548715"
-              rel="noreferrer noopener"
-              target="_blank"
-            >
-              <img
-                alt="Link que mostra número do Whatsapp"
-                class="c7"
-                src="/assets/svg/whatsapp-icon.svg"
-              />
-            </a>
-          </div>
+            <img
+              alt="Link que mostra número do Whatsapp"
+              class="c11"
+              src="/assets/svg/whatsapp-icon.svg"
+            />
+          </a>
         </div>
       </div>
     </div>
     <div
-      class="c9"
+      class="c13"
     >
-      <div
-        class="react-reveal"
+      <h3
+        class="c7"
       >
-        <p
-          class="c10"
-          color="white"
-          data-testid="description"
-        >
-          Rua Caminho Encanto 334 - Guarulhos - SP
-        </p>
-      </div>
-      <div
-        class="react-reveal"
+        Institucional
+      </h3>
+      <a
+        href="/#"
       >
-        <p
-          class="c10"
-          color="white"
-          data-testid="description"
-        >
-          Copyright ©2021 
-          <span>
-            98Barbershop
-          </span>
-          . Todos os direitos reservados
-        </p>
-      </div>
+        Termos de Uso
+      </a>
+      <a
+        href="/#"
+      >
+        Política de Privacidade
+      </a>
     </div>
-    <div
-      class="c11"
+  </div>
+  <div
+    class="c14"
+  >
+    <svg
+      class="c15"
+      viewBox="0 0 101 24"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <div
-        class="react-reveal"
+      <path
+        d="M50.49 0C40.096 0 8.415 23.94 0 23.94h100.486C92.566 23.94 60.886 0 50.49 0Z"
+        fill="currentColor"
+      />
+    </svg>
+    <a
+      class="c16"
+    >
+      <svg
+        aria-hidden="true"
+        class="c17 c18"
+        fill="currentColor"
+        focusable="false"
+        height="25"
+        viewBox="0 0 16 16"
+        width="25"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <h3
-          class="c3"
-        >
-          Institucional
-        </h3>
-      </div>
-      <div
-        class="react-reveal"
-      >
-        <p
-          class="c12"
-          color="white"
-          data-testid="description"
-        >
-          Termos de Uso
-        </p>
-      </div>
-    </div>
+        <path
+          d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </a>
+    <p
+      class="c19"
+    >
+      Rua Caminho Encanto 334 - Guarulhos - SP
+    </p>
+    <p
+      class="c19"
+    >
+      Copyright ©2021 
+      <span>
+        98Barbershop
+      </span>
+      . Todos os direitos reservados
+    </p>
   </div>
 </footer>
 `;
