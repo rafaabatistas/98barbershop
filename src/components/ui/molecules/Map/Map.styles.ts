@@ -4,7 +4,6 @@ import { MapContainer } from 'react-leaflet';
 export const Container = styled.div`
   ${({ theme }) => css`
     position: relative;
-    margin: 1.5rem 0;
     z-index: 2;
 
     .leaflet-container {
@@ -36,7 +35,7 @@ export const ArrowMoldingDown = styled.svg`
     position: absolute;
     width: 5rem;
     z-index: 400;
-    color: ${theme.colors.darkGray};
+    color: ${theme.colors.gray};
     bottom: -0.1rem;
     left: 50%;
     transform: translate(-50%, 0);
