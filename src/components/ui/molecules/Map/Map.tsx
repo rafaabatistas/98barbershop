@@ -36,7 +36,15 @@ const CustomTileLayer = () => {
 
 const Map = ({ places }: MapProps) => (
   <S.Container>
-    <S.Wrapper center={[-23.403033674122092, -46.46941343726713]} zoom={16}>
+    <S.Wrapper
+      center={[-23.403033674122092, -46.46941343726713]}
+      zoom={16}
+      minZoom={3}
+      maxBounds={[
+        [-180, 180],
+        [180, -180]
+      ]}
+    >
       <CustomTileLayer />
       {places?.map(({ id, name, location }) => {
         const { latitude, longitude } = location;

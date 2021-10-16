@@ -2,8 +2,15 @@ import styled, { css } from 'styled-components';
 import { MapContainer } from 'react-leaflet';
 
 export const Container = styled.div`
-  position: relative;
-  margin: 1.5rem 0;
+  ${({ theme }) => css`
+    position: relative;
+    margin: 1.5rem 0;
+    z-index: 2;
+
+    .leaflet-container {
+      background-color: ${theme.colors.darkGray};
+    }
+  `}
 `;
 
 export const Wrapper = styled(MapContainer)`
