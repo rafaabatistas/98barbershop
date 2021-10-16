@@ -608,7 +608,7 @@ exports[`<Home /> Deve renderizar o componente <Home /> 1`] = `
               aria-selected="false"
               class="c6"
             >
-              Opinião
+              Avaliações
             </a>
           </li>
           <li
@@ -711,7 +711,7 @@ exports[`<Home /> Deve renderizar o componente <Home /> 1`] = `
                 aria-label="Opinião"
                 class="c14"
               >
-                Opinião
+                Avaliações
               </a>
             </li>
             <li

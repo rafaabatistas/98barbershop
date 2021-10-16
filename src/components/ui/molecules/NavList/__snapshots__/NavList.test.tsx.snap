@@ -318,7 +318,7 @@ exports[`<NavList /> Deve Renderizar todos os components de <NavList /> 1`] = `
             aria-selected="false"
             class="c5"
           >
-            Opinião
+            Avaliações
           </a>
         </li>
         <li
@@ -421,7 +421,7 @@ exports[`<NavList /> Deve Renderizar todos os components de <NavList /> 1`] = `
               aria-label="Opinião"
               class="c12"
             >
-              Opinião
+              Avaliações
             </a>
           </li>
           <li

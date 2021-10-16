@@ -182,7 +182,7 @@ exports[`<MenuMobile /> Deve renderizar os links do componente <MenuMobile /> 1`
         aria-label="Opinião"
         class="c3"
       >
-        Opinião
+        Avaliações
       </a>
     </li>
     <li
