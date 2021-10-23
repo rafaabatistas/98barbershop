@@ -1,0 +1,350 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SectionContributors /> Deve renderizar o componente <SectionContributors /> 1`] = `
+.c1 {
+  max-width: 129rem;
+  margin: 0 15px;
+}
+
+.c8 {
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.c9 {
+  max-width: 15.5rem;
+  height: 28.6rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+}
+
+.c10 {
+  width: 15.5rem;
+  height: 22rem;
+  object-fit: cover;
+  border-radius: 1rem;
+  background-size: cover;
+  background-position: center;
+}
+
+.c11 {
+  color: #FFFFFF;
+  font-family: Poppins,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  margin: 3rem 0 1.4rem;
+}
+
+.c12 {
+  color: #A5A5A5;
+  font-family: Poppins,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  font-style: italic;
+}
+
+.c2 {
+  color: #1affea;
+  font-family: Dancing Script;
+  font-weight: 500;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.c3 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 3.2rem;
+}
+
+.c4 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  color: #FFFFFF;
+  font-family: Abril Fatface;
+  font-weight: 400;
+  font-size: 3.0rem;
+  text-align: center;
+}
+
+.c5 {
+  width: calc(100% + 2rem);
+  height: 0.2rem;
+  border-radius: 0.2rem;
+  background: rgba(255,255,255,0.3);
+  margin-top: 0.5rem;
+  margin-left: calc(-2rem / 2);
+}
+
+.c6 {
+  font-size: 1.2rem;
+  font-family: Poppins,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
+  font-weight: 400;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 4.5rem;
+}
+
+.c6 span {
+  color: #1affea;
+}
+
+.c7 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 3.2rem;
+}
+
+@media (min-width:1170px) {
+  .c1 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width:1440px) {
+  .c0 {
+    min-height: 106rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width:450px) {
+  .c9 {
+    max-width: 32rem;
+    height: 52.2rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c9 {
+    max-width: 41rem;
+    height: 64.2rem;
+  }
+}
+
+@media (min-width:450px) {
+  .c10 {
+    width: 32rem;
+    height: 40.2rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c10 {
+    width: 41rem;
+    height: 54.6rem;
+  }
+}
+
+@media (min-width:450px) {
+  .c11 {
+    font-size: 2.2rem;
+    line-height: 3.2rem;
+  }
+}
+
+@media (min-width:450px) {
+  .c12 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    font-size: 4.5rem;
+    margin-bottom: 1.6rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    margin-bottom: 8.0rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    font-size: 5.0rem;
+    text-align: center;
+  }
+}
+
+<section
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <div
+      class="react-reveal"
+    >
+      <h1
+        class="c2"
+      >
+        Os Melhores
+      </h1>
+    </div>
+    <div
+      class="react-reveal"
+    >
+      <div
+        class="c3"
+      >
+        <h2
+          class="c4"
+        >
+          Nossos Profissionais
+          <div
+            aria-label="LineTitle"
+            class="c5"
+          />
+        </h2>
+      </div>
+    </div>
+    <div
+      class="react-reveal"
+    >
+      <p
+        class="c6"
+        color="white"
+        data-testid="description"
+      />
+    </div>
+    <div
+      class="c7"
+    />
+  </div>
+  <div
+    class="c1 c8"
+  >
+    <div
+      class="c9"
+    >
+      <img
+        alt="Foto do nosso Barbeiro, Cleber Mariano"
+        class="c10"
+        loading="lazy"
+        src="/assets/img/contributors-1.jpg"
+      />
+      <h3
+        class="c11"
+      >
+        Cleber Mariano
+      </h3>
+      <p
+        class="c12"
+      >
+        Barbeiro
+      </p>
+    </div>
+    <div
+      class="c9"
+    >
+      <img
+        alt="Foto do nosso Barbeiro, Luan Silva"
+        class="c10"
+        loading="lazy"
+        src="/assets/img/contributors-2.jpg"
+      />
+      <h3
+        class="c11"
+      >
+        Luan Silva
+      </h3>
+      <p
+        class="c12"
+      >
+        Barbeiro
+      </p>
+    </div>
+    <div
+      class="c9"
+    >
+      <img
+        alt="Foto do nosso Tatuador, Fabrício Marques"
+        class="c10"
+        loading="lazy"
+        src="/assets/img/contributors-3.jpg"
+      />
+      <h3
+        class="c11"
+      >
+        Fabrício Marques
+      </h3>
+      <p
+        class="c12"
+      >
+        Tatuador
+      </p>
+    </div>
+  </div>
+</section>
+`;
