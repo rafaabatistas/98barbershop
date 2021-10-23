@@ -289,7 +289,9 @@ exports[`<SectionContributors /> Deve renderizar o componente <SectionContributo
       class="c9"
     >
       <img
+        alt="Foto do nosso Barbeiro, Cleber Mariano"
         class="c10"
+        loading="lazy"
         src="/assets/img/contributors-1.jpg"
       />
       <h3
@@ -307,7 +309,9 @@ exports[`<SectionContributors /> Deve renderizar o componente <SectionContributo
       class="c9"
     >
       <img
+        alt="Foto do nosso Barbeiro, Luan Silva"
         class="c10"
+        loading="lazy"
         src="/assets/img/contributors-2.jpg"
       />
       <h3
@@ -325,7 +329,9 @@ exports[`<SectionContributors /> Deve renderizar o componente <SectionContributo
       class="c9"
     >
       <img
+        alt="Foto do nosso Tatuador, Fabrício Marques"
         class="c10"
+        loading="lazy"
         src="/assets/img/contributors-3.jpg"
       />
       <h3

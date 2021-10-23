@@ -18,7 +18,7 @@ export const SectionContributors = ({ contributors }: SectionContributorsProps) 
     <S.ContainerContributors>
       {contributors?.map(({ src, name, occupation }, index) => (
         <S.BoxContributors key={`key-${name}-${index}`}>
-          <S.Image src={src} />
+          <S.Image src={src} alt={`Foto do nosso ${occupation}, ${name}`} loading="lazy" />
           <S.Name>{name}</S.Name>
           <S.Occupation>{occupation}</S.Occupation>
         </S.BoxContributors>
