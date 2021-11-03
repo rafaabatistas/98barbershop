@@ -8,13 +8,15 @@ const props: HeadingProps = {
   title: 'Bem Vindo a BarberShop',
   subtitle: 'We Are BarberShop!',
   description: 'Enjoy the Ultimate Relaxed Grooming Experience For Men every time you step into the Boardroom',
-  buttonLabelOne: 'Marcar Hora',
-  buttonLabelTwo: 'Saiba Mais'
+  buttonTypeOne: 'link',
+  buttonTypeTwo: 'link'
 };
 
 describe('<Heading />', () => {
   it('Deve renderizar todos os componentes o componente <Heading />', () => {
-    const { container } = renderWithTheme(<Heading buttons={2} {...props} />);
+    const { container } = renderWithTheme(
+      <Heading buttonLabelOne="Marcar Hora" buttonLabelTwo="Saiba Mais" {...props} />
+    );
 
     expect(screen.getByRole('heading', { name: /Bem Vindo a BarberShop/i })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: /We Are BarberShop!/i })).toBeInTheDocument();
@@ -35,21 +37,21 @@ describe('<Heading />', () => {
   });
 
   it('Deve renderizar componente <Heading /> e verificar se só um botão é renderizados', () => {
-    renderWithTheme(<Heading buttons={1} {...props}></Heading>);
+    renderWithTheme(<Heading buttonLabelOne="Marcar Hora" {...props}></Heading>);
 
     expect(screen.getByRole('button', { name: /Marcar Hora/i })).toBeInTheDocument();
   });
 
   it('Deve renderizar o conteúdo do componente <Heading /> e verificar a margem dos botões', () => {
     renderWithTheme(
-      <Heading buttons={2} {...props}>
+      <Heading buttonLabelOne="Marcar Hora" buttonLabelTwo="Saiba Mais" {...props}>
         <h1>Content</h1>
       </Heading>
     );
 
     expect(screen.getByRole('heading', { name: /Content/i })).toBeInTheDocument();
 
-    expect(screen.getByRole('button', { name: /Marcar Hora/i }).parentElement?.parentElement).toHaveStyle({
+    expect(screen.getByRole('button', { name: /Marcar Hora/i }).parentElement).toHaveStyle({
       'margin-top': theme.spacings.medium
     });
   });

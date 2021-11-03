@@ -1,10 +1,9 @@
-import Fade from 'react-reveal/Fade';
-
 import { Container } from '~atoms/Container/Container';
 import { Title } from '~atoms/Title/Title';
 import { Subtitle } from '~atoms/Subtitle/Subtitle';
 import { Description } from '~atoms/Description/Description';
 import { Button } from '~atoms/Button/Button';
+import { ButtonScroll } from '../../atoms/ButtonScroll/ButtonScroll';
 
 import * as S from './Heading.styles';
 
@@ -13,9 +12,12 @@ export type HeadingProps = {
   subtitle: string;
   lineBottom?: boolean;
   description?: string;
-  buttons?: 1 | 2;
+  buttonTypeOne?: 'scroll' | 'link';
+  buttonTypeTwo?: 'scroll' | 'link';
   buttonLabelOne?: string;
   buttonLabelTwo?: string;
+  buttonLinkOne?: string;
+  buttonLinkTwo?: string;
   size?: 'normal' | 'large';
   children?: React.ReactNode;
 };
@@ -25,47 +27,43 @@ export const Heading = ({
   subtitle,
   lineBottom = false,
   description,
-  buttons,
+  buttonTypeOne,
+  buttonTypeTwo,
   buttonLabelOne,
   buttonLabelTwo,
+  buttonLinkOne = '',
+  buttonLinkTwo = '',
   size = 'normal',
   children
 }: HeadingProps) => (
   <Container>
-    <Fade delay={300} bottom>
-      <Title size={size}>{title}</Title>
-    </Fade>
+    <Title size={size}>{title}</Title>
 
-    <Fade delay={400} bottom>
-      <Subtitle lineBottom={lineBottom} size={size}>
-        {subtitle}
-      </Subtitle>
-    </Fade>
+    <Subtitle lineBottom={lineBottom} size={size}>
+      {subtitle}
+    </Subtitle>
 
-    <Fade delay={500} bottom>
-      <Description marginBottom size="xsmall">
-        {description}
-      </Description>
-    </Fade>
+    <Description marginBottom size="xsmall">
+      {description}
+    </Description>
 
     {children}
 
     <S.WrapperButtons hasChildren={!!children}>
-      {!!buttons &&
-        (buttons == 1 ? (
-          <Fade delay={600} left>
-            <Button>{buttonLabelOne}</Button>
-          </Fade>
+      {buttonLabelOne &&
+        (buttonTypeOne === 'link' ? (
+          <Button>{buttonLabelOne}</Button>
         ) : (
-          <>
-            <Fade delay={600} left>
-              <Button>{buttonLabelOne}</Button>
-            </Fade>
+          <ButtonScroll to={buttonLinkOne!}>{buttonLabelOne}</ButtonScroll>
+        ))}
 
-            <Fade delay={600} right>
-              <Button buttonStyle="secondary">{buttonLabelTwo}</Button>
-            </Fade>
-          </>
+      {buttonLabelTwo &&
+        (buttonTypeTwo === 'link' ? (
+          <Button buttonStyle="secondary">{buttonLabelTwo}</Button>
+        ) : (
+          <ButtonScroll buttonStyle="secondary" to={buttonLinkTwo!}>
+            {buttonLabelTwo}
+          </ButtonScroll>
         ))}
     </S.WrapperButtons>
   </Container>

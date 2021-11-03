@@ -5,16 +5,30 @@ export type BannerProps = {
   img: string;
 } & HeadingProps;
 
-export const Banner = ({ img, title, subtitle, description, buttons, buttonLabelOne, buttonLabelTwo }: BannerProps) => {
+export const Banner = ({
+  img,
+  title,
+  subtitle,
+  description,
+  buttonTypeOne,
+  buttonTypeTwo,
+  buttonLabelOne,
+  buttonLabelTwo,
+  buttonLinkOne,
+  buttonLinkTwo
+}: BannerProps) => {
   return (
     <S.Banner src={img}>
       <Heading
         title={title}
         subtitle={subtitle}
         description={description}
-        buttons={buttons}
+        buttonTypeOne={buttonTypeOne}
+        buttonTypeTwo={buttonTypeTwo}
         buttonLabelOne={buttonLabelOne}
         buttonLabelTwo={buttonLabelTwo}
+        buttonLinkOne={buttonLinkOne}
+        buttonLinkTwo={buttonLinkTwo}
         size="large"
       />
     </S.Banner>
