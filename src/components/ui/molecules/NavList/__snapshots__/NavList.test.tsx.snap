@@ -289,12 +289,8 @@ exports[`<NavList /> Deve Renderizar todos os components de <NavList /> 1`] = `
       </ul>
     </div>
     <div
-      class="react-reveal"
-    >
-      <div
-        data-testid="Logo"
-      />
-    </div>
+      data-testid="Logo"
+    />
     <div
       class="c2"
     >
@@ -343,99 +339,91 @@ exports[`<NavList /> Deve Renderizar todos os components de <NavList /> 1`] = `
     class="c8"
   >
     <div
-      class="react-reveal"
+      aria-label="Abrir e Fechar"
+      class="hamburger-react"
+      role="button"
+      style="cursor: pointer; height: 48px; position: relative; transition: 0.4s ease-out; user-select: none; width: 48px; outline: none; transform: none;"
+      tabindex="0"
     >
       <div
-        aria-label="Abrir e Fechar"
-        class="hamburger-react"
-        role="button"
-        style="cursor: pointer; height: 48px; position: relative; transition: 0.4s ease-out; user-select: none; width: 48px; outline: none; transform: none;"
-        tabindex="0"
-      >
-        <div
-          style="background: rgb(255, 255, 255); height: 3px; left: 9px; position: absolute; border-radius: 9em; width: 30px; top: 13px; transition: 0.4s ease-out; transform: none;"
-        />
-        <div
-          style="background: rgb(255, 255, 255); height: 3px; left: 9px; position: absolute; border-radius: 9em; width: 30px; top: 23px; transition: 0.4s ease-out; transform: none;"
-        />
-        <div
-          style="background: rgb(255, 255, 255); height: 3px; left: 9px; position: absolute; border-radius: 9em; width: 30px; top: 33px; transition: 0.4s ease-out; transform: none;"
-        />
-      </div>
+        style="background: rgb(255, 255, 255); height: 3px; left: 9px; position: absolute; border-radius: 9em; width: 30px; top: 13px; transition: 0.4s ease-out; transform: none;"
+      />
+      <div
+        style="background: rgb(255, 255, 255); height: 3px; left: 9px; position: absolute; border-radius: 9em; width: 30px; top: 23px; transition: 0.4s ease-out; transform: none;"
+      />
+      <div
+        style="background: rgb(255, 255, 255); height: 3px; left: 9px; position: absolute; border-radius: 9em; width: 30px; top: 33px; transition: 0.4s ease-out; transform: none;"
+      />
     </div>
     <div
-      class="react-reveal"
+      aria-hidden="true"
+      aria-label="Menu Full"
+      class="c9"
     >
-      <div
-        aria-hidden="true"
-        aria-label="Menu Full"
-        class="c9"
+      <ul
+        class="c10"
       >
-        <ul
-          class="c10"
+        <li
+          class="c11"
         >
-          <li
-            class="c11"
+          <a
+            aria-label="Home"
+            class="c12"
           >
-            <a
-              aria-label="Home"
-              class="c12"
-            >
-              Home
-            </a>
-          </li>
-          <li
-            class="c13"
+            Home
+          </a>
+        </li>
+        <li
+          class="c13"
+        >
+          <a
+            aria-label="Sobre"
+            class="c12"
           >
-            <a
-              aria-label="Sobre"
-              class="c12"
-            >
-              Sobre
-            </a>
-          </li>
-          <li
-            class="c13"
+            Sobre
+          </a>
+        </li>
+        <li
+          class="c13"
+        >
+          <a
+            aria-label="Serviços"
+            class="c12"
           >
-            <a
-              aria-label="Serviços"
-              class="c12"
-            >
-              Serviços
-            </a>
-          </li>
-          <li
-            class="c13"
+            Serviços
+          </a>
+        </li>
+        <li
+          class="c13"
+        >
+          <a
+            aria-label="Equipe"
+            class="c12"
           >
-            <a
-              aria-label="Equipe"
-              class="c12"
-            >
-              Equipe
-            </a>
-          </li>
-          <li
-            class="c13"
+            Equipe
+          </a>
+        </li>
+        <li
+          class="c13"
+        >
+          <a
+            aria-label="Opinião"
+            class="c12"
           >
-            <a
-              aria-label="Opinião"
-              class="c12"
-            >
-              Avaliações
-            </a>
-          </li>
-          <li
-            class="c13"
+            Avaliações
+          </a>
+        </li>
+        <li
+          class="c13"
+        >
+          <a
+            aria-label="FeedBack"
+            class="c12"
           >
-            <a
-              aria-label="FeedBack"
-              class="c12"
-            >
-              FeedBack
-            </a>
-          </li>
-        </ul>
-      </div>
+            FeedBack
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
 </ul>
