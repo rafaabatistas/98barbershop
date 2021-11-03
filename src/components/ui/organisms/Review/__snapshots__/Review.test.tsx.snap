@@ -21,7 +21,7 @@ exports[`<Review /> Deve renderizar o componente <Review /> 1`] = `
   transform: translate(-50%,0);
 }
 
-.c20 {
+.c19 {
   position: absolute;
   width: 5rem;
   color: #080808;
@@ -255,41 +255,10 @@ exports[`<Review /> Deve renderizar o componente <Review /> 1`] = `
 }
 
 .c18 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 4.5rem;
-  height: 4.5rem;
-  border-radius: 50%;
-  background-image: url(/assets/img/testUser.png);
-  background-size: cover;
-}
-
-.c18::before {
-  content: '';
-  position: absolute;
-  width: calc(100% + 0.5rem);
-  height: calc(100% + 0.5rem);
-  border-radius: 50%;
-  border: 0.2rem solid #1affea;
-}
-
-.c19 {
   text-transform: capitalize;
   font-size: 1.2rem;
   font-weight: 300;
   color: #A5A5A5;
-  margin-top: 1rem;
 }
 
 .c12 {
@@ -334,6 +303,7 @@ exports[`<Review /> Deve renderizar o componente <Review /> 1`] = `
   font-family: Kaushan Script;
   text-align: center;
   margin-bottom: 1.5rem;
+  word-wrap: break-word;
 }
 
 .c0 {
@@ -493,9 +463,21 @@ exports[`<Review /> Deve renderizar o componente <Review /> 1`] = `
 }
 
 @media (min-width:768px) {
+  .c18 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width:768px) {
   .c12 {
     width: 41rem;
     gap: 3rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c14 {
+    font-size: 1.4rem;
   }
 }
 
@@ -540,41 +522,29 @@ exports[`<Review /> Deve renderizar o componente <Review /> 1`] = `
     <div
       class="c3"
     >
-      <div
-        class="react-reveal"
+      <h1
+        class="c4"
       >
-        <h1
-          class="c4"
+        O Que Dizem de Nós
+      </h1>
+      <div
+        class="c5"
+      >
+        <h2
+          class="c6"
         >
-          O Que Dizem de Nós
-        </h1>
+          Nossas Avaliações
+          <div
+            aria-label="LineTitle"
+            class="c7"
+          />
+        </h2>
       </div>
-      <div
-        class="react-reveal"
-      >
-        <div
-          class="c5"
-        >
-          <h2
-            class="c6"
-          >
-            Nossas Avaliações
-            <div
-              aria-label="LineTitle"
-              class="c7"
-            />
-          </h2>
-        </div>
-      </div>
-      <div
-        class="react-reveal"
-      >
-        <p
-          class="c8"
-          color="white"
-          data-testid="description"
-        />
-      </div>
+      <p
+        class="c8"
+        color="white"
+        data-testid="description"
+      />
       <div
         class="c9"
       />
@@ -623,7 +593,7 @@ exports[`<Review /> Deve renderizar o componente <Review /> 1`] = `
                     >
                       Atentido por 
                       <span>
-                        Fabrício
+                        3
                       </span>
                     </p>
                     <div
@@ -688,13 +658,9 @@ exports[`<Review /> Deve renderizar o componente <Review /> 1`] = `
                     <div
                       class="c17"
                     >
-                      <div
-                        aria-label="User image"
-                        class="c18"
-                      />
                       <p
                         aria-label="User name"
-                        class="c19"
+                        class="c18"
                       >
                         -gabriel guedes
                       </p>
@@ -728,7 +694,7 @@ exports[`<Review /> Deve renderizar o componente <Review /> 1`] = `
                     >
                       Atentido por 
                       <span>
-                        Fabrício
+                        4
                       </span>
                     </p>
                     <div
@@ -793,13 +759,9 @@ exports[`<Review /> Deve renderizar o componente <Review /> 1`] = `
                     <div
                       class="c17"
                     >
-                      <div
-                        aria-label="User image"
-                        class="c18"
-                      />
                       <p
                         aria-label="User name"
-                        class="c19"
+                        class="c18"
                       >
                         -gabriel guedes
                       </p>
@@ -833,7 +795,7 @@ exports[`<Review /> Deve renderizar o componente <Review /> 1`] = `
                     >
                       Atentido por 
                       <span>
-                        Fabrício
+                        5
                       </span>
                     </p>
                     <div
@@ -898,13 +860,9 @@ exports[`<Review /> Deve renderizar o componente <Review /> 1`] = `
                     <div
                       class="c17"
                     >
-                      <div
-                        aria-label="User image"
-                        class="c18"
-                      />
                       <p
                         aria-label="User name"
-                        class="c19"
+                        class="c18"
                       >
                         -gabriel guedes
                       </p>
@@ -938,7 +896,7 @@ exports[`<Review /> Deve renderizar o componente <Review /> 1`] = `
                     >
                       Atentido por 
                       <span>
-                        Test
+                        6
                       </span>
                     </p>
                     <div
@@ -1003,13 +961,9 @@ exports[`<Review /> Deve renderizar o componente <Review /> 1`] = `
                     <div
                       class="c17"
                     >
-                      <div
-                        aria-label="User image"
-                        class="c18"
-                      />
                       <p
                         aria-label="User name"
-                        class="c19"
+                        class="c18"
                       >
                         -gabriel guedes
                       </p>
@@ -1043,7 +997,7 @@ exports[`<Review /> Deve renderizar o componente <Review /> 1`] = `
                     >
                       Atentido por 
                       <span>
-                        cleber
+                        Gabriel
                       </span>
                     </p>
                     <div
@@ -1103,18 +1057,14 @@ exports[`<Review /> Deve renderizar o componente <Review /> 1`] = `
                     <h5
                       class="c16"
                     >
-                      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout"
+                      "It is a "
                     </h5>
                     <div
                       class="c17"
                     >
-                      <div
-                        aria-label="User image"
-                        class="c18"
-                      />
                       <p
                         aria-label="User name"
-                        class="c19"
+                        class="c18"
                       >
                         -gabriel guedes
                       </p>
@@ -1148,7 +1098,7 @@ exports[`<Review /> Deve renderizar o componente <Review /> 1`] = `
                     >
                       Atentido por 
                       <span>
-                        Luan
+                        2
                       </span>
                     </p>
                     <div
@@ -1213,13 +1163,9 @@ exports[`<Review /> Deve renderizar o componente <Review /> 1`] = `
                     <div
                       class="c17"
                     >
-                      <div
-                        aria-label="User image"
-                        class="c18"
-                      />
                       <p
                         aria-label="User name"
-                        class="c19"
+                        class="c18"
                       >
                         -gabriel guedes
                       </p>
@@ -1253,7 +1199,7 @@ exports[`<Review /> Deve renderizar o componente <Review /> 1`] = `
                     >
                       Atentido por 
                       <span>
-                        Fabrício
+                        3
                       </span>
                     </p>
                     <div
@@ -1318,13 +1264,9 @@ exports[`<Review /> Deve renderizar o componente <Review /> 1`] = `
                     <div
                       class="c17"
                     >
-                      <div
-                        aria-label="User image"
-                        class="c18"
-                      />
                       <p
                         aria-label="User name"
-                        class="c19"
+                        class="c18"
                       >
                         -gabriel guedes
                       </p>
@@ -1358,7 +1300,7 @@ exports[`<Review /> Deve renderizar o componente <Review /> 1`] = `
                     >
                       Atentido por 
                       <span>
-                        Fabrício
+                        4
                       </span>
                     </p>
                     <div
@@ -1423,13 +1365,9 @@ exports[`<Review /> Deve renderizar o componente <Review /> 1`] = `
                     <div
                       class="c17"
                     >
-                      <div
-                        aria-label="User image"
-                        class="c18"
-                      />
                       <p
                         aria-label="User name"
-                        class="c19"
+                        class="c18"
                       >
                         -gabriel guedes
                       </p>
@@ -1463,7 +1401,7 @@ exports[`<Review /> Deve renderizar o componente <Review /> 1`] = `
                     >
                       Atentido por 
                       <span>
-                        Fabrício
+                        5
                       </span>
                     </p>
                     <div
@@ -1528,13 +1466,9 @@ exports[`<Review /> Deve renderizar o componente <Review /> 1`] = `
                     <div
                       class="c17"
                     >
-                      <div
-                        aria-label="User image"
-                        class="c18"
-                      />
                       <p
                         aria-label="User name"
-                        class="c19"
+                        class="c18"
                       >
                         -gabriel guedes
                       </p>
@@ -1568,7 +1502,7 @@ exports[`<Review /> Deve renderizar o componente <Review /> 1`] = `
                     >
                       Atentido por 
                       <span>
-                        Test
+                        6
                       </span>
                     </p>
                     <div
@@ -1633,13 +1567,9 @@ exports[`<Review /> Deve renderizar o componente <Review /> 1`] = `
                     <div
                       class="c17"
                     >
-                      <div
-                        aria-label="User image"
-                        class="c18"
-                      />
                       <p
                         aria-label="User name"
-                        class="c19"
+                        class="c18"
                       >
                         -gabriel guedes
                       </p>
@@ -1673,7 +1603,7 @@ exports[`<Review /> Deve renderizar o componente <Review /> 1`] = `
                     >
                       Atentido por 
                       <span>
-                        cleber
+                        Gabriel
                       </span>
                     </p>
                     <div
@@ -1733,18 +1663,14 @@ exports[`<Review /> Deve renderizar o componente <Review /> 1`] = `
                     <h5
                       class="c16"
                     >
-                      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout"
+                      "It is a "
                     </h5>
                     <div
                       class="c17"
                     >
-                      <div
-                        aria-label="User image"
-                        class="c18"
-                      />
                       <p
                         aria-label="User name"
-                        class="c19"
+                        class="c18"
                       >
                         -gabriel guedes
                       </p>
@@ -1778,7 +1704,7 @@ exports[`<Review /> Deve renderizar o componente <Review /> 1`] = `
                     >
                       Atentido por 
                       <span>
-                        Luan
+                        2
                       </span>
                     </p>
                     <div
@@ -1843,13 +1769,9 @@ exports[`<Review /> Deve renderizar o componente <Review /> 1`] = `
                     <div
                       class="c17"
                     >
-                      <div
-                        aria-label="User image"
-                        class="c18"
-                      />
                       <p
                         aria-label="User name"
-                        class="c19"
+                        class="c18"
                       >
                         -gabriel guedes
                       </p>
@@ -1883,7 +1805,7 @@ exports[`<Review /> Deve renderizar o componente <Review /> 1`] = `
                     >
                       Atentido por 
                       <span>
-                        Fabrício
+                        3
                       </span>
                     </p>
                     <div
@@ -1948,13 +1870,9 @@ exports[`<Review /> Deve renderizar o componente <Review /> 1`] = `
                     <div
                       class="c17"
                     >
-                      <div
-                        aria-label="User image"
-                        class="c18"
-                      />
                       <p
                         aria-label="User name"
-                        class="c19"
+                        class="c18"
                       >
                         -gabriel guedes
                       </p>
@@ -1988,7 +1906,7 @@ exports[`<Review /> Deve renderizar o componente <Review /> 1`] = `
                     >
                       Atentido por 
                       <span>
-                        Fabrício
+                        4
                       </span>
                     </p>
                     <div
@@ -2053,13 +1971,9 @@ exports[`<Review /> Deve renderizar o componente <Review /> 1`] = `
                     <div
                       class="c17"
                     >
-                      <div
-                        aria-label="User image"
-                        class="c18"
-                      />
                       <p
                         aria-label="User name"
-                        class="c19"
+                        class="c18"
                       >
                         -gabriel guedes
                       </p>
@@ -2093,7 +2007,7 @@ exports[`<Review /> Deve renderizar o componente <Review /> 1`] = `
                     >
                       Atentido por 
                       <span>
-                        Fabrício
+                        5
                       </span>
                     </p>
                     <div
@@ -2158,13 +2072,9 @@ exports[`<Review /> Deve renderizar o componente <Review /> 1`] = `
                     <div
                       class="c17"
                     >
-                      <div
-                        aria-label="User image"
-                        class="c18"
-                      />
                       <p
                         aria-label="User name"
-                        class="c19"
+                        class="c18"
                       >
                         -gabriel guedes
                       </p>
@@ -2198,7 +2108,7 @@ exports[`<Review /> Deve renderizar o componente <Review /> 1`] = `
                     >
                       Atentido por 
                       <span>
-                        Test
+                        6
                       </span>
                     </p>
                     <div
@@ -2263,13 +2173,9 @@ exports[`<Review /> Deve renderizar o componente <Review /> 1`] = `
                     <div
                       class="c17"
                     >
-                      <div
-                        aria-label="User image"
-                        class="c18"
-                      />
                       <p
                         aria-label="User name"
-                        class="c19"
+                        class="c18"
                       >
                         -gabriel guedes
                       </p>
@@ -2330,7 +2236,7 @@ exports[`<Review /> Deve renderizar o componente <Review /> 1`] = `
       </section>
     </div>
     <svg
-      class="c20"
+      class="c19"
       viewBox="0 0 50 19"
       xmlns="http://www.w3.org/2000/svg"
     >
