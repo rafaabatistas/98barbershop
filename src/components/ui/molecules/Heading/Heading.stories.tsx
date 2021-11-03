@@ -27,13 +27,15 @@ export default {
 export const Basic: Story<HeadingProps> = (args) => <Heading {...args} />;
 
 Basic.args = {
-  buttons: 2
+  buttonLabelOne: 'Marcar Hora',
+  buttonLabelTwo: 'Saiba Mais'
 };
 
 export const BasicWithoutButtons: Story<HeadingProps> = (args) => <Heading {...args} />;
 
 BasicWithoutButtons.args = {
-  buttons: undefined
+  buttonLabelOne: '',
+  buttonLabelTwo: ''
 };
 
 export const Mobile: Story<HeadingProps> = (args) => <Heading {...args} />;
@@ -48,7 +50,8 @@ Mobile.parameters = {
 export const MobileWithoutButtons: Story<HeadingProps> = (args) => <Heading {...args} />;
 
 MobileWithoutButtons.args = {
-  buttons: undefined
+  buttonLabelOne: '',
+  buttonLabelTwo: ''
 };
 
 MobileWithoutButtons.parameters = {
