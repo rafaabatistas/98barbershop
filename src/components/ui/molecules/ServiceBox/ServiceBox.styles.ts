@@ -5,6 +5,8 @@ export const Wrapper = styled.section`
   ${({ theme }) => css`
     width: fit-content;
     display: flex;
+    width: 100%;
+    height: 100%;
     flex-direction: column;
     gap: ${theme.spacings.large};
     padding: ${theme.spacings.large} calc(${theme.spacings.large} / 2);
@@ -16,6 +18,7 @@ export const Wrapper = styled.section`
     ${media.greaterThan('medium')`
       gap: ${theme.spacings.huge};
       padding: ${theme.spacings.huge} calc(${theme.spacings.large} / 2);
+      height: auto;
     `}
   `}
 `;
