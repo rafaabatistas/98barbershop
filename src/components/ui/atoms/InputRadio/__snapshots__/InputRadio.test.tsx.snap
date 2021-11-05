@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InputRadio /> Deve renderizar o componente <InputRadio /> 1`] = `
+.c0 {
+  position: relative;
+}
+
+.c2 {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: #1affea;
+}
+
+.c2 svg {
+  width: 2.5rem;
+  pointer-events: none;
+  -webkit-filter: drop-shadow(0 0 0.5rem #1affea);
+  filter: drop-shadow(0 0 0.5rem #1affea);
+}
+
+.c1 {
+  width: 2.5rem;
+  height: 2.5rem;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+}
+
+<div
+  class="c0"
+>
+  <input
+    checked=""
+    class="c1"
+    id="level"
+    name="level"
+    required=""
+    type="radio"
+    value="1"
+  />
+  <label
+    class="c2"
+    color="primary"
+    data-testid="label-star"
+    for="level"
+  >
+    <svg
+      aria-hidden="true"
+      aria-label="Star"
+      focusable="false"
+      viewBox="0 0 194.22 184.73"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="m157.096 184.718-60.01-31.565-60.025 31.542 11.476-66.828-48.546-47.34 67.103-9.737L97.115-.008l29.997 60.811 67.099 9.764-48.564 47.319z"
+        fill="currentColor"
+      />
+    </svg>
+  </label>
+</div>
+`;
