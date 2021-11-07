@@ -25,7 +25,7 @@ export const NavList = () => {
           { nav: 'Serviços', link: 'servicos' },
           { nav: 'Equipe', link: 'equipe' },
           { nav: 'Avaliações', link: 'avaliacao' },
-          { nav: 'FeedBack', link: 'feedBack' }
+          { nav: 'FeedBack', link: 'feedback' }
         ]}
       >
         <Fade left={isPortrait} top={!isPortrait}>
