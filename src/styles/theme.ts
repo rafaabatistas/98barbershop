@@ -42,6 +42,7 @@ export default {
   colors: {
     primary: '#1affea',
     secondary: '#3abcbf',
+    starOff: '#d3d3d3',
     mainBg: '#333333',
     white: '#FFFFFF',
     lightRed: '#F17575',
