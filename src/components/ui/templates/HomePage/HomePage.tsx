@@ -8,6 +8,7 @@ import { SectionAbout } from '~organisms/SectionAbout/SectionAbout';
 import { MainServices } from '~organisms/MainServices/MainServices';
 import { Review } from '~organisms/Review/Review';
 import { SectionContributors } from '~organisms/SectionContributors/SectionContributors';
+import { SectionContact } from '~organisms/SectionContact/SectionContact';
 
 import items from '~organisms/BannerSlider/mock';
 import services from '~organisms/MainServices/mock';
@@ -35,6 +36,9 @@ const HomePage = () => {
       </Element>
       <Element name="avaliacao">
         <Review items={reviews} />
+      </Element>
+      <Element name="feedback">
+        <SectionContact />
       </Element>
       <Map places={places} />
       <Footer />
