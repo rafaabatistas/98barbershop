@@ -14,7 +14,7 @@ export const SectionAbout = () => {
       <S.AboutContainer>
         <S.Content>
           <HeadingAbout
-            icon="/assets/svg/iconAbout.svg"
+            icon="/assets/svg/icon-about.svg"
             title="Olá Pessoal"
             subtitle="Nós Somos a 98BarberShop"
             lineBottom={isPortrait}

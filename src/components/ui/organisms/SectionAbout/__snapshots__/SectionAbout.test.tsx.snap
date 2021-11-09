@@ -334,7 +334,7 @@ exports[`<SectionAbout /> Deve renderizar o componente <SectionAbout /> 1`] = `
           aria-label="Sinalizador Giratório"
           class="c6"
           role="img"
-          src="/assets/svg/iconAbout.svg"
+          src="/assets/svg/icon-about.svg"
         />
         <div
           aria-label="LineTitle"

@@ -1,0 +1,138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TextAreaGroup /> Deve renderizar o componente <TextAreaGroup /> 1`] = `
+.c0 {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  width: 100%;
+  max-width: 52rem;
+  height: 20.1rem;
+  padding-top: 2rem;
+  position: relative;
+}
+
+.c1 {
+  color: #FFFFFF;
+  font-family: Poppins,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}
+
+.c2 {
+  width: 100%;
+  height: 15.1rem;
+  border: none;
+  outline: none;
+  resize: none;
+  padding: 0.2rem;
+  font-size: 1.4rem;
+  font-family: Poppins,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
+  font-weight: 500;
+  background-color: transparent;
+  color: #FFFFFF;
+  border-bottom: 3px solid #181818;
+}
+
+.c2::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.c2::-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.c2:-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.c2::placeholder {
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.c2:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.c2:focus::-moz-placeholder {
+  opacity: 1;
+}
+
+.c2:focus:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.c2:focus::placeholder {
+  opacity: 1;
+}
+
+.c3 {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  font-family: Poppins,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
+  font-weight: 500;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    height: 31.1rem;
+  }
+}
+
+@media (min-width:1170px) {
+  .c0 {
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    height: 26.1rem;
+  }
+}
+
+<div
+  class="c0"
+>
+  <label
+    class="c1"
+    for="feedback"
+  >
+    Escreva sua opinião
+  </label>
+  <textarea
+    class="c2"
+    id="feedback"
+    maxlength="225"
+    name="feedback"
+    placeholder="Comente sobre sua experiência com nosso serviço"
+  />
+  <span
+    class="c3"
+    data-testid="calcMaxLength"
+  >
+    max: 
+    225
+  </span>
+</div>
+`;
