@@ -89,3 +89,11 @@ export const BoxButton = styled.div`
   align-items: center;
   justify-content: center;
 `;
+
+export const Loading = styled.svg`
+  width: 5rem;
+  height: 6rem;
+  pointer-events: none;
+  position: absolute;
+  transform: translate(-50%, -50%);
+`;

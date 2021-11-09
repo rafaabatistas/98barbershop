@@ -8,6 +8,7 @@ import { InputRadioGroup } from '~molecules/InputRadioGroup/InputRadioGroup';
 import { TextAreaGroup } from '~molecules/TextAreaGroup/TextAreaGroup';
 import { SelectGroup } from '~molecules/SelectGroup/SelectGroup';
 import { Button } from '~atoms/Button/Button';
+import { ModalForm } from '~molecules/ModalForm/ModalForm';
 
 type formInputsProps = {
   nome: string;
@@ -20,6 +21,8 @@ type formInputsProps = {
 };
 
 export const SectionContact = () => {
+  const [openModal, setOpenModal] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const [formInputs, setFormInputs] = useState<formInputsProps>({
     nome: '',
     sobrenome: '',
@@ -61,116 +64,145 @@ export const SectionContact = () => {
   };
 
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setTimeout(() => {
-      setFormInputs({
-        nome: '',
-        sobrenome: '',
-        email: '',
-        feedback: '',
-        atendido_por: 'unavailable',
-        nota: '1',
-        recomendaria: undefined
-      });
-    }, 1000);
+    try {
+      e.preventDefault();
+      setIsLoading(true);
+    } catch (e) {
+      console.log(e);
+    } finally {
+      setTimeout(() => {
+        setIsLoading(false);
+        setFormInputs({
+          nome: '',
+          sobrenome: '',
+          email: '',
+          feedback: '',
+          atendido_por: 'unavailable',
+          nota: '1',
+          recomendaria: undefined
+        });
+        setOpenModal(true);
+      }, 1000);
+    }
   };
 
   return (
-    <S.Wrapper role="form" onSubmit={(e) => onSubmit(e)}>
-      <Heading title="FeedBack" subtitle="Sua Avaliação" lineBottom />
-      <S.BoxContact>
-        <S.BoxInputs>
-          <InputGroup
-            label="Nome"
-            labelFor="nome"
-            required
-            type="text"
-            placeholder="Ex: Rafael"
-            value={formInputs.nome}
-            onChange={(e) => handleInputChange(e)}
-            marginBottom
-          />
-          <InputGroup
-            required
-            type="text"
-            marginBottom
-            label="Sobrenome"
-            labelFor="sobrenome"
-            placeholder="Ex: Batista"
-            value={formInputs.sobrenome}
-            onChange={(e) => handleInputChange(e)}
-          />
-        </S.BoxInputs>
-        <S.BoxInputs>
-          <InputGroup
-            label="E-mail"
-            labelFor="email"
-            required
-            type="email"
-            value={formInputs.email}
-            placeholder="Ex: exemplo@gmail.com"
-            marginBottom
-            onChange={(e) => handleInputChange(e)}
-          />
-          <SelectGroup
-            required
-            marginBottom
-            labelFor="recomendaria"
-            label="Recomendaria este serviço?"
-            onChange={(e) => handleInputChange(e)}
-            placeholder="Nenhuma resposta selecionanda"
-            selected={formInputs.recomendaria === undefined}
-          >
-            <option role="option" value="true">
-              Sim
-            </option>
-            <option role="option" value="false">
-              Não
-            </option>
-          </SelectGroup>
-        </S.BoxInputs>
-        <S.BoxInputs>
-          <TextAreaGroup
-            required
-            maxLength={225}
-            labelFor="feedback"
-            label="Escreva sua opinião"
-            value={formInputs.feedback}
-            calcMaxLength={calcMaxLength(225)}
-            placeholder="Comente sobre sua experiência com nosso serviço"
-            onChange={(e) => limitValueFeedback(e)}
-          />
-          <S.BoxAttendance>
+    <>
+      <S.Wrapper role="form" onSubmit={(e) => onSubmit(e)}>
+        <Heading title="FeedBack" subtitle="Sua Avaliação" lineBottom />
+        <S.BoxContact>
+          <S.BoxInputs>
+            <InputGroup
+              label="Nome"
+              labelFor="nome"
+              required
+              type="text"
+              placeholder="Ex: Rafael"
+              value={formInputs.nome}
+              onChange={(e) => handleInputChange(e)}
+              marginBottom
+            />
+            <InputGroup
+              required
+              type="text"
+              marginBottom
+              label="Sobrenome"
+              labelFor="sobrenome"
+              placeholder="Ex: Batista"
+              value={formInputs.sobrenome}
+              onChange={(e) => handleInputChange(e)}
+            />
+          </S.BoxInputs>
+          <S.BoxInputs>
+            <InputGroup
+              label="E-mail"
+              labelFor="email"
+              required
+              type="email"
+              value={formInputs.email}
+              placeholder="Ex: exemplo@gmail.com"
+              marginBottom
+              onChange={(e) => handleInputChange(e)}
+            />
             <SelectGroup
               required
               marginBottom
-              value="unavailable"
-              label="Atendido por"
-              labelFor="atendido_por"
+              labelFor="recomendaria"
+              label="Recomendaria este serviço?"
               onChange={(e) => handleInputChange(e)}
               placeholder="Nenhuma resposta selecionanda"
-              selected={formInputs.atendido_por === 'unavailable'}
+              selected={formInputs.recomendaria === undefined}
             >
-              <option role="option" value="cleber_mariano">
-                Cleber Mariano
+              <option role="option" value="true">
+                Sim
               </option>
-              <option role="option" value="luan_silva">
-                Luan Silva
-              </option>
-              <option role="option" value="fabricio_marques">
-                Fabrício Marques
+              <option role="option" value="false">
+                Não
               </option>
             </SelectGroup>
-            <S.BoxClerk data-testid="photo-clerk" src={photoContributors[formInputs.atendido_por]} />
-            <InputRadioGroup labelFor="nota" value={formInputs.nota} onClick={handleInputClick} />
-          </S.BoxAttendance>
-        </S.BoxInputs>
-      </S.BoxContact>
-      <S.BoxButton>
-        <Button as="button" type="submit">
-          Avaliar
-        </Button>
-      </S.BoxButton>
-    </S.Wrapper>
+          </S.BoxInputs>
+          <S.BoxInputs>
+            <TextAreaGroup
+              required
+              maxLength={225}
+              labelFor="feedback"
+              label="Escreva sua opinião"
+              value={formInputs.feedback}
+              calcMaxLength={calcMaxLength(225)}
+              placeholder="Comente sobre sua experiência com nosso serviço"
+              onChange={(e) => limitValueFeedback(e)}
+            />
+            <S.BoxAttendance>
+              <SelectGroup
+                required
+                marginBottom
+                value="unavailable"
+                label="Atendido por"
+                labelFor="atendido_por"
+                onChange={(e) => handleInputChange(e)}
+                placeholder="Nenhuma resposta selecionanda"
+                selected={formInputs.atendido_por === 'unavailable'}
+              >
+                <option role="option" value="cleber_mariano">
+                  Cleber Mariano
+                </option>
+                <option role="option" value="luan_silva">
+                  Luan Silva
+                </option>
+                <option role="option" value="fabricio_marques">
+                  Fabrício Marques
+                </option>
+              </SelectGroup>
+              <S.BoxClerk data-testid="photo-clerk" src={photoContributors[formInputs.atendido_por]} />
+              <InputRadioGroup labelFor="nota" value={formInputs.nota} onClick={handleInputClick} />
+            </S.BoxAttendance>
+          </S.BoxInputs>
+        </S.BoxContact>
+        <S.BoxButton>
+          <Button as="button" type="submit" disabled={isLoading} style={{ width: '12rem', height: '4.4rem' }}>
+            {isLoading ? (
+              <S.Loading version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                <path
+                  fill="#fff"
+                  d="M73,50c0-12.7-10.3-23-23-23S27,37.3,27,50 M30.9,50c0-10.5,8.5-19.1,19.1-19.1S69.1,39.5,69.1,50"
+                >
+                  <animateTransform
+                    attributeName="transform"
+                    type="rotate"
+                    dur="1s"
+                    from="0 50 50"
+                    to="360 50 50"
+                    repeatCount="indefinite"
+                  />
+                </path>
+              </S.Loading>
+            ) : (
+              'Avaliar'
+            )}
+          </Button>
+        </S.BoxButton>
+      </S.Wrapper>
+      <ModalForm status="success" isOpen={openModal} onClick={setOpenModal} />
+    </>
   );
 };
