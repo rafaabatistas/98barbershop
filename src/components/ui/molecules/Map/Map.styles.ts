@@ -1,4 +1,3 @@
-import media from 'styled-media-query';
 import styled, { css } from 'styled-components';
 import { MapContainer } from 'react-leaflet';
 
@@ -17,16 +16,11 @@ export const Wrapper = styled(MapContainer)`
   width: 100%;
   height: 43.4rem;
   position: relative;
-  pointer-events: none;
 
   .leaflet-bottom.leaflet-right {
     opacity: 0;
     pointer-events: none;
   }
-
-  ${media.greaterThan('medium')`
-    pointer-events: all;
-  `}
 `;
 
 export const ArrowMoldingUp = styled.svg`
