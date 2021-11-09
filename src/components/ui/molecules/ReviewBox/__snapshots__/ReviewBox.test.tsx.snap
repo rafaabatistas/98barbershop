@@ -60,6 +60,7 @@ exports[`<ReviewBox /> Deve renderizar o componente <ReviewBox /> 1`] = `
   font-family: Kaushan Script;
   text-align: center;
   margin-bottom: 1.5rem;
+  word-wrap: break-word;
 }
 
 @media (min-width:768px) {
@@ -78,6 +79,12 @@ exports[`<ReviewBox /> Deve renderizar o componente <ReviewBox /> 1`] = `
   .c0 {
     width: 41rem;
     gap: 3rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    font-size: 1.4rem;
   }
 }
 

@@ -243,41 +243,29 @@ exports[`<SectionContributors /> Deve renderizar o componente <SectionContributo
   <div
     class="c1"
   >
-    <div
-      class="react-reveal"
+    <h1
+      class="c2"
     >
-      <h1
-        class="c2"
+      Os Melhores
+    </h1>
+    <div
+      class="c3"
+    >
+      <h2
+        class="c4"
       >
-        Os Melhores
-      </h1>
+        Nossos Profissionais
+        <div
+          aria-label="LineTitle"
+          class="c5"
+        />
+      </h2>
     </div>
-    <div
-      class="react-reveal"
-    >
-      <div
-        class="c3"
-      >
-        <h2
-          class="c4"
-        >
-          Nossos Profissionais
-          <div
-            aria-label="LineTitle"
-            class="c5"
-          />
-        </h2>
-      </div>
-    </div>
-    <div
-      class="react-reveal"
-    >
-      <p
-        class="c6"
-        color="white"
-        data-testid="description"
-      />
-    </div>
+    <p
+      class="c6"
+      color="white"
+      data-testid="description"
+    />
     <div
       class="c7"
     />

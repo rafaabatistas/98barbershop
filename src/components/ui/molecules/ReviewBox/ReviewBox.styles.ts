@@ -40,6 +40,10 @@ export const Answered = styled.p`
     span {
       color: ${theme.colors.primary};
     }
+
+    ${media.greaterThan('medium')`
+      font-size: ${theme.font.sizes.small};
+    `}
   `}
 `;
 
@@ -50,6 +54,7 @@ export const Comment = styled.h5`
     font-family: ${theme.font.family.textReview};
     text-align: center;
     margin-bottom: 1.5rem;
+    word-wrap: break-word;
 
     ${media.greaterThan('medium')`
       font-size: ${theme.font.sizes.xbig};

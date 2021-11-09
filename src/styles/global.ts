@@ -1,3 +1,4 @@
+import { darken } from 'polished';
 import { createGlobalStyle, css } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
@@ -103,19 +104,38 @@ const GlobalStyles = createGlobalStyle`
     font-size: 62.5%;
   }
 
-  ${({ theme }) => css`
     body {
-      font-family: ${theme.font.family.tertiary};
-      background: ${theme.colors.darkGray};
+      ${({ theme }) => css`
+        font-family: ${theme.font.family.tertiary};
+        background: ${theme.colors.darkGray};
+
+        .active {
+          color: ${theme.colors.primary};
+          text-shadow: 0 0 3rem rgba(26, 255, 234, 0.2), 0 0 1.5rem rgba(26, 255, 234, 0.4),
+            0 0 1rem rgba(26, 255, 234, 0.4), 0 0 5rem rgba(26, 255, 234, 0.2);
+        }
+      `}
     }
 
-    .active {
-      color: ${theme.colors.primary};
-      text-shadow: 0 0 3rem rgba(26, 255, 234, 0.2), 0 0 1.5rem rgba(26, 255, 234, 0.4),
-        0 0 1rem rgba(26, 255, 234, 0.4), 0 0 5rem rgba(26, 255, 234, 0.2);
+::-webkit-scrollbar-track, 
+::-webkit-scrollbar {
+  ${({ theme }) => css`
+    width: 1rem;
+    background: ${theme.colors.darkGray};
+  `}
+}
+
+::-webkit-scrollbar-thumb {
+  ${({ theme }) => css`
+    border-radius: 1rem;
+    background: ${theme.colors.primary};
+
+    &:hover {
+      background: ${darken(0.2, theme.colors.primary)};
     }
   `}
-  
+}
+
   button {
     cursor: pointer;
     border-style: none;
@@ -124,8 +144,6 @@ const GlobalStyles = createGlobalStyle`
   button:focus {
     outline: none;
   }
-
-  
 `;
 
 export default GlobalStyles;

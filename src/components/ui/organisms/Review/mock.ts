@@ -2,51 +2,44 @@ import { ReviewBoxProps } from '~molecules/ReviewBox/ReviewBox';
 
 const reviews: ReviewBoxProps[] = [
   {
-    answered: 'cleber',
+    answered: 'Gabriel',
     feedbackNote: 5,
-    comment:
-      'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout',
-    userImage: '/assets/img/testUser.png',
+    comment: 'It is a ',
     userName: 'gabriel guedes'
   },
   {
-    answered: 'Luan',
+    answered: '2',
     feedbackNote: 5,
     comment:
       'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout',
-    userImage: '/assets/img/testUser.png',
     userName: 'gabriel guedes'
   },
   {
-    answered: 'Fabrício',
+    answered: '3',
     feedbackNote: 5,
     comment:
       'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout',
-    userImage: '/assets/img/testUser.png',
     userName: 'gabriel guedes'
   },
   {
-    answered: 'Fabrício',
+    answered: '4',
     feedbackNote: 5,
     comment:
       'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout',
-    userImage: '/assets/img/testUser.png',
     userName: 'gabriel guedes'
   },
   {
-    answered: 'Fabrício',
+    answered: '5',
     feedbackNote: 5,
     comment:
       'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout',
-    userImage: '/assets/img/testUser.png',
     userName: 'gabriel guedes'
   },
   {
-    answered: 'Test',
+    answered: '6',
     feedbackNote: 5,
     comment:
       'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout',
-    userImage: '/assets/img/testUser.png',
     userName: 'gabriel guedes'
   }
 ];

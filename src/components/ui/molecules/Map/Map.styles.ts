@@ -16,6 +16,11 @@ export const Wrapper = styled(MapContainer)`
   width: 100%;
   height: 43.4rem;
   position: relative;
+
+  .leaflet-bottom.leaflet-right {
+    opacity: 0;
+    pointer-events: none;
+  }
 `;
 
 export const ArrowMoldingUp = styled.svg`

@@ -142,60 +142,40 @@ exports[`<Heading /> Deve renderizar todos os componentes o componente <Heading 
 <div
   class="c0"
 >
-  <div
-    class="react-reveal"
+  <h1
+    class="c1"
   >
-    <h1
-      class="c1"
-    >
-      Bem Vindo a BarberShop
-    </h1>
-  </div>
+    Bem Vindo a BarberShop
+  </h1>
   <div
-    class="react-reveal"
+    class="c2"
   >
-    <div
-      class="c2"
+    <h2
+      class="c3"
     >
-      <h2
-        class="c3"
-      >
-        We Are BarberShop!
-      </h2>
-    </div>
+      We Are BarberShop!
+    </h2>
   </div>
-  <div
-    class="react-reveal"
+  <p
+    class="c4"
+    color="white"
+    data-testid="description"
   >
-    <p
-      class="c4"
-      color="white"
-      data-testid="description"
-    >
-      Enjoy the Ultimate Relaxed Grooming Experience For Men every time you step into the Boardroom
-    </p>
-  </div>
+    Enjoy the Ultimate Relaxed Grooming Experience For Men every time you step into the Boardroom
+  </p>
   <div
     class="c5"
   >
-    <div
-      class="react-reveal"
+    <button
+      class="c6"
     >
-      <button
-        class="c6"
-      >
-        Marcar Hora
-      </button>
-    </div>
-    <div
-      class="react-reveal"
+      Marcar Hora
+    </button>
+    <button
+      class="c7"
     >
-      <button
-        class="c7"
-      >
-        Saiba Mais
-      </button>
-    </div>
+      Saiba Mais
+    </button>
   </div>
 </div>
 `;

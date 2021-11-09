@@ -327,41 +327,29 @@ exports[`<MainServices /> Deve renderizar o componente <MainServices /> 1`] = `
     <div
       class="c3"
     >
-      <div
-        class="react-reveal"
+      <h1
+        class="c4"
       >
-        <h1
-          class="c4"
+        Pronto para Cortar
+      </h1>
+      <div
+        class="c5"
+      >
+        <h2
+          class="c6"
         >
-          Pronto para Cortar
-        </h1>
+          Principais Serviços
+          <div
+            aria-label="LineTitle"
+            class="c7"
+          />
+        </h2>
       </div>
-      <div
-        class="react-reveal"
-      >
-        <div
-          class="c5"
-        >
-          <h2
-            class="c6"
-          >
-            Principais Serviços
-            <div
-              aria-label="LineTitle"
-              class="c7"
-            />
-          </h2>
-        </div>
-      </div>
-      <div
-        class="react-reveal"
-      >
-        <p
-          class="c8"
-          color="white"
-          data-testid="description"
-        />
-      </div>
+      <p
+        class="c8"
+        color="white"
+        data-testid="description"
+      />
       <div
         class="c9"
       />

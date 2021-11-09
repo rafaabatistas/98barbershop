@@ -8,7 +8,7 @@ export type ReviewBoxProps = {
 } & StarProps &
   UserInfoProps;
 
-export const ReviewBox = ({ answered, feedbackNote, comment, userImage, userName }: ReviewBoxProps) => (
+export const ReviewBox = ({ answered, feedbackNote, comment, userName }: ReviewBoxProps) => (
   <S.Wrapper>
     <S.Bookmark xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 53">
       <path d="M.185 53 .06 1V0h18.815v53L9.53 41.406.185 53Z" fill="currentColor" />
@@ -22,6 +22,6 @@ export const ReviewBox = ({ answered, feedbackNote, comment, userImage, userName
 
     <S.Comment>{`"${comment}"`}</S.Comment>
 
-    <UserInfo userImage={userImage} userName={userName} />
+    <UserInfo userName={userName} />
   </S.Wrapper>
 );

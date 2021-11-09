@@ -13,10 +13,6 @@ describe('<UserInfo />', () => {
     //Arrange
     const { container } = renderWithTheme(<UserInfo {...props} />);
     //Assert
-    expect(screen.getByLabelText(/User image/)).toHaveStyle({
-      'background-image': `url(${props.userImage})`
-    });
-
     expect(screen.getByText(`-${props.userName}`)).toBeInTheDocument();
 
     expect(container.firstChild).toMatchSnapshot();
