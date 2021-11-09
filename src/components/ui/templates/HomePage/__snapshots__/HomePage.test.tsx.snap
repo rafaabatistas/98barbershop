@@ -576,6 +576,18 @@ exports[`<Home /> Deve renderizar o componente <Home /> 1`] = `
 
 }
 
+@media (min-width:768px) {
+
+}
+
+@media (min-width:768px) {
+
+}
+
+@media (min-width:768px) {
+
+}
+
 <header
   class="c0"
 >
