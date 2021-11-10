@@ -1,6 +1,6 @@
 import * as S from './SectionContact.styles';
 
-import { ChangeEvent, useState } from 'react';
+import { ChangeEvent, useState, useContext } from 'react';
 
 import { Heading } from '~molecules/Heading/Heading';
 import { InputGroup } from '~molecules/InputGroup/InputGroup';
@@ -10,27 +10,34 @@ import { SelectGroup } from '~molecules/SelectGroup/SelectGroup';
 import { Button } from '~atoms/Button/Button';
 import { ModalForm } from '~molecules/ModalForm/ModalForm';
 
-type formInputsProps = {
+import datoClient from '~src/dato-cms/dato-client';
+import { ReviewContext } from '~contexts/ReviewContext';
+
+type StatusRequest = 'success' | 'error';
+
+type FormInputsProps = {
   nome: string;
   sobrenome: string;
   email: string;
   feedback: string;
-  atendido_por: 'unavailable' | 'cleber_mariano' | 'luan_silva' | 'fabricio_marques';
+  atendidoPor: 'unavailable' | 'cleber_mariano' | 'luan_silva' | 'fabricio_marques';
   nota: '1' | '2' | '3' | '4' | '5';
-  recomendaria?: boolean;
+  recomendaria?: 'true' | 'false';
 };
 
 export const SectionContact = () => {
+  const { reviews, setReviews } = useContext(ReviewContext);
+  const [statusRequest, setStatusRequest] = useState<StatusRequest>('success');
   const [openModal, setOpenModal] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
-  const [formInputs, setFormInputs] = useState<formInputsProps>({
+  const [formInputs, setFormInputs] = useState<FormInputsProps>({
     nome: '',
     sobrenome: '',
     email: '',
     feedback: '',
-    atendido_por: 'unavailable',
+    atendidoPor: 'unavailable',
     nota: '1',
-    recomendaria: true
+    recomendaria: 'true'
   });
 
   const photoContributors = {
@@ -67,22 +74,26 @@ export const SectionContact = () => {
     try {
       e.preventDefault();
       setIsLoading(true);
+      const dataInputs = { ...formInputs, nota: +formInputs.nota, itemType: '1236153' };
+      const allReviews = reviews;
+      allReviews.push(dataInputs);
+      await datoClient.items.create(dataInputs);
+      setReviews([...allReviews]);
+      setStatusRequest('success');
     } catch (e) {
-      console.log(e);
+      setStatusRequest('error');
     } finally {
-      setTimeout(() => {
-        setIsLoading(false);
-        setFormInputs({
-          nome: '',
-          sobrenome: '',
-          email: '',
-          feedback: '',
-          atendido_por: 'unavailable',
-          nota: '1',
-          recomendaria: undefined
-        });
-        setOpenModal(true);
-      }, 1000);
+      setIsLoading(false);
+      setFormInputs({
+        nome: '',
+        sobrenome: '',
+        email: '',
+        feedback: '',
+        atendidoPor: 'unavailable',
+        nota: '1',
+        recomendaria: undefined
+      });
+      setOpenModal(true);
     }
   };
 
@@ -158,10 +169,10 @@ export const SectionContact = () => {
                 marginBottom
                 value="unavailable"
                 label="Atendido por"
-                labelFor="atendido_por"
+                labelFor="atendidoPor"
                 onChange={(e) => handleInputChange(e)}
                 placeholder="Nenhuma resposta selecionanda"
-                selected={formInputs.atendido_por === 'unavailable'}
+                selected={formInputs.atendidoPor === 'unavailable'}
               >
                 <option role="option" value="cleber_mariano">
                   Cleber Mariano
@@ -173,7 +184,7 @@ export const SectionContact = () => {
                   Fabrício Marques
                 </option>
               </SelectGroup>
-              <S.BoxClerk data-testid="photo-clerk" src={photoContributors[formInputs.atendido_por]} />
+              <S.BoxClerk data-testid="photo-clerk" src={photoContributors[formInputs.atendidoPor]} />
               <InputRadioGroup labelFor="nota" value={formInputs.nota} onClick={handleInputClick} />
             </S.BoxAttendance>
           </S.BoxInputs>
@@ -202,7 +213,7 @@ export const SectionContact = () => {
           </Button>
         </S.BoxButton>
       </S.Wrapper>
-      <ModalForm status="success" isOpen={openModal} onClick={setOpenModal} />
+      <ModalForm status={statusRequest} isOpen={openModal} onClick={setOpenModal} />
     </>
   );
 };

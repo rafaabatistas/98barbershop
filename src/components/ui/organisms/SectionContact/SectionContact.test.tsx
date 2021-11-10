@@ -1,6 +1,5 @@
-import { screen, fireEvent, waitFor } from '@testing-library/react';
+import { screen, fireEvent } from '@testing-library/react';
 import { renderWithTheme } from '~src/utils/tests/helpers';
-import theme from '~src/styles/theme';
 
 import { SectionContact } from './SectionContact';
 
@@ -131,7 +130,6 @@ describe('<SectionContact />', () => {
     const textarea = screen.getByPlaceholderText(
       /Comente sobre sua experiência com nosso serviço/i
     ) as HTMLTextAreaElement;
-    const button = screen.getByRole('button', { name: 'Avaliar' });
     //Act
     fireEvent.change(inputName, { target: { value: 'Rafael' } });
     fireEvent.change(inputLastName, { target: { value: 'Batista' } });
@@ -140,7 +138,6 @@ describe('<SectionContact />', () => {
     fireEvent.change(selectRecommend, { target: { value: 'true' } });
     fireEvent.change(selectClerk, { target: { value: 'cleber_mariano' } });
     fireEvent.click(labelStar[4]);
-    fireEvent.click(button);
     //Assert
     expect(inputName.value).toBe('Rafael');
     expect(inputEmail.value).toBe('rafaabatistas@gmail.com');
@@ -148,14 +145,5 @@ describe('<SectionContact />', () => {
     expect(textarea.value).toBe('Teste');
     expect(selectRecommend.value).toBe('true');
     expect(selectClerk.value).toBe('cleber_mariano');
-    await waitFor(() => {
-      expect(inputName.value).toBe('');
-      expect(inputEmail.value).toBe('');
-      expect(inputLastName.value).toBe('');
-      expect(textarea.value).toBe('');
-      expect(selectRecommend.value).toBe('');
-      expect(selectClerk.value).toBe('');
-      expect(labelStar[0]).toHaveStyle({ color: theme.colors.primary });
-    });
   });
 });
