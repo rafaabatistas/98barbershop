@@ -2,45 +2,49 @@ import { ReviewBoxProps } from '~molecules/ReviewBox/ReviewBox';
 
 const reviews: ReviewBoxProps[] = [
   {
-    answered: 'Gabriel',
-    feedbackNote: 5,
-    comment: 'It is a ',
-    userName: 'gabriel guedes'
+    atendidoPor: 'fabricio_marques',
+    nota: 5,
+    feedback: 'Excelente atendimento, recomendo muito.',
+    nome: 'Luan',
+    sobrenome: 'Santana'
   },
   {
-    answered: '2',
-    feedbackNote: 5,
-    comment:
-      'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout',
-    userName: 'gabriel guedes'
+    atendidoPor: 'luan_silva',
+    nota: 5,
+    feedback: 'Melhor degrade da região, profissionais que amam oque fazem, estão de parabéns. Ótimo atendimento',
+    nome: 'Fernando',
+    sobrenome: 'bernardo'
   },
   {
-    answered: '3',
-    feedbackNote: 5,
-    comment:
-      'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout',
-    userName: 'gabriel guedes'
+    atendidoPor: 'cleber_mariano',
+    nota: 5,
+    feedback: 'Lugar top! Ótimo atendimento, o namorado entra feio e sai lindo. 👏🏽',
+    nome: 'Edilaine',
+    sobrenome: 'Viana'
   },
   {
-    answered: '4',
-    feedbackNote: 5,
-    comment:
-      'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout',
-    userName: 'gabriel guedes'
+    atendidoPor: 'luan_silva',
+    nota: 5,
+    feedback:
+      'Os cara é desnrolado nos corte mano jaça e o cleber que faz uns corte cacho de Banana hahaha  tmj rapaziada nao esquece de agendar meu horário kk',
+    nome: 'bruno',
+    sobrenome: 'silva'
   },
   {
-    answered: '5',
-    feedbackNote: 5,
-    comment:
-      'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout',
-    userName: 'gabriel guedes'
+    atendidoPor: 'luan_silva',
+    nota: 5,
+    feedback:
+      'Ótimo atendimento apresentado pelos funcionários. Profissionais capacitados, sempre de bom humor apresentando um atendimento com carisma e descontração!',
+    nome: 'Leonardo',
+    sobrenome: 'Lopes Pereira'
   },
   {
-    answered: '6',
-    feedbackNote: 5,
-    comment:
-      'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout',
-    userName: 'gabriel guedes'
+    atendidoPor: 'cleber_mariano',
+    nota: 5,
+    feedback:
+      'Os mano desenrola nos corte, só corto lá tem uns anos já, eu e meu filho. Recomendo demais ambos os cabeleiro e o tatuador tbm...',
+    nome: 'Felipe',
+    sobrenome: 'Cardoso'
   }
 ];
 
