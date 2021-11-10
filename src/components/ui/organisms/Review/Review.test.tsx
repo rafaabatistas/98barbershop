@@ -11,7 +11,7 @@ const props = reviews;
 describe('<Review />', () => {
   it('Deve renderizar o componente <Review />', () => {
     //Arrange
-    const { container } = renderWithTheme(<Review items={props} />);
+    const { container } = renderWithTheme(<Review reviews={props} />);
     //Assert
     expect(container.firstChild).toMatchSnapshot();
   });

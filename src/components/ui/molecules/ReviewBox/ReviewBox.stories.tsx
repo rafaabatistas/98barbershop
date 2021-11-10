@@ -6,12 +6,12 @@ export default {
   title: 'molecules/ReviewBox',
   component: ReviewBox,
   args: {
-    answered: 'cleber',
-    feedbackNote: 5,
-    comment:
+    atendidoPor: 'cleber',
+    nota: 5,
+    feedback:
       'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout',
-    userImage: '/assets/img/testUser.png',
-    userName: 'gabriel guedes'
+    nome: 'gabriel',
+    sobrenome: 'guedes'
   }
 } as Meta;
 

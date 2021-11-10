@@ -15,11 +15,11 @@ describe('<ReviewBox />', () => {
     //Arrange
     const { container } = renderWithTheme(
       <ReviewBox
-        answered="cleber"
-        feedbackNote={5}
-        comment="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout"
-        userImage="/assets/img/testUser.png"
-        userName="gabriel guedes"
+        atendidoPor="cleber_mariano"
+        nota={5}
+        feedback="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout"
+        nome="gabriel"
+        sobrenome="guedes"
       />
     );
     //Assert
