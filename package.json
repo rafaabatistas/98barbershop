@@ -28,6 +28,9 @@
   },
   "dependencies": {
     "@styled-icons/bootstrap": "^10.34.0",
+    "datocms-client": "^3.5.9",
+    "graphql": "^16.0.1",
+    "graphql-request": "^3.6.1",
     "hamburger-react": "^2.4.1",
     "leaflet": "^1.7.1",
     "next": "11.0.1",
