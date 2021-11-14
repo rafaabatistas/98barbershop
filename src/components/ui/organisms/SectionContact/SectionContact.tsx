@@ -75,7 +75,7 @@ export const SectionContact = () => {
       e.preventDefault();
       setIsLoading(true);
       const dataInputs = { ...formInputs, stars: +formInputs.stars };
-      await axios.post(`${process.env.NEXT_PUBLIC_VERCEL_URL}/api/evaluations`, { dataForm: dataInputs });
+      await axios.post('/api/evaluations', { dataForm: dataInputs });
       const allReviews = reviews;
       allReviews.push(dataInputs);
       setReviews([...allReviews]);
