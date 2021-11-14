@@ -1,14 +1,13 @@
 import { gql } from 'graphql-request';
 
-export const GET_VIEWS = gql`
+export const GET_REVIEWS = gql`
   query getReviews($first: IntType) {
-    allContacts(first: $first) {
-      id
-      nota
-      nome
-      sobrenome
+    allEvaluations(orderBy: createdAt_DESC, first: $first) {
+      name
+      surname
       feedback
-      atendidoPor
+      answered
+      stars
     }
   }
 `;
