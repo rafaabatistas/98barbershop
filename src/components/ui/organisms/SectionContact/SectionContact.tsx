@@ -16,13 +16,13 @@ import { ReviewContext } from '~contexts/ReviewContext';
 type StatusRequest = 'success' | 'error';
 
 type FormInputsProps = {
-  nome: string;
-  sobrenome: string;
+  name: string;
+  surname: string;
   email: string;
   feedback: string;
-  atendidoPor: 'unavailable' | 'cleber_mariano' | 'luan_silva' | 'fabricio_marques';
-  nota: '1' | '2' | '3' | '4' | '5';
-  recomendaria?: 'true' | 'false';
+  answered: 'unavailable' | 'cleber_mariano' | 'luan_silva' | 'fabricio_marques';
+  stars: '1' | '2' | '3' | '4' | '5';
+  recommend?: 'true' | 'false';
 };
 
 export const SectionContact = () => {
@@ -31,13 +31,13 @@ export const SectionContact = () => {
   const [openModal, setOpenModal] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [formInputs, setFormInputs] = useState<FormInputsProps>({
-    nome: '',
-    sobrenome: '',
+    name: '',
+    surname: '',
     email: '',
     feedback: '',
-    atendidoPor: 'unavailable',
-    nota: '1',
-    recomendaria: 'true'
+    answered: 'unavailable',
+    stars: '1',
+    recommend: 'true'
   });
 
   const photoContributors = {
@@ -85,13 +85,13 @@ export const SectionContact = () => {
     } finally {
       setIsLoading(false);
       setFormInputs({
-        nome: '',
-        sobrenome: '',
+        name: '',
+        surname: '',
         email: '',
         feedback: '',
-        atendidoPor: 'unavailable',
-        nota: '1',
-        recomendaria: undefined
+        answered: 'unavailable',
+        stars: '1',
+        recommend: undefined
       });
       setOpenModal(true);
     }
@@ -105,11 +105,11 @@ export const SectionContact = () => {
           <S.BoxInputs>
             <InputGroup
               label="Nome"
-              labelFor="nome"
+              labelFor="name"
               required
               type="text"
               placeholder="Ex: Rafael"
-              value={formInputs.nome}
+              value={formInputs.name}
               onChange={(e) => handleInputChange(e)}
               marginBottom
             />
@@ -118,9 +118,9 @@ export const SectionContact = () => {
               type="text"
               marginBottom
               label="Sobrenome"
-              labelFor="sobrenome"
+              labelFor="surname"
               placeholder="Ex: Batista"
-              value={formInputs.sobrenome}
+              value={formInputs.surname}
               onChange={(e) => handleInputChange(e)}
             />
           </S.BoxInputs>
@@ -138,11 +138,11 @@ export const SectionContact = () => {
             <SelectGroup
               required
               marginBottom
-              labelFor="recomendaria"
+              labelFor="recommend"
               label="Recomendaria este serviço?"
               onChange={(e) => handleInputChange(e)}
               placeholder="Nenhuma resposta selecionanda"
-              selected={formInputs.recomendaria === undefined}
+              selected={formInputs.recommend === undefined}
             >
               <option role="option" value="true">
                 Sim
@@ -169,10 +169,10 @@ export const SectionContact = () => {
                 marginBottom
                 value="unavailable"
                 label="Atendido por"
-                labelFor="atendidoPor"
+                labelFor="answered"
                 onChange={(e) => handleInputChange(e)}
                 placeholder="Nenhuma resposta selecionanda"
-                selected={formInputs.atendidoPor === 'unavailable'}
+                selected={formInputs.answered === 'unavailable'}
               >
                 <option role="option" value="cleber_mariano">
                   Cleber Mariano
@@ -184,8 +184,8 @@ export const SectionContact = () => {
                   Fabrício Marques
                 </option>
               </SelectGroup>
-              <S.BoxClerk data-testid="photo-clerk" src={photoContributors[formInputs.atendidoPor]} />
-              <InputRadioGroup labelFor="nota" value={formInputs.nota} onClick={handleInputClick} />
+              <S.BoxClerk data-testid="photo-clerk" src={photoContributors[formInputs.answered]} />
+              <InputRadioGroup labelFor="stars" value={formInputs.stars} onClick={handleInputClick} />
             </S.BoxAttendance>
           </S.BoxInputs>
         </S.BoxContact>
