@@ -1,12 +1,11 @@
 export type Reviews = {
-  id: number;
-  nota: number;
-  nome: string;
-  sobrenome: string;
+  name: string;
+  surname: string;
   feedback: string;
-  atendidoPor: string;
+  answered: string;
+  stars: 1 | 2 | 3 | 4 | 5;
 };
 
 export type GetReviewsProps = {
-  allContacts: Reviews[];
+  allEvaluations: Reviews[];
 };
