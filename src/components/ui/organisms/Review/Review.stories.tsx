@@ -1,6 +1,6 @@
 import { Story, Meta } from '@storybook/react';
 
-import items from './mock';
+import reviews from './mock';
 
 import { Review, ReviewProps } from './Review';
 
@@ -8,7 +8,7 @@ export default {
   title: 'organisms/Review',
   component: Review,
   args: {
-    items: items
+    reviews: reviews
   },
   parameters: {
     layout: 'fullscreen'

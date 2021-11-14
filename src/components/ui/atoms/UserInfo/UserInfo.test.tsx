@@ -4,8 +4,8 @@ import { renderWithTheme } from '~src/utils/tests/helpers';
 import { UserInfo } from './UserInfo';
 
 const props = {
-  nome: 'Gabriel',
-  sobrenome: 'Guedes'
+  name: 'Gabriel',
+  surname: 'Guedes'
 };
 
 describe('<UserInfo />', () => {
@@ -13,7 +13,7 @@ describe('<UserInfo />', () => {
     //Arrange
     const { container } = renderWithTheme(<UserInfo {...props} />);
     //Assert
-    expect(screen.getByText(`-${props.nome} ${props.sobrenome}`)).toBeInTheDocument();
+    expect(screen.getByText(`-${props.name} ${props.surname}`)).toBeInTheDocument();
 
     expect(container.firstChild).toMatchSnapshot();
   });

@@ -3,12 +3,12 @@ import { UserInfo, UserInfoProps } from '~atoms/UserInfo/UserInfo';
 import * as S from './ReviewBox.styles';
 
 export type ReviewBoxProps = {
-  atendidoPor: 'cleber_mariano' | 'luan_silva' | 'fabricio_marques';
+  answered: 'cleber_mariano' | 'luan_silva' | 'fabricio_marques';
   feedback: string;
-  nota: 1 | 2 | 3 | 4 | 5;
+  stars: 1 | 2 | 3 | 4 | 5;
 } & UserInfoProps;
 
-export const ReviewBox = ({ atendidoPor, nota, feedback, nome, sobrenome }: ReviewBoxProps) => {
+export const ReviewBox = ({ answered, stars, feedback, name, surname }: ReviewBoxProps) => {
   const nameAnswered = {
     cleber_mariano: 'Cleber',
     luan_silva: 'Luan',
@@ -22,14 +22,14 @@ export const ReviewBox = ({ atendidoPor, nota, feedback, nome, sobrenome }: Revi
       </S.Bookmark>
 
       <S.Answered>
-        Atentido por <span>{nameAnswered[atendidoPor]}</span>
+        Atentido por <span>{nameAnswered[answered]}</span>
       </S.Answered>
 
-      <Stars feedbackNote={nota} />
+      <Stars feedbackNote={stars} />
 
       <S.Comment>{`"${feedback}"`}</S.Comment>
 
-      <UserInfo nome={nome} sobrenome={sobrenome} />
+      <UserInfo name={name} surname={surname} />
     </S.Wrapper>
   );
 };

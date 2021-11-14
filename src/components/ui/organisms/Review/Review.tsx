@@ -77,7 +77,7 @@ export const Review = ({ reviews }: ReviewProps) => (
       <S.WrapperSlider>
         <Slider settings={settings}>
           {reviews?.map((item, index) => (
-            <ReviewBox key={`${item.nome} - ${item.atendidoPor} - ${index}`} {...item} />
+            <ReviewBox key={`${item.name} - ${item.answered} - ${index}`} {...item} />
           ))}
         </Slider>
       </S.WrapperSlider>

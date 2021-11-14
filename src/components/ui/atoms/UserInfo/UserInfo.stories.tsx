@@ -6,8 +6,8 @@ export default {
   title: 'atoms/UserInfo',
   component: UserInfo,
   args: {
-    userImage: '/assets/img/testUser.png',
-    userName: 'gabriel guedes'
+    name: 'gabriel',
+    surname: 'guedes'
   }
 } as Meta;
 
