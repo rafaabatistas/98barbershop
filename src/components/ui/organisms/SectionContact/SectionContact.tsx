@@ -10,7 +10,7 @@ import { SelectGroup } from '~molecules/SelectGroup/SelectGroup';
 import { Button } from '~atoms/Button/Button';
 import { ModalForm } from '~molecules/ModalForm/ModalForm';
 
-import datoClient from '~src/dato-cms/dato-client';
+import axios from 'axios';
 import { ReviewContext } from '~contexts/ReviewContext';
 
 type StatusRequest = 'success' | 'error';
@@ -74,10 +74,10 @@ export const SectionContact = () => {
     try {
       e.preventDefault();
       setIsLoading(true);
-      const dataInputs = { ...formInputs, nota: +formInputs.nota, itemType: '1236153' };
+      const dataInputs = { ...formInputs, stars: +formInputs.stars };
+      await axios.post(`${process.env.NEXT_PUBLIC_VERCEL_URL}/api/evaluations`, { dataForm: dataInputs });
       const allReviews = reviews;
       allReviews.push(dataInputs);
-      await datoClient.items.create(dataInputs);
       setReviews([...allReviews]);
       setStatusRequest('success');
     } catch (e) {
