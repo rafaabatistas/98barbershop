@@ -15,6 +15,8 @@ module.exports = {
       '~molecules': path.resolve(__dirname, '..', 'src/components/ui/molecules'),
       '~atoms': path.resolve(__dirname, '..', 'src/components/ui/atoms'),
       '~styles': path.resolve(__dirname, '..', './src/styles'),
+      '~graphql': path.resolve(__dirname, '..', './src/graphql'),
+      '~contexts': path.resolve(__dirname, '..', './src/contexts'),
       '~assets': path.resolve(__dirname, '..', './public/assets'),
       '~svg': path.resolve(__dirname, '..', './public/assets/svg'),
       '~img': path.resolve(__dirname, '..', './public/assets/img'),

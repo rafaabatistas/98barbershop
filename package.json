@@ -28,6 +28,10 @@
   },
   "dependencies": {
     "@styled-icons/bootstrap": "^10.34.0",
+    "axios": "^0.24.0",
+    "datocms-client": "^3.5.9",
+    "graphql": "^16.0.1",
+    "graphql-request": "^3.6.1",
     "hamburger-react": "^2.4.1",
     "leaflet": "^1.7.1",
     "next": "11.0.1",
@@ -58,6 +62,7 @@
     "@types/styled-components": "^5.1.11",
     "@typescript-eslint/eslint-plugin": "^4.28.3",
     "@typescript-eslint/parser": "^4.28.3",
+    "@vercel/node": "^1.12.1",
     "babel-loader": "^8.2.2",
     "babel-plugin-styled-components": "^1.13.2",
     "eslint": "7.30.0",

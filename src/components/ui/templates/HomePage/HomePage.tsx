@@ -1,5 +1,8 @@
 import { Element } from 'react-scroll';
 import dynamic from 'next/dynamic';
+import { useContext } from 'react';
+
+import { ReviewContext } from '~contexts/ReviewContext';
 
 import { Header } from '~organisms/Header/Header';
 import { Footer } from '~organisms/Footer/Footer';
@@ -12,13 +15,14 @@ import { SectionContact } from '~organisms/SectionContact/SectionContact';
 
 import items from '~organisms/BannerSlider/mock';
 import services from '~organisms/MainServices/mock';
-import reviews from '~organisms/Review/mock';
 import places from '~molecules/Map/map.mock';
 import contributors from '~organisms/SectionContributors/contributors.mock';
 
 const Map = dynamic(() => import('~molecules/Map/Map'), { ssr: false });
 
 const HomePage = () => {
+  const { reviews } = useContext(ReviewContext);
+
   return (
     <>
       <Header />
@@ -35,7 +39,7 @@ const HomePage = () => {
         <SectionContributors contributors={contributors} />
       </Element>
       <Element name="avaliacao">
-        <Review items={reviews} />
+        <Review reviews={reviews} />
       </Element>
       <Element name="feedback">
         <SectionContact />

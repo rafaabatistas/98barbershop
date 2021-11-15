@@ -6,7 +6,7 @@ import { ReviewBox, ReviewBoxProps } from '~molecules/ReviewBox/ReviewBox';
 import * as S from './Review.styles';
 
 export type ReviewProps = {
-  items: ReviewBoxProps[];
+  reviews: ReviewBoxProps[];
 };
 
 const settings: SliderSettings = {
@@ -69,15 +69,15 @@ const settings: SliderSettings = {
   ]
 };
 
-export const Review = ({ items }: ReviewProps) => (
+export const Review = ({ reviews }: ReviewProps) => (
   <S.Wrapper>
     <Background src="/assets/img/slide-4.jpg">
       <Heading title="O Que Dizem de Nós" subtitle="Nossas Avaliações" lineBottom />
 
       <S.WrapperSlider>
         <Slider settings={settings}>
-          {items.map((item, index) => (
-            <ReviewBox key={`${item.userName} - ${item.answered} - ${index}`} {...item} />
+          {reviews?.map((item, index) => (
+            <ReviewBox key={`${item.name} - ${item.answered} - ${index}`} {...item} />
           ))}
         </Slider>
       </S.WrapperSlider>

@@ -488,30 +488,6 @@ exports[`<Home /> Deve renderizar o componente <Home /> 1`] = `
 
 }
 
-@media (max-width:768px) {
-
-}
-
-@media (min-width:768px) {
-
-}
-
-@media (min-width:768px) {
-
-}
-
-@media (min-width:768px) {
-
-}
-
-@media (min-width:768px) {
-
-}
-
-@media (min-width:768px) {
-
-}
-
 @media (min-width:1170px) {
 
 }

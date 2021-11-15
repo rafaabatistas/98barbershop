@@ -1,6 +1,6 @@
 import * as S from './SectionContact.styles';
 
-import { ChangeEvent, useState } from 'react';
+import { ChangeEvent, useState, useContext } from 'react';
 
 import { Heading } from '~molecules/Heading/Heading';
 import { InputGroup } from '~molecules/InputGroup/InputGroup';
@@ -10,27 +10,34 @@ import { SelectGroup } from '~molecules/SelectGroup/SelectGroup';
 import { Button } from '~atoms/Button/Button';
 import { ModalForm } from '~molecules/ModalForm/ModalForm';
 
-type formInputsProps = {
-  nome: string;
-  sobrenome: string;
+import axios from 'axios';
+import { ReviewContext } from '~contexts/ReviewContext';
+
+type StatusRequest = 'success' | 'error';
+
+type FormInputsProps = {
+  name: string;
+  surname: string;
   email: string;
   feedback: string;
-  atendido_por: 'unavailable' | 'cleber_mariano' | 'luan_silva' | 'fabricio_marques';
-  nota: '1' | '2' | '3' | '4' | '5';
-  recomendaria?: boolean;
+  answered: 'unavailable' | 'cleber_mariano' | 'luan_silva' | 'fabricio_marques';
+  stars: '1' | '2' | '3' | '4' | '5';
+  recommend?: 'true' | 'false';
 };
 
 export const SectionContact = () => {
+  const { reviews, setReviews } = useContext(ReviewContext);
+  const [statusRequest, setStatusRequest] = useState<StatusRequest>('success');
   const [openModal, setOpenModal] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
-  const [formInputs, setFormInputs] = useState<formInputsProps>({
-    nome: '',
-    sobrenome: '',
+  const [formInputs, setFormInputs] = useState<FormInputsProps>({
+    name: '',
+    surname: '',
     email: '',
     feedback: '',
-    atendido_por: 'unavailable',
-    nota: '1',
-    recomendaria: true
+    answered: 'unavailable',
+    stars: '1',
+    recommend: 'true'
   });
 
   const photoContributors = {
@@ -67,22 +74,26 @@ export const SectionContact = () => {
     try {
       e.preventDefault();
       setIsLoading(true);
+      const dataInputs = { ...formInputs, stars: +formInputs.stars };
+      await axios.post('/api/evaluations', { dataForm: dataInputs });
+      const allReviews = reviews;
+      allReviews.push(dataInputs);
+      setReviews([...allReviews]);
+      setStatusRequest('success');
     } catch (e) {
-      console.log(e);
+      setStatusRequest('error');
     } finally {
-      setTimeout(() => {
-        setIsLoading(false);
-        setFormInputs({
-          nome: '',
-          sobrenome: '',
-          email: '',
-          feedback: '',
-          atendido_por: 'unavailable',
-          nota: '1',
-          recomendaria: undefined
-        });
-        setOpenModal(true);
-      }, 1000);
+      setIsLoading(false);
+      setFormInputs({
+        name: '',
+        surname: '',
+        email: '',
+        feedback: '',
+        answered: 'unavailable',
+        stars: '1',
+        recommend: undefined
+      });
+      setOpenModal(true);
     }
   };
 
@@ -94,11 +105,11 @@ export const SectionContact = () => {
           <S.BoxInputs>
             <InputGroup
               label="Nome"
-              labelFor="nome"
+              labelFor="name"
               required
               type="text"
               placeholder="Ex: Rafael"
-              value={formInputs.nome}
+              value={formInputs.name}
               onChange={(e) => handleInputChange(e)}
               marginBottom
             />
@@ -107,9 +118,9 @@ export const SectionContact = () => {
               type="text"
               marginBottom
               label="Sobrenome"
-              labelFor="sobrenome"
+              labelFor="surname"
               placeholder="Ex: Batista"
-              value={formInputs.sobrenome}
+              value={formInputs.surname}
               onChange={(e) => handleInputChange(e)}
             />
           </S.BoxInputs>
@@ -127,11 +138,11 @@ export const SectionContact = () => {
             <SelectGroup
               required
               marginBottom
-              labelFor="recomendaria"
+              labelFor="recommend"
               label="Recomendaria este serviço?"
               onChange={(e) => handleInputChange(e)}
               placeholder="Nenhuma resposta selecionanda"
-              selected={formInputs.recomendaria === undefined}
+              selected={formInputs.recommend === undefined}
             >
               <option role="option" value="true">
                 Sim
@@ -158,10 +169,10 @@ export const SectionContact = () => {
                 marginBottom
                 value="unavailable"
                 label="Atendido por"
-                labelFor="atendido_por"
+                labelFor="answered"
                 onChange={(e) => handleInputChange(e)}
                 placeholder="Nenhuma resposta selecionanda"
-                selected={formInputs.atendido_por === 'unavailable'}
+                selected={formInputs.answered === 'unavailable'}
               >
                 <option role="option" value="cleber_mariano">
                   Cleber Mariano
@@ -173,8 +184,8 @@ export const SectionContact = () => {
                   Fabrício Marques
                 </option>
               </SelectGroup>
-              <S.BoxClerk data-testid="photo-clerk" src={photoContributors[formInputs.atendido_por]} />
-              <InputRadioGroup labelFor="nota" value={formInputs.nota} onClick={handleInputClick} />
+              <S.BoxClerk data-testid="photo-clerk" src={photoContributors[formInputs.answered]} />
+              <InputRadioGroup labelFor="stars" value={formInputs.stars} onClick={handleInputClick} />
             </S.BoxAttendance>
           </S.BoxInputs>
         </S.BoxContact>
@@ -202,7 +213,7 @@ export const SectionContact = () => {
           </Button>
         </S.BoxButton>
       </S.Wrapper>
-      <ModalForm status="success" isOpen={openModal} onClick={setOpenModal} />
+      <ModalForm status={statusRequest} isOpen={openModal} onClick={setOpenModal} />
     </>
   );
 };
