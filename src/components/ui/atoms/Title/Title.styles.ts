@@ -5,14 +5,17 @@ import { TitleProps } from './Title';
 const titleModifiers = {
   normal: (theme: DefaultTheme) => css`
     font-size: ${theme.font.sizes.xbig};
+    margin-bottom: 0.5rem;
 
     ${media.greaterThan('medium')`
       font-size: ${theme.font.sizes.xlarge};
+      margin-bottom: ${theme.spacings.xsmall};
     `}
   `,
 
   large: (theme: DefaultTheme) => css`
     font-size: ${theme.font.sizes.large};
+    margin-bottom: ${theme.spacings.xsmall};
 
     ${media.greaterThan('medium')`
       font-size: ${theme.font.sizes.xxlarge};
@@ -20,11 +23,12 @@ const titleModifiers = {
   `
 };
 
-export const Title = styled.h2<TitleProps>`
-  ${({ theme, size }) => css`
+export const Title = styled.h1<TitleProps>`
+  ${({ theme, size, textAlign }) => css`
     color: ${theme.colors.primary};
     font-family: ${theme.font.family.primary};
     font-weight: ${theme.font.regular};
+    text-align: ${textAlign};
 
     ${!!size && titleModifiers[size!](theme)}
   `}

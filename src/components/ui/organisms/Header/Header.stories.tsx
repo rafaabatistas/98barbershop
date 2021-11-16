@@ -6,6 +6,7 @@ export default {
   title: 'molecules/Header',
   component: Header,
   parameters: {
+    layout: 'fullscreen',
     backgrounds: {
       default: 'dark',
       values: [{ name: 'dark', value: '#121212' }]

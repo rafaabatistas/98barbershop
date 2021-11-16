@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<UserInfo /> Deve renderizar o componente <UserInfo /> 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c1 {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #A5A5A5;
+}
+
+@media (min-width:768px) {
+  .c1 {
+    font-size: 1.4rem;
+  }
+}
+
+<div
+  class="c0"
+>
+  <p
+    aria-label="User name"
+    class="c1"
+  >
+    -Gabriel Guedes
+  </p>
+</div>
+`;

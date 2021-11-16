@@ -31,7 +31,7 @@ describe('<MediaMatch />', () => {
 
   it('Deve mostrar ou ocultar o componente <MediaMatch /> com base na mídia passada', () => {
     //Assert
-    expect(desktopHeading.parentElement).toHaveStyleRule('display', 'block', { media: '(min-width: 768px)' });
+    expect(desktopHeading.parentElement).toHaveStyleRule('display', 'block', { media: '(min-width: 769px)' });
     expect(mobileHeading.parentElement).toHaveStyleRule('display', 'block', { media: '(max-width: 768px)' });
   });
 });

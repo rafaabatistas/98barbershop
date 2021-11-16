@@ -24,7 +24,7 @@ describe('<Description />', () => {
     const description = screen.getByTestId('description');
     //Assert
     expect(description).toHaveStyle({ 'font-size': '1.6rem' });
-    expect(description).toHaveStyle({ 'margin-bottom': '2.5rem' });
+    expect(description).toHaveStyle({ 'margin-bottom': '4.5rem' });
   });
 
   it('Deve renderizar o componente <Description /> em seu tamanho xmedium', () => {

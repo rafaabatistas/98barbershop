@@ -1,7 +1,15 @@
 import styled, { css } from 'styled-components';
-import media, { DefaultBreakpoints } from 'styled-media-query';
+import { customMedia, extraMedia } from '~src/utils/media/customMedia';
 
-type breakpoint = keyof DefaultBreakpoints;
+interface breakpointPlus {
+  huge: string;
+  large: string;
+  big: string;
+  medium: string;
+  small: string;
+}
+
+type breakpoint = keyof breakpointPlus;
 
 export type MediaMatchProps = {
   lessThan?: breakpoint;
@@ -10,13 +18,13 @@ export type MediaMatchProps = {
 
 export const mediaMatchModifiers = {
   lessThan: (size: breakpoint) => css`
-    ${media.lessThan(size)`
+    ${extraMedia.lessThan(size)`
       display: block;
     `}
   `,
 
   greaterThan: (size: breakpoint) => css`
-    ${media.greaterThan(size)`
+    ${customMedia.greaterThan(size)`
       display: block;
     `}
   `

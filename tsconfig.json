@@ -9,6 +9,8 @@
       "~molecules/*": ["./src/components/ui/molecules/*"],
       "~atoms/*": ["./src/components/ui/atoms/*"],
       "~styles/*": ["./src/styles/*"],
+      "~graphql/*": ["./src/graphql/*"],
+      "~contexts/*": ["./src/contexts/*"],
       "~assets/*": ["./public/assets/*"],
       "~svg/*": ["./public/assets/svg/*"],
       "~img/*": ["./public/assets/img/*"],

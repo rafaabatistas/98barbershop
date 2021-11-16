@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Container /> Deve renderizar o componente <Container /> 1`] = `
+.c0 {
+  max-width: 129rem;
+  margin: 0 15px;
+}
+
+@media (min-width:1170px) {
+  .c0 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+<div
+  class="c0"
+/>
+`;

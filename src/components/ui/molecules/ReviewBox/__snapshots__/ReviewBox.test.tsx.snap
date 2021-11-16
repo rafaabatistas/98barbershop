@@ -1,0 +1,182 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ReviewBox /> Deve renderizar o componente <ReviewBox /> 1`] = `
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.c3 svg {
+  width: 1.5rem;
+  color: #1affea;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 31rem;
+  width: 31rem;
+  position: relative;
+  background: #FFFFFF;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.c1 {
+  position: absolute;
+  top: 0;
+  left: 2rem;
+  color: #1affea;
+  height: 5.3rem;
+}
+
+.c2 {
+  color: #282828;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-family: Kaushan Script;
+  text-align: right;
+}
+
+.c2 span {
+  color: #1affea;
+}
+
+.c4 {
+  color: #282828;
+  font-size: 2.0rem;
+  font-family: Kaushan Script;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  word-wrap: break-word;
+}
+
+@media (min-width:768px) {
+  .c3 svg {
+    width: 2rem;
+  }
+}
+
+@media (max-width:768px) {
+  .c3 {
+    margin: 2rem 0 1rem 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    width: 41rem;
+    gap: 3rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+  }
+}
+
+<div
+  class="c0"
+>
+  <svg
+    class="c1"
+    viewBox="0 0 19 53"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M.185 53 .06 1V0h18.815v53L9.53 41.406.185 53Z"
+      fill="currentColor"
+    />
+  </svg>
+  <p
+    class="c2"
+  >
+    Atentido por 
+    <span>
+      Cleber
+    </span>
+  </p>
+  <div
+    class="c3"
+  >
+    <svg
+      aria-label="Star"
+      viewBox="0 0 194.22 184.73"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="m157.096 184.718-60.01-31.565-60.025 31.542 11.476-66.828-48.546-47.34 67.103-9.737L97.115-.008l29.997 60.811 67.099 9.764-48.564 47.319z"
+        fill="currentColor"
+      />
+    </svg>
+    <svg
+      aria-label="Star"
+      viewBox="0 0 194.22 184.73"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="m157.096 184.718-60.01-31.565-60.025 31.542 11.476-66.828-48.546-47.34 67.103-9.737L97.115-.008l29.997 60.811 67.099 9.764-48.564 47.319z"
+        fill="currentColor"
+      />
+    </svg>
+    <svg
+      aria-label="Star"
+      viewBox="0 0 194.22 184.73"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="m157.096 184.718-60.01-31.565-60.025 31.542 11.476-66.828-48.546-47.34 67.103-9.737L97.115-.008l29.997 60.811 67.099 9.764-48.564 47.319z"
+        fill="currentColor"
+      />
+    </svg>
+    <svg
+      aria-label="Star"
+      viewBox="0 0 194.22 184.73"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="m157.096 184.718-60.01-31.565-60.025 31.542 11.476-66.828-48.546-47.34 67.103-9.737L97.115-.008l29.997 60.811 67.099 9.764-48.564 47.319z"
+        fill="currentColor"
+      />
+    </svg>
+    <svg
+      aria-label="Star"
+      viewBox="0 0 194.22 184.73"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="m157.096 184.718-60.01-31.565-60.025 31.542 11.476-66.828-48.546-47.34 67.103-9.737L97.115-.008l29.997 60.811 67.099 9.764-48.564 47.319z"
+        fill="currentColor"
+      />
+    </svg>
+  </div>
+  <h5
+    class="c4"
+  >
+    "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout"
+  </h5>
+  <div
+    data-testid="UserInfo"
+  />
+</div>
+`;

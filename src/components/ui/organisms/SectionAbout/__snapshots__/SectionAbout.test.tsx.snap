@@ -1,0 +1,403 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SectionAbout /> Deve renderizar o componente <SectionAbout /> 1`] = `
+.c1 {
+  max-width: 129rem;
+  margin: 0 15px;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c8 {
+  width: 270px;
+}
+
+.c9 {
+  color: #1affea;
+  font-family: Dancing Script;
+  font-weight: 500;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.c6 {
+  display: none;
+}
+
+.c7 {
+  display: none;
+}
+
+.c10 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 3.2rem;
+}
+
+.c11 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  color: #FFFFFF;
+  font-family: Abril Fatface;
+  font-weight: 400;
+  font-size: 3.0rem;
+  text-align: center;
+}
+
+.c0 {
+  height: 60rem;
+}
+
+.c2 {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c3 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c4 {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c15 {
+  width: 27.9rem;
+  height: 21.6rem;
+}
+
+.c12 {
+  max-width: 51.8rem;
+  font-family: Poppins,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.c14 {
+  color: #FFFFFF;
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 4rem;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  margin-left: 5.8rem;
+  background: #3abcbf;
+  border: 0.2rem solid #3abcbf;
+}
+
+.c14:hover {
+  background: #226f71;
+  border: 0.2rem solid #226f71;
+}
+
+.c17 {
+  color: #FFFFFF;
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 4rem;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  background: #3abcbf;
+  border: 0.2rem solid #3abcbf;
+}
+
+.c17:hover {
+  background: #226f71;
+  border: 0.2rem solid #226f71;
+}
+
+.c13 {
+  display: none;
+}
+
+.c16 {
+  display: none;
+}
+
+@media (min-width:1170px) {
+  .c1 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width:450px) {
+  .c8 {
+    width: auto;
+  }
+}
+
+@media (min-width:1025px) {
+  .c9 {
+    text-align: left;
+  }
+}
+
+@media (min-width:768px) {
+  .c9 {
+    font-size: 4.5rem;
+    margin-bottom: 1.6rem;
+  }
+}
+
+@media (min-width:1025px) {
+  .c6 {
+    display: block;
+    margin-bottom: 4rem;
+  }
+}
+
+@media (min-width:1025px) {
+  .c7 {
+    display: block;
+    width: 0.4rem;
+    height: calc(100% - 2rem);
+    border-radius: 0.4rem;
+    background: rgba(255,255,255,0.3);
+    margin-right: 2rem;
+    margin-bottom: 4rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c10 {
+    margin-bottom: 4.0rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c11 {
+    font-size: 5.0rem;
+    text-align: left;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    height: 80rem;
+  }
+}
+
+@media (min-width:1025px) {
+  .c0 {
+    height: 60rem;
+  }
+}
+
+@media (min-width:1025px) {
+  .c2 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width:1024px) {
+  .c4 {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media (min-width:768px) {
+  .c15 {
+    width: 46.1rem;
+    height: 36.2rem;
+  }
+}
+
+@media (max-width:1170px) {
+  .c15 {
+    margin-bottom: 3.5rem;
+  }
+}
+
+@media (min-width:1024px) {
+  .c12 {
+    text-align: left;
+  }
+}
+
+@media (min-width:1025px) {
+  .c12 {
+    margin-bottom: 4.0rem;
+    margin-left: 5.8rem;
+  }
+}
+
+@media (min-width:450px) {
+  .c12 {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+}
+
+@media (min-width:1025px) {
+  .c13 {
+    display: block;
+  }
+}
+
+@media (max-width:1024px) {
+  .c16 {
+    display: block;
+  }
+}
+
+<section
+  class="c0"
+>
+  <div
+    class="c1 c2"
+  >
+    <div
+      class="c3 c4"
+    >
+      <div
+        class="c5"
+      >
+        <img
+          aria-label="Sinalizador Giratório"
+          class="c6"
+          role="img"
+          src="/assets/svg/icon-about.svg"
+        />
+        <div
+          aria-label="LineTitle"
+          class="c7"
+        />
+        <div
+          class="c8"
+        >
+          <h1
+            class="c9"
+          >
+            Olá Pessoal
+          </h1>
+          <div
+            class="c10"
+          >
+            <h2
+              class="c11"
+            >
+              Nós Somos a 98BarberShop
+            </h2>
+          </div>
+        </div>
+      </div>
+      <p
+        class="c12"
+      >
+        A 98 BarberShop é um espaço de serviços masculinos que combina valores tradicionais com estilo moderno. Uma barbearia contemporânea com uma atmosfera informal e alegre. Um espaço para homens com estilo moderno, energia jovem e com pensamento inovador.
+      </p>
+      <div
+        class="c13"
+      >
+        <a
+          buttonstyle="primary"
+          class="c14"
+          data-testid="button-scroll"
+          marginleft="big"
+        >
+          Saiba Mais
+        </a>
+      </div>
+    </div>
+    <div
+      class="c3"
+    >
+      <img
+        alt="Foto ilustrativa do interior de uma barbearia"
+        class="c15"
+        loading="lazy"
+        src="/assets/img/image-about.png"
+      />
+      <div
+        class="c16"
+      >
+        <a
+          buttonstyle="primary"
+          class="c17"
+          data-testid="button-scroll"
+        >
+          Saiba Mais
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+`;

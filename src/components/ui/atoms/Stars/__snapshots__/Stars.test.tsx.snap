@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Stars /> Deve renderizar o componente <Stars /> 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.c0 svg {
+  width: 1.5rem;
+  color: #1affea;
+}
+
+@media (min-width:768px) {
+  .c0 svg {
+    width: 2rem;
+  }
+}
+
+@media (max-width:768px) {
+  .c0 {
+    margin: 2rem 0 1rem 0;
+  }
+}
+
+<div
+  class="c0"
+>
+  <svg
+    aria-label="Star"
+    viewBox="0 0 194.22 184.73"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="m157.096 184.718-60.01-31.565-60.025 31.542 11.476-66.828-48.546-47.34 67.103-9.737L97.115-.008l29.997 60.811 67.099 9.764-48.564 47.319z"
+      fill="currentColor"
+    />
+  </svg>
+  <svg
+    aria-label="Star"
+    viewBox="0 0 194.22 184.73"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="m157.096 184.718-60.01-31.565-60.025 31.542 11.476-66.828-48.546-47.34 67.103-9.737L97.115-.008l29.997 60.811 67.099 9.764-48.564 47.319z"
+      fill="currentColor"
+    />
+  </svg>
+  <svg
+    aria-label="Star"
+    viewBox="0 0 194.22 184.73"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="m157.096 184.718-60.01-31.565-60.025 31.542 11.476-66.828-48.546-47.34 67.103-9.737L97.115-.008l29.997 60.811 67.099 9.764-48.564 47.319z"
+      fill="currentColor"
+    />
+  </svg>
+  <svg
+    aria-label="Star"
+    viewBox="0 0 194.22 184.73"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="m157.096 184.718-60.01-31.565-60.025 31.542 11.476-66.828-48.546-47.34 67.103-9.737L97.115-.008l29.997 60.811 67.099 9.764-48.564 47.319z"
+      fill="currentColor"
+    />
+  </svg>
+  <svg
+    aria-label="Star"
+    viewBox="0 0 194.22 184.73"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="m157.096 184.718-60.01-31.565-60.025 31.542 11.476-66.828-48.546-47.34 67.103-9.737L97.115-.008l29.997 60.811 67.099 9.764-48.564 47.319z"
+      fill="currentColor"
+    />
+  </svg>
+</div>
+`;

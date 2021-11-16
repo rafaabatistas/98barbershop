@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Background /> Deve renderizar o componente <Background /> 1`] = `
+.c0 {
+  position: relative;
+  background-image: url(/assets/img/slide-1.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 5rem 0;
+  overflow: hidden;
+}
+
+.c1 {
+  position: absolute;
+  width: 5rem;
+  color: #080808;
+  top: -0.1rem;
+  left: 50%;
+  -webkit-transform: translate(-50%,0);
+  -ms-transform: translate(-50%,0);
+  transform: translate(-50%,0);
+}
+
+.c2 {
+  position: absolute;
+  width: 5rem;
+  color: #080808;
+  bottom: -0.1rem;
+  left: 50%;
+  -webkit-transform: translate(-50%,0);
+  -ms-transform: translate(-50%,0);
+  transform: translate(-50%,0);
+}
+
+@media (min-width:768px) {
+  .c0 {
+    padding: 10rem 1.5rem;
+  }
+}
+
+<div
+  aria-label="Background"
+  class="c0"
+  src="/assets/img/slide-1.jpg"
+>
+  <svg
+    class="c1"
+    viewBox="0 0 50 19"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M25.5 18.85C25.5 9.426 43 1.347 50 1.347V0H0v1.347c7 0 25.5 8.078 25.5 17.504Z"
+      fill="currentColor"
+    />
+  </svg>
+  <h1>
+    Background
+  </h1>
+  <svg
+    class="c2"
+    viewBox="0 0 50 19"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M24.5 0C24.5 9.425 7 17.504 0 17.504v1.347h50v-1.347c-7 0-25.5-8.079-25.5-17.504Z"
+      fill="currentColor"
+    />
+  </svg>
+</div>
+`;

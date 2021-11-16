@@ -1,0 +1,200 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MenuMobile /> Deve renderizar os links do componente <MenuMobile /> 1`] = `
+.c0 {
+  background: #080808;
+  opacity: 0.9;
+  pointer-events: all;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: calc(4.8rem + (1.5rem + 1.5rem));
+  z-index: 20;
+  color: white;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.c1 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.c2 {
+  position: relative;
+  list-style: none;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #1affea;
+}
+
+.c2::after {
+  content: '';
+  position: absolute;
+  justify-self: center;
+  bottom: -0.5rem;
+  height: 0.2rem;
+  width: 100%;
+  background: #1affea;
+  box-shadow: 0 0 1rem #1affea;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.c2:hover::after,
+.c2:focus::after {
+  width: 100%;
+}
+
+.c4 {
+  position: relative;
+  list-style: none;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #FFFFFF;
+}
+
+.c4::after {
+  content: '';
+  position: absolute;
+  justify-self: center;
+  bottom: -0.5rem;
+  height: 0.2rem;
+  width: 0;
+  background: #1affea;
+  box-shadow: 0 0 1rem #1affea;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.c4:hover::after,
+.c4:focus::after {
+  width: 100%;
+}
+
+.c3 {
+  font-size: 1.8rem;
+  font-weight: 300;
+  padding: 0 1rem;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.c3:hover,
+.c3:focus {
+  color: #1affea;
+  cursor: pointer;
+  text-shadow: 0 0 3rem rgba(26,255,234,0.2),0 0 1.5rem rgba(26,255,234,0.4),0 0 1rem rgba(26,255,234,0.4),0 0 5rem rgba(26,255,234,0.2);
+}
+
+<div
+  aria-hidden="false"
+  aria-label="Menu Full"
+  class="c0"
+>
+  <ul
+    class="c1"
+  >
+    <li
+      class="c2"
+    >
+      <a
+        aria-label="Home"
+        class="c3"
+      >
+        Home
+      </a>
+    </li>
+    <li
+      class="c4"
+    >
+      <a
+        aria-label="Sobre"
+        class="c3"
+      >
+        Sobre
+      </a>
+    </li>
+    <li
+      class="c4"
+    >
+      <a
+        aria-label="Serviços"
+        class="c3"
+      >
+        Serviços
+      </a>
+    </li>
+    <li
+      class="c4"
+    >
+      <a
+        aria-label="Equipe"
+        class="c3"
+      >
+        Equipe
+      </a>
+    </li>
+    <li
+      class="c4"
+    >
+      <a
+        aria-label="Opinião"
+        class="c3"
+      >
+        Avaliações
+      </a>
+    </li>
+    <li
+      class="c4"
+    >
+      <a
+        aria-label="FeedBack"
+        class="c3"
+      >
+        FeedBack
+      </a>
+    </li>
+  </ul>
+</div>
+`;

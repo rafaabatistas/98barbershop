@@ -1,0 +1,222 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InputRadioGroup /> Deve renderizar o componente <InputRadioGroup /> 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.c1 {
+  position: relative;
+}
+
+.c3 {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: #1affea;
+}
+
+.c3 svg {
+  width: 2.5rem;
+  pointer-events: none;
+  -webkit-filter: drop-shadow(0 0 0.5rem #1affea);
+  filter: drop-shadow(0 0 0.5rem #1affea);
+}
+
+.c4 {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: #d3d3d3;
+}
+
+.c4 svg {
+  width: 2.5rem;
+  pointer-events: none;
+  -webkit-filter: none;
+  filter: none;
+}
+
+.c2 {
+  width: 2.5rem;
+  height: 2.5rem;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <input
+      checked=""
+      class="c2"
+      data-testid="one-star"
+      id="nota"
+      name="nota"
+      required=""
+      type="radio"
+      value="1"
+    />
+    <label
+      class="c3"
+      color="primary"
+      data-testid="label-star"
+      for="nota"
+    >
+      <svg
+        aria-hidden="true"
+        aria-label="Star"
+        focusable="false"
+        viewBox="0 0 194.22 184.73"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="m157.096 184.718-60.01-31.565-60.025 31.542 11.476-66.828-48.546-47.34 67.103-9.737L97.115-.008l29.997 60.811 67.099 9.764-48.564 47.319z"
+          fill="currentColor"
+        />
+      </svg>
+    </label>
+  </div>
+  <div
+    class="c1"
+  >
+    <input
+      class="c2"
+      data-testid="two-star"
+      id="nota"
+      name="nota"
+      type="radio"
+      value="2"
+    />
+    <label
+      class="c4"
+      color="starOff"
+      data-testid="label-star"
+      for="nota"
+    >
+      <svg
+        aria-hidden="true"
+        aria-label="Star"
+        focusable="false"
+        viewBox="0 0 194.22 184.73"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="m157.096 184.718-60.01-31.565-60.025 31.542 11.476-66.828-48.546-47.34 67.103-9.737L97.115-.008l29.997 60.811 67.099 9.764-48.564 47.319z"
+          fill="currentColor"
+        />
+      </svg>
+    </label>
+  </div>
+  <div
+    class="c1"
+  >
+    <input
+      class="c2"
+      data-testid="three-star"
+      id="nota"
+      name="nota"
+      type="radio"
+      value="3"
+    />
+    <label
+      class="c4"
+      color="starOff"
+      data-testid="label-star"
+      for="nota"
+    >
+      <svg
+        aria-hidden="true"
+        aria-label="Star"
+        focusable="false"
+        viewBox="0 0 194.22 184.73"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="m157.096 184.718-60.01-31.565-60.025 31.542 11.476-66.828-48.546-47.34 67.103-9.737L97.115-.008l29.997 60.811 67.099 9.764-48.564 47.319z"
+          fill="currentColor"
+        />
+      </svg>
+    </label>
+  </div>
+  <div
+    class="c1"
+  >
+    <input
+      class="c2"
+      data-testid="four-star"
+      id="nota"
+      name="nota"
+      type="radio"
+      value="4"
+    />
+    <label
+      class="c4"
+      color="starOff"
+      data-testid="label-star"
+      for="nota"
+    >
+      <svg
+        aria-hidden="true"
+        aria-label="Star"
+        focusable="false"
+        viewBox="0 0 194.22 184.73"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="m157.096 184.718-60.01-31.565-60.025 31.542 11.476-66.828-48.546-47.34 67.103-9.737L97.115-.008l29.997 60.811 67.099 9.764-48.564 47.319z"
+          fill="currentColor"
+        />
+      </svg>
+    </label>
+  </div>
+  <div
+    class="c1"
+  >
+    <input
+      class="c2"
+      data-testid="five-star"
+      id="nota"
+      name="nota"
+      type="radio"
+      value="5"
+    />
+    <label
+      class="c4"
+      color="starOff"
+      data-testid="label-star"
+      for="nota"
+    >
+      <svg
+        aria-hidden="true"
+        aria-label="Star"
+        focusable="false"
+        viewBox="0 0 194.22 184.73"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="m157.096 184.718-60.01-31.565-60.025 31.542 11.476-66.828-48.546-47.34 67.103-9.737L97.115-.008l29.997 60.811 67.099 9.764-48.564 47.319z"
+          fill="currentColor"
+        />
+      </svg>
+    </label>
+  </div>
+</div>
+`;

@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ButtonScroll /> Deve renderizar os estilos primarios do componente <ButtonScroll /> 1`] = `
+.c0 {
+  color: #FFFFFF;
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 4rem;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  background: #3abcbf;
+  border: 0.2rem solid #3abcbf;
+}
+
+.c0:hover {
+  background: #226f71;
+  border: 0.2rem solid #226f71;
+}
+
+<a
+  buttonstyle="primary"
+  class="c0"
+  data-testid="button-scroll"
+>
+  Marcar Hora
+</a>
+`;
