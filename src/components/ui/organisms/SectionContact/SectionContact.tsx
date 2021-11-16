@@ -75,11 +75,11 @@ export const SectionContact = () => {
       e.preventDefault();
       setIsLoading(true);
       const dataInputs = { ...formInputs, stars: +formInputs.stars };
-      await axios.post('/api/evaluations', { dataForm: dataInputs });
+      const { data } = await axios.post('/api/evaluations', { dataForm: dataInputs });
       const allReviews = reviews;
-      allReviews.push(dataInputs);
+      allReviews.push(data.data);
       setReviews([...allReviews]);
-      setStatusRequest('success');
+      setStatusRequest(data.message);
     } catch (e) {
       setStatusRequest('error');
     } finally {
