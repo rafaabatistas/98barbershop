@@ -1,6 +1,6 @@
 import { Story, Meta } from '@storybook/react';
 
-import { Button } from './Button';
+import { Button, ButtonProps } from './Button';
 
 export default {
   title: 'atoms/Button',
@@ -10,22 +10,16 @@ export default {
       default: 'dark',
       values: [{ name: 'dark', value: '#121212' }]
     }
-  },
-  argTypes: {
-    as: {
-      type: 'select',
-      options: ['a', 'button']
-    }
   }
 } as Meta;
 
-export const Basic: Story = (args) => <Button {...args} />;
+export const Basic: Story<ButtonProps> = (args) => <Button {...args} />;
 
 Basic.args = {
   children: 'Marcar Hora'
 };
 
-export const Secondary: Story = (args) => <Button {...args} />;
+export const Secondary: Story<ButtonProps> = (args) => <Button {...args} />;
 
 Secondary.args = {
   children: 'Saiba Mais',
