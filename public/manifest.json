@@ -1,21 +1,46 @@
 {
-  "name": "Boilerplate NextJS",
-  "short_name": "Boilerplate NextJS",
+  "name": "98Barbershop",
+  "short_name": "98Barbershop",
   "icons": [
     {
-      "src": "assets/img/icon-logo.png",
-      "type": "image/png",
-      "sizes": "40x59"
+      "src": "assets/svg/logotipo-36-36.svg",
+      "type": "image/svg+xml",
+      "sizes": "36x36"
     },
     {
-      "src": "assets/svg/ilustration.svg",
-      "type": "image/img",
-      "sizes": "1920x1279"
+      "src": "assets/svg/logotipo-48-48.svg",
+      "type": "image/svg+xml",
+      "sizes": "48x48"
+    },
+    {
+      "src": "assets/svg/logotipo-72-72.svg",
+      "type": "image/svg+xml",
+      "sizes": "72x72"
+    },
+    {
+      "src": "assets/svg/logotipo-96-96.svg",
+      "type": "image/svg+xml",
+      "sizes": "96x96"
+    },
+    {
+      "src": "assets/svg/logotipo-144-144.svg",
+      "type": "image/svg+xml",
+      "sizes": "144x144"
+    },
+    {
+      "src": "assets/svg/logotipo-192-192.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192"
+    },
+    {
+      "src": "assets/svg/logotipo-512-512.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512"
     }
   ],
-  "background_color": "#333333",
+  "background_color": "#387e80",
   "description": "98Barbershop, sua barbearia preferida agora em uma plataforma.",
   "display": "fullscreen",
   "start_url": "/",
-  "theme_color": "#333333"
+  "theme_color": "#387e80"
 }
