@@ -31,7 +31,6 @@ exports[`<SelectGroup /> Deve renderizar o componente <SelectGroup /> 1`] = `
 }
 
 .c2 option {
-  border: none;
   border: 0;
   color: #FFFFFF;
   background-color: #080808;

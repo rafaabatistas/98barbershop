@@ -56,9 +56,6 @@ exports[`<MainServices /> Deve renderizar o componente <MainServices /> 1`] = `
 
 .c5 {
   width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -68,12 +65,7 @@ exports[`<MainServices /> Deve renderizar o componente <MainServices /> 1`] = `
 }
 
 .c6 {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -109,9 +101,6 @@ exports[`<MainServices /> Deve renderizar o componente <MainServices /> 1`] = `
 
 .c9 {
   width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -124,9 +113,6 @@ exports[`<MainServices /> Deve renderizar o componente <MainServices /> 1`] = `
   position: relative;
   display: block;
   box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -151,7 +137,6 @@ exports[`<MainServices /> Deve renderizar o componente <MainServices /> 1`] = `
 }
 
 .c13 .slick-list.dragging {
-  cursor: pointer;
   cursor: hand;
 }
 
@@ -161,8 +146,6 @@ exports[`<MainServices /> Deve renderizar o componente <MainServices /> 1`] = `
   -moz-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   -o-transform: translate3d(0,0,0);
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
 }
 
@@ -233,9 +216,6 @@ exports[`<MainServices /> Deve renderizar o componente <MainServices /> 1`] = `
 
 .c0 .slick-track,
 .c0 .slick-list {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -248,9 +228,6 @@ exports[`<MainServices /> Deve renderizar o componente <MainServices /> 1`] = `
 }
 
 .c11 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   gap: 3rem;
 }

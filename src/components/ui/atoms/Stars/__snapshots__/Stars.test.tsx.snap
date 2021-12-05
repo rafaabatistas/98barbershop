@@ -2,9 +2,6 @@
 
 exports[`<Stars /> Deve renderizar o componente <Stars /> 1`] = `
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
