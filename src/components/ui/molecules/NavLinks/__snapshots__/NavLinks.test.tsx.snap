@@ -7,9 +7,6 @@ exports[`<NavLinks /> Deve renderizar todos os componentes dentro do componente 
 
 .c0 {
   width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -31,9 +28,6 @@ exports[`<NavLinks /> Deve renderizar todos os componentes dentro do componente 
 }
 
 .c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   gap: 4rem;
 }

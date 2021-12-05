@@ -2,9 +2,6 @@
 
 exports[`<ReviewBox /> Deve renderizar o componente <ReviewBox /> 1`] = `
 .c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -19,9 +16,6 @@ exports[`<ReviewBox /> Deve renderizar o componente <ReviewBox /> 1`] = `
 }
 
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;

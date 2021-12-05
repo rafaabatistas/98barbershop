@@ -9,7 +9,6 @@ const props: BannerProps = {
   title: 'Bem Vindo a BarberShop',
   subtitle: 'We Are BarberShop!',
   description: 'Enjoy the Ultimate Relaxed Grooming Experience For Men every time you step into the Boardroom',
-  buttons: 2,
   buttonLabelOne: 'Marcar Hora',
   buttonLabelTwo: 'Saiba Mais'
 };

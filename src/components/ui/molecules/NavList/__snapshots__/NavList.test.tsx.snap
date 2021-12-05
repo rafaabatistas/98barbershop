@@ -6,9 +6,6 @@ exports[`<NavList /> Deve Renderizar todos os components de <NavList /> 1`] = `
   width: 100%;
   height: 100%;
   list-style: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -43,9 +40,6 @@ exports[`<NavList /> Deve Renderizar todos os components de <NavList /> 1`] = `
   right: calc(4.8rem + (1.5rem + 1.5rem));
   z-index: 20;
   color: white;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -61,9 +55,6 @@ exports[`<NavList /> Deve Renderizar todos os components de <NavList /> 1`] = `
 
 .c10 {
   width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -79,9 +70,6 @@ exports[`<NavList /> Deve Renderizar todos os components de <NavList /> 1`] = `
   position: relative;
   list-style: none;
   text-align: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -112,9 +100,6 @@ exports[`<NavList /> Deve Renderizar todos os components de <NavList /> 1`] = `
   position: relative;
   list-style: none;
   text-align: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -158,9 +143,6 @@ exports[`<NavList /> Deve Renderizar todos os components de <NavList /> 1`] = `
 
 .c1 {
   width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -182,9 +164,6 @@ exports[`<NavList /> Deve Renderizar todos os components de <NavList /> 1`] = `
 }
 
 .c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   gap: 4rem;
 }

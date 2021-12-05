@@ -14,9 +14,6 @@ exports[`<Footer /> Deve renderizar o componente <Footer /> 1`] = `
 
 .c0 {
   width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -26,9 +23,6 @@ exports[`<Footer /> Deve renderizar o componente <Footer /> 1`] = `
 }
 
 .c0 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -39,9 +33,6 @@ exports[`<Footer /> Deve renderizar o componente <Footer /> 1`] = `
 
 .c3 {
   width: auto;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -62,9 +53,6 @@ exports[`<Footer /> Deve renderizar o componente <Footer /> 1`] = `
 
 .c6 {
   width: auto;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -87,9 +75,6 @@ exports[`<Footer /> Deve renderizar o componente <Footer /> 1`] = `
 
 .c14 {
   width: auto;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -145,9 +130,6 @@ exports[`<Footer /> Deve renderizar o componente <Footer /> 1`] = `
 .c16 {
   position: absolute;
   width: 5rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -173,9 +155,6 @@ exports[`<Footer /> Deve renderizar o componente <Footer /> 1`] = `
 
 .c13 {
   width: auto;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -215,9 +194,6 @@ exports[`<Footer /> Deve renderizar o componente <Footer /> 1`] = `
 }
 
 .c8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -251,9 +227,6 @@ exports[`<Footer /> Deve renderizar o componente <Footer /> 1`] = `
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;

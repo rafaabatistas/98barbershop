@@ -2,9 +2,6 @@
 
 exports[`<HeadingAbout /> Deve renderizar o componente <HeadingAbout /> 1`] = `
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -27,9 +24,6 @@ exports[`<HeadingAbout /> Deve renderizar o componente <HeadingAbout /> 1`] = `
 
 .c3 {
   width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -39,12 +33,7 @@ exports[`<HeadingAbout /> Deve renderizar o componente <HeadingAbout /> 1`] = `
 }
 
 .c4 {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;

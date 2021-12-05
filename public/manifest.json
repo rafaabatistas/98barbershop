@@ -1,21 +1,46 @@
 {
-  "name": "Boilerplate NextJS",
-  "short_name": "Boilerplate NextJS",
+  "name": "98Barbershop",
+  "short_name": "98Barbershop",
   "icons": [
     {
-      "src": "assets/img/icon-logo.png",
+      "src": "assets/img/logotipo-36-36.png",
       "type": "image/png",
-      "sizes": "40x59"
+      "sizes": "36x36"
     },
     {
-      "src": "assets/svg/ilustration.svg",
-      "type": "image/img",
-      "sizes": "1920x1279"
+      "src": "assets/img/logotipo-48-48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "assets/img/logotipo-72-72.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "assets/img/logotipo-96-96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "assets/img/logotipo-144-144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "assets/img/logotipo-192-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "assets/img/logotipo-512-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ],
-  "background_color": "#333333",
+  "background_color": "#387e80",
   "description": "98Barbershop, sua barbearia preferida agora em uma plataforma.",
   "display": "fullscreen",
   "start_url": "/",
-  "theme_color": "#333333"
+  "theme_color": "#387e80"
 }
