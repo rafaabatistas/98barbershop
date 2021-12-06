@@ -7,6 +7,9 @@ exports[`<SectionAbout /> Deve renderizar o componente <SectionAbout /> 1`] = `
 }
 
 .c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -37,6 +40,9 @@ exports[`<SectionAbout /> Deve renderizar o componente <SectionAbout /> 1`] = `
 
 .c10 {
   width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -46,7 +52,12 @@ exports[`<SectionAbout /> Deve renderizar o componente <SectionAbout /> 1`] = `
 }
 
 .c11 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -64,6 +75,9 @@ exports[`<SectionAbout /> Deve renderizar o componente <SectionAbout /> 1`] = `
 
 .c2 {
   height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -74,6 +88,9 @@ exports[`<SectionAbout /> Deve renderizar o componente <SectionAbout /> 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;

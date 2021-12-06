@@ -17,6 +17,9 @@ exports[`<Heading /> Deve renderizar todos os componentes o componente <Heading 
 
 .c2 {
   width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -26,7 +29,12 @@ exports[`<Heading /> Deve renderizar todos os componentes o componente <Heading 
 }
 
 .c3 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -93,6 +101,9 @@ exports[`<Heading /> Deve renderizar todos os componentes o componente <Heading 
 
 .c5 {
   width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;

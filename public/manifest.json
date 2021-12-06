@@ -38,9 +38,9 @@
       "sizes": "512x512"
     }
   ],
-  "background_color": "#387e80",
+  "background_color": "#080808",
   "description": "98Barbershop, sua barbearia preferida agora em uma plataforma.",
-  "display": "fullscreen",
+  "display": "standalone",
   "start_url": "/",
-  "theme_color": "#387e80"
+  "theme_color": "#080808"
 }

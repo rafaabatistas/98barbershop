@@ -2,8 +2,14 @@
 
 exports[`<ServiceBox /> Deve renderizar o componente <ServiceBox /> 1`] = `
 .c0 {
-  width: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  width: 100%;
   height: 100%;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -18,6 +24,9 @@ exports[`<ServiceBox /> Deve renderizar o componente <ServiceBox /> 1`] = `
 }
 
 .c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -30,6 +39,9 @@ exports[`<ServiceBox /> Deve renderizar o componente <ServiceBox /> 1`] = `
 }
 
 .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;

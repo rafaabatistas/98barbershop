@@ -2,6 +2,9 @@
 
 exports[`<InputRadioGroup /> Deve renderizar o componente <InputRadioGroup /> 1`] = `
 .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
