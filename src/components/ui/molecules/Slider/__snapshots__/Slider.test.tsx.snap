@@ -8,6 +8,9 @@ exports[`<Slider /> should render the heading 1`] = `
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
   -webkit-touch-callout: none;
   -khtml-user-select: none;
@@ -29,6 +32,7 @@ exports[`<Slider /> should render the heading 1`] = `
 }
 
 .c0 .slick-list.dragging {
+  cursor: pointer;
   cursor: hand;
 }
 
@@ -38,6 +42,8 @@ exports[`<Slider /> should render the heading 1`] = `
   -moz-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   -o-transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
 }
 

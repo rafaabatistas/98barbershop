@@ -2,6 +2,9 @@
 
 exports[`<UserInfo /> Deve renderizar o componente <UserInfo /> 1`] = `
 .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;

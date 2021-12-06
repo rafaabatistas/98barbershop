@@ -8,6 +8,9 @@ exports[`<Banner /> Deve renderizar o componente <Banner /> com o componente <He
   background-position: center;
   background-size: cover;
   text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
