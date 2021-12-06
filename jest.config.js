@@ -22,7 +22,8 @@ module.exports = {
     '!src/styles/*.ts',
     '!src/types/*.ts',
     '!src/contexts/**',
-    '!src/graphql/**'
+    '!src/graphql/**',
+    '!src/components/ui/atoms/Analytics/**'
   ],
   setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],
   testMatch: ['**/**/**/**/**/*.test.tsx'],
